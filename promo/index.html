@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#357bee" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+    <meta name="theme-color" content="#357bee" />
+    <meta
+      name="description"
+      content="Software Engineering Club at The Ohio State University"
+    />
+    <meta
+      name="keywords"
+      content="software engineering, osu, cse, cse club, osu cs, osu cs club, software engineering club, software engineering club osu, software engineering club at the ohio state university, software engineering club at ohio state, dev, dev at dev, dev, dev at ohio state"
+    />
+
+    <title>DEV - Software Engineering Club at OSU</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Libre+Franklin&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "IBM Plex Mono", monospace;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .h2-input {
+        font-size: 1.5rem;
+        border: none;
+        background-color: transparent;
+        color: inherit;
+        font-family: "IBM Plex Mono", monospace;
+        width: 100vw;
+        text-align: center;
+        margin: 0.83em 0;
+      }
+      p {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+      a {
+        color: white;
+        background-color: #357bee;
+        padding: 0.3rem;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        --gradient-shift: 0px;
+      }
+      span {
+        width: fit-content;
+      }
+      a:hover {
+        background-image: linear-gradient(
+          to right,
+          #357bee var(--gradient-shift),
+          #ef2e92
+        );
+      }
+      footer {
+        border-top: 0.5px solid black;
+        margin-top: 3rem;
+      }
+      #head {
+        margin: 0;
+        width: 100%;
+        height: 75vh;
+        min-height: 250px;
+        /* padding: 1rem; */
+        background-image: radial-gradient(
+          circle at var(--cursor-x) var(--cursor-y),
+          #bd0063 1px,
+          #00c8fc 50%,
+          #2400db
+        );
+        opacity: 0.85;
+        color: white;
+        --cursor-x: 100%;
+        --cursor-y: 100%;
+        align-items: center;
+
+        /* sexy shadow */
+        /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+      }
+      #headBody {
+        margin: 1rem;
+      }
+      .blinking {
+        animation: blinking 2s infinite;
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+      }
+      .block {
+        margin: 2rem 3rem 0 3rem;
+        width: 50%;
+        min-width: 350px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @keyframes blinking {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      /* iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        } */
+    </style>
+  </head>
+  <body>
+    <div id="head" class="section">
+      <div id="headBody" class="center">
+        <span
+          ><img
+            src="../assets/logo-white.png"
+            alt="DEV Logo"
+            height="100px"
+            class="center"
+        /></span>
+        <span
+          ><h2>
+            <span id="subtitle">
+              Software Engineering Club at The Ohio State University
+            </span>
+            <span id="blinkingUnderscore" class="blinking" style="margin-left:-15px">_</span>
+          </h2></span
+        >
+        <span
+          class="center"
+          ><h1>
+            tosu.dev
+          </h1></span
+        >
+        <div class="section">
+          <div class="block" style="width:fit-content;">
+          <img style="height: 300px; margin: auto;" src="../assets/qrcode.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="block">
+        <h1>👀 About</h1>
+        <p>
+          DEV at OSU is a student organization that aims to provide students
+          with the opportunity to learn new tech in web dev, desktop, and other
+          branches of programming through workshops.
+        </p>
+        <p>
+          We are also committed to supporting your personal software projects by
+          providing mentorship and computing resources (free hosting and
+          subdomains).
+        </p>
+        <p>
+          This club is welcoming every student regardless of their experience,
+          major, or year at OSU.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <!-- copyright -->
+      <div class="section">
+        <p>© <span id="thisYear"></span> DEV</p>
+      </div>
+    </footer>
+
+    <script>
+      const thisYear = document.getElementById("thisYear");
+      thisYear.textContent = new Date().getFullYear();
+
+      const head = document.getElementById("head");
+      head.onmousemove = (e) => {
+        head.style.setProperty("--cursor-x", e.clientX + "px");
+        head.style.setProperty("--cursor-y", e.clientY + "px");
+      };
+      head.ontouchmove = (e) => {
+        head.style.setProperty("--cursor-x", e.touches[0].clientX + "px");
+        head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
+      };
+    </script>
+  </body>
+</html>

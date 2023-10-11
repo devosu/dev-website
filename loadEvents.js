@@ -1,0 +1,126 @@
+/*
+ * This script loads the events.json file and displays the events on the page
+ */
+
+async function loadEvents() {
+  await loadFont("./assets/fonts/LibreFranklin-Regular.ttf");
+  const eventsBox = document.getElementById("events-box");
+  const eventsReq = await fetch("./events.json");
+  const events = (await eventsReq.json()).events;
+
+  for (let event of events) {
+    addEvent(event, eventsBox);
+  }
+}
+
+function addEvent(event, parent) {
+  const eventElement = document.createElement("p");
+  eventElement.classList.add("event");
+
+  addImage(event, eventElement);
+
+  // event info box
+  const eventInfo = document.createElement("div");
+  eventInfo.classList.add("event-info");
+  
+  addName(event, eventInfo);
+  
+  addDescription(event, eventInfo);
+  
+  const date = new Date(event.date);
+  
+  addDate(date, eventInfo);
+
+  addStartsIn(date, eventInfo);
+  
+  addLocation(event, eventInfo);
+  
+  addButton(event, eventInfo);
+
+  eventElement.appendChild(eventInfo);
+  parent.appendChild(eventElement);
+}
+
+function addImage(event, parent) {
+  if (event.imageSrc) {
+    const eventImage = document.createElement("img");
+    eventImage.src = event.imageSrc;
+    eventImage.alt = event.name;
+    eventImage.classList.add("event-image");
+    parent.appendChild(eventImage);
+  }
+}
+
+function addName(event, parent) {
+  const eventName = document.createElement("h3");
+  eventName.textContent = event.name;
+  parent.appendChild(eventName);
+}
+
+function addDescription(event, parent) {
+  if (event.description) {
+    const eventDescription = document.createElement("p");
+    eventDescription.innerHTML = event.description;
+    parent.appendChild(eventDescription);
+  }
+}
+
+function addDate(date, parent) {
+  const eventDate = document.createElement("p");
+  eventDate.textContent =
+    "📆 " + date.toDateString() + ", " + date.toLocaleTimeString();
+  parent.appendChild(eventDate);
+}
+
+function addStartsIn(date, parent) {
+  if (date > new Date()) {
+    const eventTimeLeft = document.createElement("p");
+    eventTimeLeft.classList.add("event-time-left");
+
+    // svg
+    const eventTimeLeftCountdown = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "svg"
+    );
+    eventTimeLeftCountdown.innerHTML = '<path d=""></path>';
+
+    eventTimeLeftCountdown.setAttribute("width", "500");
+    eventTimeLeftCountdown.setAttribute("height", "32");
+    eventTimeLeftCountdown.classList.add("countdown");
+    addCountdown(eventTimeLeftCountdown, date, 20, 1, false, () => {
+      // callback for when the countdown is finished
+      eventTimeLeft.textContent = "⏳ Started";
+      eventTimeLeftCountdown.remove();
+    });
+
+    // redirect to countdown page
+    eventTimeLeftCountdown.onclick = () => {
+      const query = new URLSearchParams({ date });
+      const url = "countdown/?" + query;
+      window.open(url, "_blank");
+    };
+
+    eventTimeLeft.textContent = "⏳ Starts in";
+    eventTimeLeft.appendChild(eventTimeLeftCountdown);
+    parent.appendChild(eventTimeLeft);
+  }
+}
+
+function addLocation(event, parent) {
+  if (event.location) {
+    const eventLocation = document.createElement("p");
+    eventLocation.textContent = "📍 " + event.location;
+    parent.appendChild(eventLocation);
+  }
+}
+
+function addButton(event, parent) {
+  if (event.buttonText && event.buttonLink) {
+    const eventButton = document.createElement("a");
+    eventButton.href = event.buttonLink;
+    eventButton.textContent = event.buttonText;
+    parent.appendChild(eventButton);
+  }
+}
+
+loadEvents();

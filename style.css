@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&family=Libre+Franklin&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+a {
+  color: white;
+  background-color: #357bee;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  --gradient-shift: 0px;
+}
+a:hover {
+  background-image: linear-gradient(
+    to right,
+    #357bee var(--gradient-shift),
+    #ef2e92
+  );
+}
+span {
+  width: fit-content;
+}
+footer {
+  border-top: 0.5px solid black;
+  margin-top: 3rem;
+}
+#head {
+  margin: 0;
+  width: 100%;
+  height: 25vh;
+  min-height: 250px;
+  /* padding: 1rem; */
+  align-items: center;
+
+  /* sexy shadow */
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+}
+.gradient-banner {
+  background-image: radial-gradient(
+    circle at var(--cursor-x) var(--cursor-y),
+    #bd0063 1px,
+    #00c8fc 50%,
+    #2400db
+  );
+  opacity: 0.85;
+  color: white;
+  --cursor-x: 100%;
+  --cursor-y: 100%;
+}
+#headBody {
+  margin: 1rem;
+}
+#headBody h2 {
+  width: 100vw;
+  text-align: center;
+}
+.blinking {
+  animation: blinking 2s infinite;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  margin: 2rem 3rem 0 3rem;
+  width: 50%;
+  min-width: 350px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name,
+.gradient-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.4rem;
+  /* bold */
+  font-weight: 700;
+  margin: 0;
+  /* gradient text */
+  background-image: linear-gradient(to right, #357bee, #ef2e92);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  border: 0.5px solid #7e7e7e;
+  border-radius: 10px;
+  /* padding: 0; */
+  margin: 2rem 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.event-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.countdown {
+  margin: 0 0.4rem;
+  vertical-align: middle;
+  /* font size times max character count*/
+  /* width: calc(20px * 16); */
+}
+
+.scrollable {
+  overflow-x: scroll;
+  padding: 0 1rem;
+  max-height: 80vh;
+  /* inner shadow top and bottom */
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.2),
+    inset 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+}

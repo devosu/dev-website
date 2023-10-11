@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#357bee" />
+
+    <!-- manifest and colors -->
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+    <meta name="theme-color" content="#357bee" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+
+    <!-- meta for SEO -->
+    <meta name="apple-mobile-web-app-title" content="DEV" />
+    <meta name="application-name" content="DEV" />
+    <meta
+      name="description"
+      content="Software Engineering Club at The Ohio State University"
+    />
+    <meta
+      name="keywords"
+      content="software engineering, osu, cse, cse club, osu cs, osu cs club, software engineering club, software engineering club osu, software engineering club at the ohio state university, software engineering club at ohio state, dev, dev at dev, dev, dev at ohio state"
+    />
+
+    <!-- libraries for countdown -->
+    <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+    <script src="https://unpkg.com/flubber@0.3.0"></script>
+    <script src="countdown.js"></script>
+
+    <title>DEV - Software Engineering Club at OSU</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="head" class="gradient-banner section">
+      <div id="headBody" class="center">
+        <span
+          ><img
+            src="assets/logo-white.png"
+            alt="DEV Logo"
+            height="100px"
+            class="center"
+        /></span>
+        <span
+          ><h2>
+            <span id="subtitle">
+              Software Engineering Club at The Ohio State University
+            </span>
+            <span id="blinkingUnderscore" class="blinking" style="margin-left:-15px">_</span>
+          </h2>
+        </span>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="block">
+        <h1>👀 About</h1>
+        <p>
+          DEV at OSU is a student organization that aims to provide students
+          with the opportunity to learn new tech in web dev, desktop, and other
+          branches of programming through workshops.
+        </p>
+        <p>
+          We are also committed to supporting your personal software projects by
+          providing mentorship and computing resources (free hosting and
+          subdomains).
+        </p>
+        <p>
+          This club is welcoming every student regardless of their experience,
+          major, or year at OSU.
+        </p>
+      </div>
+    </div>
+
+    <div id="meetings" class="section">
+      <div class="block">
+        <h1>📅 Meetings</h1>
+        <p>
+          Please join our
+          <a href="https://go.tosu.dev/discord" target="_blank">Discord</a> for
+          the latest updates.
+        </p>
+        <div class="scrollable">
+          <div id="events-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="officers" class="section">
+      <div class="block">
+        <h1>🧑‍💻 Officers</h1>
+        <p><span class="name">Alex</span>, president</p>
+        <p><span class="name">Johnathan</span>, vice president</p>
+        <p><span class="name">RJ</span>, financial director</p>
+        <p><span class="name">Elijah</span>, outreach director</p>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <div class="block">
+        <h1>🌵 Contactus</h1>
+        <p>
+          Join our
+          <a href="https://go.tosu.dev/discord" target="_blank">Discord</a> to
+          get the latest updates and to chat with other members
+        </p>
+        <p>
+          Subscribe to our
+          <a href="https://go.tosu.dev/newsletter" target="_blank"
+            >newsletter</a
+          >
+          to get all important announcements to your email
+        </p>
+        <!-- still thinking whether to embed this -->
+        <!-- <iframe class="center" src="https://devosu.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe> -->
+        <p>
+          Reach out to us at <a href="mailto:club@tosu.dev">club@tosu.dev</a> if
+          you have any questions
+        </p>
+      </div>
+    </div>
+
+    <div id="scientist" class="section">
+      <div class="block">
+        <h1>📸 Computer Scientist of the day</h1>
+        <img
+          id="photoOfTheDayPhoto"
+          style="height: 45vh; max-width: 100%; object-fit: contain"
+          class="center"
+          alt="Photo of the day loading"
+        />
+        <h2 id="photoOfTheDayName"></h2>
+        <p id="photoOfTheDayDescription"></p>
+        <a id="photoOfTheDaySource" target="_blank">Source</a>
+        <script src="./photoOfTheDay.js"></script>
+      </div>
+    </div>
+
+    <footer>
+      <!-- copyright -->
+      <div class="section">
+        <p>© <span id="thisYear"></span> DEV</p>
+      </div>
+    </footer>
+
+    <script>
+      const thisYear = document.getElementById("thisYear");
+      thisYear.textContent = new Date().getFullYear();
+
+      const head = document.getElementById("head");
+      head.onmousemove = (e) => {
+        head.style.setProperty("--cursor-x", e.clientX + "px");
+        head.style.setProperty("--cursor-y", e.clientY + "px");
+      };
+      head.ontouchmove = (e) => {
+        head.style.setProperty("--cursor-x", e.touches[0].clientX + "px");
+        head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
+      };
+    </script>
+    <script src="./loadEvents.js"></script>
+    <script src="50154.js"></script>
+  </body>
+</html>
