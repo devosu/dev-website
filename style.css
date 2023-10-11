@@ -4,27 +4,33 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
 h1,
 h2,
 h3 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 p {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
 }
+
 a {
   color: white;
   background-color: #357bee;
@@ -41,24 +47,35 @@ a:hover {
     #ef2e92
   );
 }
+
+a.icon-link {
+  background-image: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0.3rem;
+  height: 20px;
+}
+a.icon-link:hover {
+  opacity: 0.7;
+}
+
 span {
   width: fit-content;
 }
+
 footer {
   border-top: 0.5px solid black;
   margin-top: 3rem;
 }
+
 #head {
   margin: 0;
   width: 100%;
   height: 25vh;
   min-height: 250px;
-  /* padding: 1rem; */
   align-items: center;
-
-  /* sexy shadow */
-  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
 }
+
 .gradient-banner {
   background-image: radial-gradient(
     circle at var(--cursor-x) var(--cursor-y),
@@ -71,30 +88,34 @@ footer {
   --cursor-x: 100%;
   --cursor-y: 100%;
 }
+
 #headBody {
   margin: 1rem;
 }
+
 #headBody h2 {
   width: 100vw;
   text-align: center;
 }
-.blinking {
-  animation: blinking 2s infinite;
-}
+
 .section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .block {
   margin: 2rem 3rem 0 3rem;
   width: 50%;
   min-width: 350px;
 }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .name,
 .gradient-text {
   font-family: "IBM Plex Mono", monospace;
@@ -107,6 +128,10 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.blinking {
+  animation: blinking 2s infinite;
 }
 @keyframes blinking {
   0% {
@@ -130,7 +155,6 @@ footer {
 .event {
   border: 0.5px solid #7e7e7e;
   border-radius: 10px;
-  /* padding: 0; */
   margin: 2rem 0;
   overflow: hidden;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
@@ -149,8 +173,6 @@ footer {
 .countdown {
   margin: 0 0.4rem;
   vertical-align: middle;
-  /* font size times max character count*/
-  /* width: calc(20px * 16); */
 }
 
 .scrollable {
