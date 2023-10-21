@@ -6,8 +6,8 @@
             "description": "Learn the basics of web development with JavaScript, HTML, and CSS. No prior experience required! You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/front_end_workshop.png",
             "location": "Enarson 358",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp"
+            "buttonText": "Slides",
+            "buttonLink": "https://docs.google.com/presentation/d/1Z7zzj5U1Zb-XkW0kcacyCiw9NmQKYe5MQO5eiCJj9N8/edit?usp=sharing"
         },
         {
             "name": "DEV Talk: Chris Pinchot",
@@ -15,8 +15,8 @@
             "description": "Chris Pinchot, CTO of <a href='https://www.statusaccounts.com/' target='_blank'>Status</a>, an e-commerce startup, will be talking about web development, his career as a software engineer, and entrepreneurship.",
             "imageSrc": "/assets/status_banner.jpeg",
             "location": "Hitchcock 030",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp"
+            "buttonText": "Recording",
+            "buttonLink": "https://youtu.be/g_pmwRL2gI0"
         },
         {
             "name": "Intro to Full-Stack Web Dev, workshop with Node.js",

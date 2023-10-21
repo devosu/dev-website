@@ -15,6 +15,14 @@ async function loadFont(fontURL) {
 
 let glyphWidth = 0;
 
+let countdowns = [];
+function clearCountdowns() {
+  for (const countdown of countdowns) {
+    clearInterval(countdown);
+  }
+  countdowns = [];
+}
+
 /*
  * This function adds a countdown to the given svgElement
  * @param {HTMLElement} svgElement - the svg element to add the countdown to
@@ -125,6 +133,7 @@ async function addCountdown(
     // save the new glyphs for the next frame
     oldGlyphs = newGlyphs;
   }, 1000);
+  countdowns.push(interval);
 }
 
 function makeString(days, hours, minutes, seconds) {

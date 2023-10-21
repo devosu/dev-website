@@ -5,11 +5,37 @@
 async function loadEvents() {
   await loadFont("./assets/fonts/LibreFranklin-Regular.ttf");
   const eventsBox = document.getElementById("events-box");
+  const eventsFutureSwitch = document.getElementById("events-future-switch");
+  const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
+
   const eventsReq = await fetch("./events.json");
   const events = (await eventsReq.json()).events;
 
-  for (let event of events) {
-    addEvent(event, eventsBox);
+  const pastEvents = events.filter((event) => {
+    return new Date(event.date) < new Date();
+  });
+  const futureEvents = events.filter((event) => {
+    return new Date(event.date) > new Date();
+  });
+
+  eventsFutureSwitch.onchange = () => {
+    updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
+  };
+
+  updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
+}
+
+function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents) {
+  eventsBox.innerHTML = "";
+  clearCountdowns();
+  if (eventsFutureSwitchInput.checked) {
+    for (let event of futureEvents) {
+      addEvent(event, eventsBox);
+    }
+  } else {
+    for (let event of pastEvents) {
+      addEvent(event, eventsBox);
+    }
   }
 }
 
@@ -118,6 +144,7 @@ function addButton(event, parent) {
   if (event.buttonText && event.buttonLink) {
     const eventButton = document.createElement("a");
     eventButton.href = event.buttonLink;
+    eventButton.target = "_blank";
     eventButton.textContent = event.buttonText;
     parent.appendChild(eventButton);
   }

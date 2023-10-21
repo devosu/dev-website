@@ -92,12 +92,26 @@
 
     <div id="meetings" class="section">
       <div class="block">
+
         <h1>📅 Meetings</h1>
-        <p>
-          Please join our
-          <a href="https://go.tosu.dev/discord" target="_blank">Discord</a> for
-          the latest updates.
-        </p>
+
+        <!-- <div class="switch">
+          <input type="radio" name="event-time" id="past-event-switch">
+          <label for="past-event-switch">Past</label>
+          <input type="radio" name="event-time" id="future-event-switch">
+          <label for="future-event-switch">Future</label>
+          <span class="switch-slider"></span>
+        </div> -->
+
+        <div class="center">
+        <label class="switch" id="events-future-switch">
+          <input type="checkbox" checked>
+          <span class="slider">
+          </span>
+        </label>
+        </div>
+        
+
         <div class="scrollable">
           <div id="events-box"></div>
         </div>
