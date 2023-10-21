@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#357bee" />
+
+    <!-- manifest and colors -->
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+    <meta name="theme-color" content="#357bee" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+
+    <!-- meta for SEO -->
+    <meta name="apple-mobile-web-app-title" content="DEV" />
+    <meta name="application-name" content="DEV" />
+    <meta
+      name="description"
+      content="Software Engineering Club at The Ohio State University"
+    />
+    <meta
+      name="keywords"
+      content="software engineering, osu, cse, cse club, osu cs, osu cs club, software engineering club, software engineering club osu, software engineering club at the ohio state university, software engineering club at ohio state, dev, dev at dev, dev, dev at ohio state"
+    />
+
+    <title>DEV - Software Engineering Club at OSU</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="head" class="gradient-banner section">
+      <div id="headBody" class="center">
+        <a href="../" class="no">
+          <img
+            src="../assets/logo-white.png"
+            alt="DEV Logo"
+            height="100px"
+            class="center"
+        /></a>
+        <span
+          ><h2>
+            <span id="subtitle">
+              Software Engineering Club at The Ohio State University
+            </span>
+            <span id="blinkingUnderscore" class="blinking" style="margin-left:-15px">_</span>
+          </h2>
+        </span>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div id="intro" class="section">
+      <div class="block">
+        <h1>🚀 Introduction</h1>
+        <p>
+          Welcome to the Software Engineering Club (DEV). Our mission is to empower students with new skills, expose them to diverse programming fields, and provide the resources they need to launch their groundbreaking projects.
+        </p>
+      </div>
+    </div>
+
+    <!-- Benefits for Sponsors Section -->
+    <div id="benefits" class="section">
+      <div class="block">
+        <h1>🎁 Benefits for Sponsors</h1>
+        <p>
+          By partnering with us, you're not just supporting a club — you're shaping the next generation of tech talent. All sponsors gain exclusive access to our Discord announcement channel and a resume book of our talented members.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sponsorship Tiers Section -->
+    <div id="tiers" class="section">
+      <div class="block">
+        <h1>💰 Sponsorship Tiers</h1>
+        <p>
+          <strong>Tier 1 ($50+):</strong> Receive a special acknowledgment with a small logo on our website.<br>
+          <strong>Tier 2 ($150+):</strong> Make a bigger impact with a medium-sized logo on both our website and marketing materials.<br>
+          <strong>Tier 3 ($300+):</strong> Stand out with a large logo prominently displayed on our website and all marketing materials.
+        </p>
+      </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div id="stats" class="section">
+      <div class="block">
+        <h1>📈 Club Statistics</h1>
+        <p>
+          Our strength is in our numbers and diversity. As a new club founded this semester, we already proudly host over 100 total members, with over 30 active members contributing to our initiatives. Our member skills span a broad spectrum of technologies, ensuring a vibrant and dynamic learning environment.
+          <!-- You can embed a pie chart or other graphical representation of member skills here, using services like Chart.js, Google Charts, etc. -->
+        </p>
+      </div>
+    </div>
+
+    <!-- How to Donate Section -->
+    <div id="donate" class="section">
+      <div class="block">
+        <h1>💳 How to Donate</h1>
+        <p>
+          Supporting us is easy! Here's how you can make a donation:
+          <ul>
+            <li>
+              <strong>Credit/Debit Cards:</strong> We accept most major credit and debit cards through <a href="https://www.givebutter.com/dev" target="_blank">Givebutter</a>. Please note that there's a ~3% fee for this method.
+            </li>
+            <li>
+              <strong>Mailed Checks:</strong> Send a check to our mailing address. Please contact us for more details.
+            </li>
+            <li>
+              <strong>ACH Transfers:</strong> Direct bank transfers with no commission. For ACH details, please reach out to us.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <div class="block">
+        <h1>🌵 Contactus</h1>
+        <!-- still thinking whether to embed this -->
+        <!-- <iframe class="center" src="https://devosu.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe> -->
+        <p>
+          Reach out to us at <a href="mailto:club@tosu.dev">club@tosu.dev</a> if
+          you have any questions, concerns, or suggestions
+        </p>
+        <p>
+          You can also join our
+          <a href="https://go.tosu.dev/discord" target="_blank">Discord</a> to
+          engage with our members and officers
+        </p>
+      </div>
+    </div>
+
+
+    <footer>
+      <!-- copyright -->
+      <div class="section">
+        <p>© <span id="thisYear"></span> DEV</p>
+        <a class="icon-link" href="https://github.com/devosu/dev-website" target="_blank"><img src="../assets/github-mark.svg" width="20"></a>
+      </div>
+    </footer>
+
+    <script>
+      const thisYear = document.getElementById("thisYear");
+      thisYear.textContent = new Date().getFullYear();
+
+      const head = document.getElementById("head");
+      head.onmousemove = (e) => {
+        head.style.setProperty("--cursor-x", e.clientX + "px");
+        head.style.setProperty("--cursor-y", e.clientY + "px");
+      };
+      head.ontouchmove = (e) => {
+        head.style.setProperty("--cursor-x", e.touches[0].clientX + "px");
+        head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
+      };
+    </script>
+  </body>
+</html>

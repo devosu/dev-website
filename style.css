@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2rem;
 }
 
 h1,
@@ -25,9 +26,7 @@ h3 {
   font-weight: 700;
 }
 
-p {
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 1.2rem;
+p, ul {
   line-height: 2rem;
 }
 
@@ -223,7 +222,7 @@ div.center {
   position: absolute;
   content: "Past events";
   height: 30px;
-  width: 125px;
+  width: 150px;
   left: 4px;
   top: 4px;
   background-color: #357def;
@@ -236,6 +235,6 @@ div.center {
 }
 
 input:checked + .slider:before {
-  left: calc(100% - 4px - 125px);
+  left: calc(100% - 4px - 150px);
   content: "Future events";
 }
