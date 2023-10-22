@@ -46,6 +46,11 @@ a:hover {
     #ef2e92
   );
 }
+a.no-gradient {
+  background-image: none;
+  background-color: transparent;
+  color: black;
+}
 
 a.icon-link {
   background-image: none;
