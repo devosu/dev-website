@@ -20,6 +20,7 @@ async function loadEvents() {
 
   eventsFutureSwitch.onchange = () => {
     updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
+    window.navigator.vibrate(10);
   };
 
   updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
