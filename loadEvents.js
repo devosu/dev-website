@@ -9,13 +9,17 @@ async function loadEvents() {
   const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
 
   const eventsReq = await fetch("./events.json");
-  const events = (await eventsReq.json()).events;
+  let events = (await eventsReq.json()).events;
+
+  events = events.filter((event) => {
+    return !event.hide && (!event.publishOn || new Date(event.publishOn) <= new Date());
+  });
 
   const pastEvents = events.filter((event) => {
-    return new Date(event.date) < new Date() && !event.hide;
+    return new Date(event.date) < new Date();
   });
   const futureEvents = events.filter((event) => {
-    return new Date(event.date) > new Date() && !event.hide;
+    return new Date(event.date) > new Date();
   });
 
   eventsFutureSwitch.onchange = () => {
