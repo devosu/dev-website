@@ -12,10 +12,10 @@ async function loadEvents() {
   const events = (await eventsReq.json()).events;
 
   const pastEvents = events.filter((event) => {
-    return new Date(event.date) < new Date();
+    return new Date(event.date) < new Date() && !event.hide;
   });
   const futureEvents = events.filter((event) => {
-    return new Date(event.date) > new Date();
+    return new Date(event.date) > new Date() && !event.hide;
   });
 
   eventsFutureSwitch.onchange = () => {

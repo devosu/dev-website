@@ -26,6 +26,34 @@
             "location": "Hitchcock 131",
             "buttonText": "RSVP",
             "buttonLink": "https://go.tosu.dev/rsvp"
+        },
+        {
+            "name": "Cloud Computing Workshop",
+            "date": "2023-10-31T18:00:00",
+            "description": "Learn how to deploy a web application to the cloud with AWS/Azure/Google Cloud. We will also go over some GitHub. You will need a Windows/Mac/Linux laptop.",
+            "imageSrc": "/assets/cloud_computing_workshop.png",
+            "location": "Hitchcock 030",
+            "buttonText": "RSVP",
+            "buttonLink": "https://go.tosu.dev/rsvp"
+        },
+        {
+            "name": "",
+            "date": "2023-11-07T18:00:00",
+            "description": "",
+            "imageSrc": "",
+            "location": "Hitchcock 030",
+            "buttonText": "RSVP",
+            "buttonLink": "https://go.tosu.dev/rsvp",
+            "hide": true
+        },
+        {
+            "name": "Python Workshop",
+            "date": "2023-11-14T18:00:00",
+            "description": "Learn the basics of Python, a popular programming language used in data science, web development, and more. No experience required, but some programming experience in any language is recommended. You will need a Windows/Mac/Linux laptop.",
+            "imageSrc": "/assets/python_workshop.png",
+            "location": "Lazenby 002",
+            "buttonText": "RSVP",
+            "buttonLink": "https://go.tosu.dev/rsvp"
         }
     ]
 }
