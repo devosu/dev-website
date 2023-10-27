@@ -24,8 +24,8 @@
             "description": "Learn how to build a full-stack web application with Node.js. Basic knowledge of JavaScript from the Intro to Web Dev workshop is recommended. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/full_stack_workshop.png",
             "location": "Hitchcock 131",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp"
+            "buttonText": "Recording",
+            "buttonLink": ""
         },
         {
             "name": "Cloud Computing Workshop",

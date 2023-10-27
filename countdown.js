@@ -165,6 +165,9 @@ function makeInterpolator(oldGlyph, newGlyph, leftMarginCursor, fontSize) {
     const newPath = newGlyph
       .getPath(leftMarginCursor, fontSize + 1, fontSize)
       .toPathData();
+    // if there was an error getting the old path or the new path, just return the new path
+    if (!oldPath || !newPath) return () => newPath;
+    // use flubber to interpolate between the old path and the new path
     return flubber.interpolate(oldPath, newPath, { maxSegmentLength: 1 });
   }
 }

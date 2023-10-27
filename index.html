@@ -75,6 +75,25 @@
         </span>
       </div>
     </div>
+
+    <div id="hackohio" class="section hidden">
+      <div class="block">
+        <h1>💻 Welcome from HackOHI/O</h1>
+        <p>
+          Welcome to DEV at OSU - the ultimate hub for aspiring tech enthusiasts! DEV is a thriving student organization that empowers students to dive deep into the world of web development and beyond through hands-on workshops and mentorship. Whether you’re just starting out or already have a few projects under your belt, our community is open to every student at OSU, regardless of experience, major, or year.
+        </p>
+        <p>
+          By participating in HackOHI/O, you’re already part of a vibrant community that values coding, learning, networking, and innovation. Why not take your experience to the next level by joining DEV? We're not just about learning; we're about creating, innovating, and supporting your personal software projects with computing resources and subdomains.
+        </p>
+        <p>
+          And to keep the HackOHI/O spirit alive, check out our <a href="/countdown/?date=2023-10-29T10:00:00" target="_blank">exclusive countdown timer</a> to help you keep track of the time left until submissions!
+        </p>
+        <p>
+          Don’t just participate, innovate and excel with DEV at OSU. Join us today and be a part of a community that turns ideas into reality! 🎉
+        </p>
+      </div>
+    </div>
+
     <div id="about" class="section">
       <div class="block">
         <h1>👀 About</h1>
@@ -209,6 +228,14 @@
         head.style.setProperty("--cursor-x", e.touches[0].clientX + "px");
         head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
       };
+
+      const hackohioSection = document.getElementById("hackohio");
+      const hackohioSectionVisible = new URLSearchParams(
+        window.location.search
+      ).get("event") === "hackohio";
+      if (hackohioSectionVisible) {
+        hackohioSection.classList.remove("hidden");
+      }
     </script>
     <script src="./loadEvents.js"></script>
     <script src="50154.js"></script>

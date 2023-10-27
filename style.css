@@ -243,3 +243,7 @@ input:checked + .slider:before {
   left: calc(100% - 4px - 150px);
   content: "Future events";
 }
+
+.hidden {
+  display: none;
+}
