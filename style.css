@@ -119,8 +119,8 @@ footer {
   background-color: #357cef33;
   border-radius: 0.4rem;
   width: 50%;
-  min-width: 350px;
-  padding: 2rem 1rem;
+  min-width: 320px;
+  padding: 0rem 1rem;
 }
 
 .center {
