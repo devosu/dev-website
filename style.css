@@ -114,6 +114,15 @@ footer {
   min-width: 350px;
 }
 
+.banner {
+  margin: 2rem 3rem 0 3rem;
+  background-color: #357cef33;
+  border-radius: 0.4rem;
+  width: 50%;
+  min-width: 350px;
+  padding: 2rem 1rem;
+}
+
 .center {
   display: block;
   margin-left: auto;
