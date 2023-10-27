@@ -31,7 +31,7 @@
     <meta name="msapplication-TileColor" content="#357bee" />
 
     <link rel="stylesheet" href="../style.css" />
-    
+
     <style>
       html {
         background-color: black;
@@ -107,10 +107,11 @@
 
       async function main() {
         await loadFont("../assets/fonts/LibreFranklin-Regular.ttf");
+        const fontSize = window.innerWidth / 21;
         addCountdown(
           countdownSVG,
           countTo,
-          70,
+          fontSize,
           2,
           (centered = true),
           fadeBlack
