@@ -21,123 +21,18 @@
     />
 
     <title>DEV - Software Engineering Club at OSU</title>
+    <link rel="stylesheet" href="../style.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Libre+Franklin&display=swap");
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-      }
-      h1,
-      h2,
-      h3 {
-        font-family: "IBM Plex Mono", monospace;
-      }
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      .h2-input {
-        font-size: 1.5rem;
-        border: none;
-        background-color: transparent;
-        color: inherit;
-        font-family: "IBM Plex Mono", monospace;
-        width: 100vw;
-        text-align: center;
-        margin: 0.83em 0;
-      }
-      p {
-        font-family: "Libre Franklin", sans-serif;
-        font-size: 1.2rem;
-        line-height: 2rem;
-      }
-      a {
-        color: white;
-        background-color: #357bee;
-        padding: 0.3rem;
-        border-radius: 0.4rem;
-        text-decoration: none;
-        transition: all 0.2s linear;
-        --gradient-shift: 0px;
-      }
-      span {
-        width: fit-content;
-      }
-      a:hover {
-        background-image: linear-gradient(
-          to right,
-          #357bee var(--gradient-shift),
-          #ef2e92
-        );
-      }
-      footer {
-        border-top: 0.5px solid black;
-        margin-top: 3rem;
-      }
       #head {
-        margin: 0;
-        width: 100%;
         height: 75vh;
-        min-height: 250px;
-        /* padding: 1rem; */
-        background-image: radial-gradient(
-          circle at var(--cursor-x) var(--cursor-y),
-          #bd0063 1px,
-          #00c8fc 50%,
-          #2400db
-        );
-        opacity: 0.85;
-        color: white;
-        --cursor-x: 100%;
-        --cursor-y: 100%;
-        align-items: center;
 
         /* sexy shadow */
         /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
       }
-      #headBody {
-        margin: 1rem;
-      }
-      .blinking {
-        animation: blinking 2s infinite;
-      }
-      .section {
-        display: flex;
-        justify-content: center;
-      }
-      .block {
-        margin: 2rem 3rem 0 3rem;
-        width: 50%;
-        min-width: 350px;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      @keyframes blinking {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      /* iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        } */
     </style>
   </head>
   <body>
-    <div id="head" class="section">
+    <div id="head" class="gradient-banner section">
       <div id="headBody" class="center">
         <span
           ><img
@@ -155,10 +50,8 @@
           </h2></span
         >
         <span
-          class="center"
-          ><h1>
-            tosu.dev
-          </h1></span
+          class="section"
+          ><h1>tosu.dev</h1></span
         >
         <div class="section">
           <div class="block" style="width:fit-content;">
@@ -171,14 +64,16 @@
       </div>
     </div>
     
-    <div id="about" class="section">
+    <div class="section">
       <div class="block">
-        <div id="custom-substack-embed"></div>
+        <h1>Type your email to join</h1>
+        <div id="custom-substack-embed" class="center"></div>
+        <p>You will get an email with everything you need to become a member</p>
         <script>
           window.CustomSubstackWidget = {
             substackUrl: "devosu.substack.com",
             placeholder: "example@gmail.com",
-            buttonText: "Subscribe",
+            buttonText: "Join",
             theme: "custom",
             colors: {
               primary: "#357DEF",
@@ -190,6 +85,10 @@
           };
         </script>
         <script src="https://substackapi.com/widget.js" async></script>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="block">
         <h1>👀 About</h1>
         <p>
           DEV at OSU is a student organization that aims to provide students
