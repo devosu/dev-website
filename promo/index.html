@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#357bee" />
+    <link
+      rel="mask-icon"
+      href="../icons/safari-pinned-tab.svg"
+      color="#357bee"
+    />
     <meta name="msapplication-TileColor" content="#357bee" />
     <meta name="theme-color" content="#357bee" />
     <meta
@@ -24,11 +42,12 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       #head {
-        height: 100vh;
+        height: 50vh;
 
         /* sexy shadow */
         /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
       }
+      
     </style>
   </head>
   <body>
@@ -46,45 +65,42 @@
             <span id="subtitle">
               Software Engineering Club at The Ohio State University
             </span>
-            <span id="blinkingUnderscore" class="blinking" style="margin-left:-15px">_</span>
+            <span
+              id="blinkingUnderscore"
+              class="blinking"
+              style="margin-left: -15px"
+              >_</span
+            >
           </h2></span
         >
-        <span
-          class="section"
-          ><h1>tosu.dev</h1></span
-        >
-        <div class="section">
+        <span class="section"><h1>tosu.dev</h1></span>
+        <!-- <div class="section">
           <div class="block" style="width:fit-content;">
           <img style="height: 300px; margin: auto;" src="../assets/qrcode.png">
 
           
           </div>
-        </div>
-        
+        </div> -->
       </div>
     </div>
-    
-    <div class="section">
+
+    <div id="join" class="section">
       <div class="block">
-        <h1>Type your email to join</h1>
-        <div id="custom-substack-embed" class="center"></div>
-        <p>You will get an email with everything you need to become a member</p>
-        <script>
-          window.CustomSubstackWidget = {
-            substackUrl: "devosu.substack.com",
-            placeholder: "example@gmail.com",
-            buttonText: "Join",
-            theme: "custom",
-            colors: {
-              primary: "#357DEF",
-              input: "#FFFFFF",
-              email: "#000000",
-              text: "#FFFFFF",
-            }
-            // Go to substackapi.com to unlock custom redirect
-          };
-        </script>
-        <script src="https://substackapi.com/widget.js" async></script>
+        <h1>🤝 Join</h1>
+        <p>
+          DEV is open membership, you can join at any time with zero commitement.
+        </p>
+        <p>
+          To become a member, type your email below and click "Subscribe". The first email you recieve has all the next steps. You will also start recieving emails with important club announcements. Then, just come to any of our meetings and you will be a member!
+        </p>
+        
+        <div class="center">
+          <iframe src="https://devosu.substack.com/embed" width="350" height="150" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <p>
+          To use perks like subdomains and cloud credits, you need to be an active OSU student, but you can still attend workshops and recieve mentorship if you are not.
+        </p>
       </div>
     </div>
     <div id="about" class="section">
