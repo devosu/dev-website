@@ -2,58 +2,75 @@
     "events": [
         {
             "name": "Intro to Web Dev, Front-end workshop with JavaScript, HTML, and CSS",
+            "emoji": "🌐",
             "date": "2023-10-10T18:00:00",
             "description": "Learn the basics of web development with JavaScript, HTML, and CSS. No prior experience required! You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/front_end_workshop.png",
             "location": "Enarson 358",
-            "buttonText": "Slides",
-            "buttonLink": "https://docs.google.com/presentation/d/1Z7zzj5U1Zb-XkW0kcacyCiw9NmQKYe5MQO5eiCJj9N8/edit?usp=sharing"
+            "buttons": [
+                {
+                    "buttonText": "Slides",
+                    "buttonLink": "https://docs.google.com/presentation/d/1Z7zzj5U1Zb-XkW0kcacyCiw9NmQKYe5MQO5eiCJj9N8/edit?usp=sharing"
+                },
+                {
+                    "buttonText": "Code",
+                    "buttonLink": "https://github.com/devosu/gpa-calculator"
+                }
+            ]
         },
         {
             "name": "DEV Talk: Chris Pinchot",
+            "emoji": "👨‍💻",
             "date": "2023-10-17T18:00:00",
             "description": "Chris Pinchot, CTO of <a href='https://www.statusaccounts.com/' target='_blank'>Status</a>, an e-commerce startup, will be talking about web development, his career as a software engineer, and entrepreneurship.",
             "imageSrc": "/assets/status_banner.jpeg",
             "location": "Hitchcock 030",
-            "buttonText": "Recording",
-            "buttonLink": "https://youtu.be/g_pmwRL2gI0"
+            "buttons": [
+                {
+                    "buttonText": "Recording",
+                    "buttonLink": "https://youtu.be/g_pmwRL2gI0"
+                },
+                {
+                    "buttonText": "Slides",
+                    "buttonLink": "https://drive.google.com/file/d/17UPyBUvr3GhJs31nHTVorkyhmg1tj0n7/view?usp=sharing"
+                }
+            ]
         },
         {
             "name": "Intro to Full-Stack Web Dev, workshop with Node.js",
+            "emoji": "🖥️",
             "date": "2023-10-24T18:00:00",
             "description": "Learn how to build a full-stack web application with Node.js. Basic knowledge of JavaScript from the Intro to Web Dev workshop is recommended. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/full_stack_workshop.png",
             "location": "Hitchcock 131",
-            "buttonText": "Recording",
-            "buttonLink": ""
+            "buttons": [
+                {
+                    "buttonText": "Code",
+                    "buttonLink": "https://github.com/devosu/group-chat"
+                }
+            ]
         },
         {
             "name": "Cloud Computing Workshop",
+            "emoji": "☁️",
             "date": "2023-10-31T18:00:00",
             "description": "Learn how to deploy a web application to the cloud with AWS/Azure/Google Cloud. We will also go over some GitHub. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/cloud_computing_workshop_min.png",
             "location": "Hitchcock 030",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp"
-        },
-        {
-            "name": "",
-            "date": "2023-11-07T18:00:00",
-            "description": "",
-            "imageSrc": "",
-            "location": "Hitchcock 030",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp",
-            "hide": true
+            "buttons": [
+                {
+                    "buttonText": "Video",
+                    "buttonLink": "https://youtu.be/mysqrU3Zqpg"
+                }
+            ]
         },
         {
             "name": "Python Workshop",
+            "emoji": "🐍",
             "date": "2023-11-14T18:00:00",
             "description": "Learn the basics of Python, a popular programming language used in data science, web development, and more. No experience required, but some programming experience in any language is recommended. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/python_workshop_min.png",
-            "location": "Lazenby 002",
-            "buttonText": "RSVP",
-            "buttonLink": "https://go.tosu.dev/rsvp"
+            "location": "Enarson 222"
         }
     ]
 }

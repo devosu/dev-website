@@ -63,6 +63,16 @@ a.icon-link:hover {
   opacity: 0.7;
 }
 
+.button-bar {
+  display: flex;
+  justify-content: left;
+ align-items: center;
+}
+.button-bar a {
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+}
+
 /* span {
   width: fit-content;
 } */
@@ -177,6 +187,23 @@ div.center {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.event-watermark {
+  position: relative;
+  top: 170px;
+  text-align: right;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  font-size: 14rem;
+  height: 0;
+  /* no select */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
 .event-image {
   width: 100%;
   max-height: 300px;
@@ -247,6 +274,8 @@ div.center {
   text-align: center;
   line-height: 30px;
 }
+/* .slider:hover {
+} */
 
 input:checked + .slider:before {
   left: calc(100% - 4px - 150px);

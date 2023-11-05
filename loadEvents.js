@@ -17,7 +17,8 @@ async function loadEvents() {
 
   const pastEvents = events.filter((event) => {
     return new Date(event.date) < new Date();
-  });
+  }).reverse();
+
   const futureEvents = events.filter((event) => {
     return new Date(event.date) > new Date();
   });
@@ -54,19 +55,26 @@ function addEvent(event, parent) {
   const eventInfo = document.createElement("div");
   eventInfo.classList.add("event-info");
   
+  addWatermark(eventInfo, event);
+  
   addName(event, eventInfo);
   
   addDescription(event, eventInfo);
   
   const date = new Date(event.date);
-  
-  addDate(date, eventInfo);
+  const now = new Date();
+  console.log(date, now)
 
-  addStartsIn(date, eventInfo);
+  addDate(date, eventInfo);
+  
+  if (date > now) {
+    addStartsIn(date, eventInfo);
+  }
   
   addLocation(event, eventInfo);
   
-  addButton(event, eventInfo);
+  addButtons(event, eventInfo, date, now);
+
 
   eventElement.appendChild(eventInfo);
   parent.appendChild(eventElement);
@@ -99,42 +107,40 @@ function addDescription(event, parent) {
 function addDate(date, parent) {
   const eventDate = document.createElement("p");
   eventDate.textContent =
-    "📆 " + date.toDateString() + ", " + date.toLocaleTimeString();
+    `📆 ${date.toDateString()}, ${date.toLocaleTimeString()}`;
   parent.appendChild(eventDate);
 }
 
 function addStartsIn(date, parent) {
-  if (date > new Date()) {
-    const eventTimeLeft = document.createElement("p");
-    eventTimeLeft.classList.add("event-time-left");
+  const eventTimeLeft = document.createElement("p");
+  eventTimeLeft.classList.add("event-time-left");
 
-    // svg
-    const eventTimeLeftCountdown = document.createElementNS(
-      "http://www.w3.org/2000/svg",
-      "svg"
-    );
-    eventTimeLeftCountdown.innerHTML = '<path d=""></path>';
+  // svg
+  const eventTimeLeftCountdown = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "svg"
+  );
+  eventTimeLeftCountdown.innerHTML = '<path d=""></path>';
 
-    eventTimeLeftCountdown.setAttribute("width", "500");
-    eventTimeLeftCountdown.setAttribute("height", "32");
-    eventTimeLeftCountdown.classList.add("countdown");
-    addCountdown(eventTimeLeftCountdown, date, 20, 1, false, () => {
-      // callback for when the countdown is finished
-      eventTimeLeft.textContent = "⏳ Started";
-      eventTimeLeftCountdown.remove();
-    });
+  eventTimeLeftCountdown.setAttribute("width", "500");
+  eventTimeLeftCountdown.setAttribute("height", "32");
+  eventTimeLeftCountdown.classList.add("countdown");
+  addCountdown(eventTimeLeftCountdown, date, 20, 1, false, () => {
+    // callback for when the countdown is finished
+    eventTimeLeft.textContent = "⏳ Started";
+    eventTimeLeftCountdown.remove();
+  });
 
-    // redirect to countdown page
-    eventTimeLeftCountdown.onclick = () => {
-      const query = new URLSearchParams({ date });
-      const url = "countdown/?" + query;
-      window.open(url, "_blank");
-    };
+  // redirect to countdown page
+  eventTimeLeftCountdown.onclick = () => {
+    const query = new URLSearchParams({ date });
+    const url = "countdown/?" + query;
+    window.open(url, "_blank");
+  };
 
-    eventTimeLeft.textContent = "⏳ Starts in";
-    eventTimeLeft.appendChild(eventTimeLeftCountdown);
-    parent.appendChild(eventTimeLeft);
-  }
+  eventTimeLeft.textContent = "⏳ Starts in";
+  eventTimeLeft.appendChild(eventTimeLeftCountdown);
+  parent.appendChild(eventTimeLeft);
 }
 
 function addLocation(event, parent) {
@@ -145,14 +151,66 @@ function addLocation(event, parent) {
   }
 }
 
-function addButton(event, parent) {
-  if (event.buttonText && event.buttonLink) {
-    const eventButton = document.createElement("a");
-    eventButton.href = event.buttonLink;
-    eventButton.target = "_blank";
-    eventButton.textContent = event.buttonText;
-    parent.appendChild(eventButton);
+function addRSVP(parent) {
+  const eventRSVP = document.createElement("a");
+  eventRSVP.href = "https://go.tosu.dev/rsvp";
+  eventRSVP.target = "_blank";
+  eventRSVP.textContent = "RSVP";
+  parent.appendChild(eventRSVP);
+}
+
+function addGoogleCalendar(parent, event, date) {
+  const url = new URL("https://www.google.com/calendar/render");
+  url.searchParams.append("action", "TEMPLATE");
+
+  let name = event.name + " at DEV";
+  if (event.emoji) name = event.emoji + " " + name;
+  url.searchParams.append("text", name);
+
+  const endDate = new Date(date);
+  endDate.setHours(endDate.getHours() + 1);
+
+  //format date as YYYYMMDDTHHmmSSZ
+  const dateFormatted = date.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
+  const endDateFormatted = endDate.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
+
+  url.searchParams.append("dates", dateFormatted + "/" + endDateFormatted);
+  url.searchParams.append("location", event.location + " (Check https://tosu.dev for updates)");
+  url.searchParams.append("details", "Check https://tosu.dev for latest updates! \n" + event.description);
+
+  const eventGoogleCalendar = document.createElement("a");
+  eventGoogleCalendar.href = url;
+  eventGoogleCalendar.target = "_blank";
+  eventGoogleCalendar.textContent = "Google Calendar";
+  parent.appendChild(eventGoogleCalendar);
+}
+
+function addButtons(event, parent, date, now) {
+  const eventButtons = document.createElement("div");
+  eventButtons.classList.add("button-bar");
+
+  if (date > now) {
+    addRSVP(eventButtons);
+    addGoogleCalendar(eventButtons, event, date);
   }
+
+  if (event.buttons) {
+    for (let button of event.buttons) {
+      const eventButton = document.createElement("a");
+      eventButton.href = button.buttonLink;
+      eventButton.target = "_blank";
+      eventButton.textContent = button.buttonText;
+      eventButtons.appendChild(eventButton);
+    }
+  }
+  parent.appendChild(eventButtons);
+}
+
+function addWatermark(parent, event) {
+  const watermark = document.createElement("div");
+  watermark.classList.add("event-watermark");
+  watermark.textContent = event.emoji;
+  parent.appendChild(watermark);
 }
 
 loadEvents();
