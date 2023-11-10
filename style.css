@@ -50,6 +50,7 @@ a.no-gradient {
   background-image: none;
   background-color: transparent;
   color: black;
+  padding: 0;
 }
 
 a.icon-link {
@@ -220,7 +221,7 @@ div.center {
 }
 
 .scrollable {
-  overflow-x: scroll;
+  overflow-y: scroll;
   padding: 0 1rem;
   max-height: 80vh;
   /* inner shadow top and bottom */

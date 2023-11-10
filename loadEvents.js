@@ -163,7 +163,7 @@ function addGoogleCalendar(parent, event, date) {
   const url = new URL("https://www.google.com/calendar/render");
   url.searchParams.append("action", "TEMPLATE");
 
-  let name = event.name + " at DEV";
+  let name = event.name;
   if (event.emoji) name = event.emoji + " " + name;
   url.searchParams.append("text", name);
 

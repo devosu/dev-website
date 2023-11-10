@@ -71,6 +71,15 @@
             "description": "Learn the basics of Python, a popular programming language used in data science, web development, and more. No experience required, but some programming experience in any language is recommended. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/python_workshop_min.png",
             "location": "Enarson 222"
+        },
+        {
+            "name": "DEV Talk: Camryn Friedman",
+            "emoji": "👩‍💻",
+            "date": "2023-11-16T18:00:00",
+            "description": "Camryn Friedman, an OSU CSE alumna, currently works as a Back-End Developer for the global consulting firm, <a href=\"https://www.avanade.com/en\" target=\"_blank\">Avanade</a>, Inc. Since graduating, Camryn has capitalized on multiple opportunities for personal and professional growth and will be sharing her exciting journey from a student to a Full-Time engineer, and how Avanade has helped her achieve success.",
+            "imageSrc": "/assets/avanade_banner.jpg",
+            "location": "Enarson 254",
+            "hide": false
         }
     ]
 }
