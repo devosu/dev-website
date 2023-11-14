@@ -74,7 +74,7 @@
             "buttons": [
                 {
                     "buttonText": "Dataset",
-                    "buttonLink": "https://www.kaggle.com/datasets/dheemanthbhat/stack-overflow-annual-developer-survey-2022"
+                    "buttonLink": "https://insights.stackoverflow.com/survey"
                 }
             ]
         },
