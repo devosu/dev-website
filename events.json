@@ -70,7 +70,13 @@
             "date": "2023-11-14T18:00:00",
             "description": "Learn the basics of Python, a popular programming language used in data science, web development, and more. No experience required, but some programming experience in any language is recommended. You will need a Windows/Mac/Linux laptop.",
             "imageSrc": "/assets/python_workshop_min.png",
-            "location": "Enarson 222"
+            "location": "Enarson 222",
+            "buttons": [
+                {
+                    "buttonText": "Dataset",
+                    "buttonLink": "https://www.kaggle.com/datasets/dheemanthbhat/stack-overflow-annual-developer-survey-2022"
+                }
+            ]
         },
         {
             "name": "DEV Talk: Camryn Friedman",

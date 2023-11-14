@@ -286,3 +286,45 @@ input:checked + .slider:before {
 .hidden {
   display: none;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .square, .gallery .rectangle {
+  margin: 0.5rem;
+  object-fit: contain;
+}
+
+.gallery .small.square {
+  width: 100px;
+  max-height: 75px;
+}
+
+.gallery .small.rectangle {
+  width: 200px;
+  max-height: 50px;
+}
+
+.gallery .medium.square {
+  width: 200px;
+  max-height: 150px;
+}
+
+.gallery .medium.rectangle {
+  width: 400px;
+  max-height: 100px;
+}
+
+.gallery .big.square {
+  width: 400px;
+  max-height: 300px;
+}
+
+.gallery .big.rectangle {
+  width: 800px;
+  max-height: 200px;
+}
