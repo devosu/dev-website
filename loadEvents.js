@@ -1,7 +1,6 @@
 /*
  * This script loads the events.json file and displays the events on the page
  */
-
 async function loadEvents() {
   await loadFont("./assets/fonts/LibreFranklin-Regular.ttf");
   const eventsBox = document.getElementById("events-box");
@@ -23,26 +22,58 @@ async function loadEvents() {
     return new Date(event.date) > new Date();
   });
 
+  let switchCallback = () => {
+    eventsFutureSwitchInput.checked = !eventsFutureSwitchInput.checked;
+    updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback);
+  };
+  
   eventsFutureSwitch.onchange = () => {
-    updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
+    updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback);
     window.navigator.vibrate(10);
   };
 
-  updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents);
+  updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback);
 }
 
-function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents) {
+function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback) {
   eventsBox.innerHTML = "";
   clearCountdowns();
+  
   if (eventsFutureSwitchInput.checked) {
-    for (let event of futureEvents) {
-      addEvent(event, eventsBox);
-    }
+    addEvents(futureEvents, eventsBox, "Nothing planned yet 😳", "Without a time machine, there is no way I can tell.", "past", switchCallback)
   } else {
-    for (let event of pastEvents) {
+    addEvents(pastEvents, eventsBox, "Nothing happened yet 😳", "Nothing ever was, but everything will be.", "future", switchCallback)
+  }
+}
+
+function addEvents(events, eventsBox, emptyTitle, emptyMessage, oppositeTabName, switchCallback) {
+  console.log(switchCallback)
+  if (events.length === 0) {
+    const message = addMessage(eventsBox, emptyTitle, emptyMessage);
+    const buttonBar = addButtonBar(message);
+    addButton(buttonBar, `See ${oppositeTabName} events`, switchCallback)
+    addButton(buttonBar, "Subscribe to updates", "https://go.tosu.dev/newsletter")
+  } else {
+    for (let event of events) {
       addEvent(event, eventsBox);
     }
   }
+}
+
+function addMessage(parent, title, message) {
+  const messageBody = document.createElement("p");
+  messageBody.classList.add("center", "center-text");
+  parent.appendChild(messageBody);
+
+  const messageTitle = document.createElement("h2");
+  messageTitle.textContent = title;
+  messageBody.appendChild(messageTitle);
+
+  const messageP = document.createElement("p");
+  messageP.textContent = message;
+  messageBody.appendChild(messageP);
+
+  return messageBody;
 }
 
 function addEvent(event, parent) {
@@ -73,7 +104,7 @@ function addEvent(event, parent) {
   
   addLocation(event, eventInfo);
   
-  addButtons(event, eventInfo, date, now);
+  addEventButtons(event, eventInfo, date, now);
 
 
   eventElement.appendChild(eventInfo);
@@ -152,11 +183,7 @@ function addLocation(event, parent) {
 }
 
 function addRSVP(parent) {
-  const eventRSVP = document.createElement("a");
-  eventRSVP.href = "https://go.tosu.dev/rsvp";
-  eventRSVP.target = "_blank";
-  eventRSVP.textContent = "RSVP";
-  parent.appendChild(eventRSVP);
+  addButton(parent, "RSVP", "https://go.tosu.dev/rsvp");
 }
 
 function addGoogleCalendar(parent, event, date) {
@@ -178,16 +205,30 @@ function addGoogleCalendar(parent, event, date) {
   url.searchParams.append("location", event.location + " (Check https://tosu.dev for updates)");
   url.searchParams.append("details", "Check https://tosu.dev for latest updates! \n" + event.description);
 
-  const eventGoogleCalendar = document.createElement("a");
-  eventGoogleCalendar.href = url;
-  eventGoogleCalendar.target = "_blank";
-  eventGoogleCalendar.textContent = "Google Calendar";
-  parent.appendChild(eventGoogleCalendar);
+  addButton(parent, "Google Calendar", url);
 }
 
-function addButtons(event, parent, date, now) {
+function addButtonBar(parent) {
   const eventButtons = document.createElement("div");
   eventButtons.classList.add("button-bar");
+  parent.appendChild(eventButtons);
+  return eventButtons;
+}
+
+function addButton(parent, text, link) {
+  const button = document.createElement("a");
+  if (typeof link == "function") {
+    button.onclick = link;
+  } else {
+    button.href = link;
+  }
+  button.target = "_blank";
+  button.textContent = text;
+  parent.appendChild(button);
+}
+
+function addEventButtons(event, parent, date, now) {
+  const eventButtons = addButtonBar(parent, event);
 
   if (date > now) {
     addRSVP(eventButtons);
@@ -196,14 +237,9 @@ function addButtons(event, parent, date, now) {
 
   if (event.buttons) {
     for (let button of event.buttons) {
-      const eventButton = document.createElement("a");
-      eventButton.href = button.buttonLink;
-      eventButton.target = "_blank";
-      eventButton.textContent = button.buttonText;
-      eventButtons.appendChild(eventButton);
+      addButton(eventButtons, button.buttonText, button.buttonLink);
     }
   }
-  parent.appendChild(eventButtons);
 }
 
 function addWatermark(parent, event) {

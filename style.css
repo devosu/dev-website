@@ -38,6 +38,7 @@ a {
   text-decoration: none;
   transition: all 0.2s linear;
   --gradient-shift: 0px;
+  cursor: pointer;
 }
 a:hover {
   background-image: linear-gradient(
@@ -66,8 +67,11 @@ a.icon-link:hover {
 
 .button-bar {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-info .button-bar {
   justify-content: left;
- align-items: center;
 }
 .button-bar a {
   margin: 0 0.2rem;
@@ -95,13 +99,14 @@ footer {
   background-image: radial-gradient(
     circle at var(--cursor-x) var(--cursor-y),
     #bd0063 1px,
-    #00c8fc 50%,
+    #00c8fc var(--gradient-shift),
     #2400db
   );
   opacity: 0.85;
   color: white;
   --cursor-x: 100%;
   --cursor-y: 100%;
+  --gradient-shift: 50%;
 }
 
 #headBody {
@@ -138,6 +143,10 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center-text {
+  text-align: center;
 }
 
 div.center {
@@ -186,6 +195,8 @@ div.center {
   margin: 2rem 0;
   overflow: hidden;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  line-height: 2rem;
+  justify-content: left;
 }
 
 .event-watermark {
