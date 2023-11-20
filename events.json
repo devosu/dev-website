@@ -86,6 +86,13 @@
             "imageSrc": "/assets/avanade_banner.jpg",
             "location": "Enarson 254",
             "hide": false
+        },
+        {
+            "name": "Computer Science Social",
+            "emoji": "🍕",
+            "date": "2023-11-28T19:00:00",
+            "description": "Come hang out with other students and organizations on campus! There will be free food and games.",
+            "hide": true
         }
     ]
 }

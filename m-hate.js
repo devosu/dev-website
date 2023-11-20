@@ -4,7 +4,7 @@
 
 
 const mHate = {
-  excludedTags: ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'LABEL', 'HATE'],
+  excludedTags: ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'LABEL', 'PRE', 'HATE'],
   excludedClasses: [],
 
   /**
@@ -12,7 +12,7 @@ const mHate = {
    * @param {Array[string]} tags 
    */
   excludeTags: (tags) => {
-    mHateConfig.excludedTags.push(...tags);
+    mHate.excludedTags.push(...tags);
   },
   
   /**
@@ -20,20 +20,39 @@ const mHate = {
    * @param {Array[string]} classes 
    */
   excludeClasses: (classes) => {
-    mHateConfig.excludedClasses.push(...classes);
+    mHate.excludedClasses.push(...classes);
   },
 
   /**
    * Crosses all m's in the document
    */
   crossAllM: () =>{
-    crossM(document.body);
+    mHate.crossIn(document.body);
+  },
+
+  /**
+   * Recursively crosses all m's in the given element
+   * @param {HTMLElement} element
+   */
+  crossIn: (element) => {
+    if (element.nodeType === Node.TEXT_NODE && (element.textContent.includes('m') || element.textContent.includes('M'))) {
+      const text = element.textContent;
+      // a new tag is introduced to avoid collisions with other
+      const newHtml = text.replace(/[mM]/g, '<hate>$&</hate>');
+      const newNode = document.createElement('text');
+      newNode.innerHTML = newHtml;
+      element.replaceWith(newNode);
+    } else if (
+      !mHate.excludedTags.includes(element.tagName) &&
+      !(element.classList && mHate.excludedClasses.some((className) => element.classList.contains(className)))
+      ) {
+      for (const child of element.childNodes) {
+        mHate.crossIn(child);
+      }
+    }
   }
 
 }
-
-
-// --- Stuff below is private ---
 
 /**
  * Adds styles and calls crossM on the body when the page is loaded
@@ -48,25 +67,6 @@ window.addEventListener('load', () => {
   }
   `;
   document.head.appendChild(style);
-
-  /**
-   * Recursively crosses all m's in the given element
-   * @param {HTMLElement} element
-   */
-  const crossM = (element) => {
-    if (element.nodeType === Node.TEXT_NODE && (element.textContent.includes('m') || element.textContent.includes('M'))) {
-      const text = element.textContent;
-      // a new tag is introduced to avoid collisions with other
-      const newHtml = text.replace(/[mM]/g, '<hate>$&</hate>');
-      const newNode = document.createElement('text');
-      newNode.innerHTML = newHtml;
-      element.replaceWith(newNode);
-    } else if (!excludedTags.includes(element.tagName) && !excludedClasses.some((className) => element.classList.contains(className))) {
-      for (const child of element.childNodes) {
-        crossM(child);
-      }
-    }
-  }
 
   // find all m's
   mHate.crossAllM();

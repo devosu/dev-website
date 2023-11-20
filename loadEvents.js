@@ -44,10 +44,11 @@ function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEven
   } else {
     addEvents(pastEvents, eventsBox, "Nothing happened yet 😳", "Nothing ever was, but everything will be.", "future", switchCallback)
   }
+
+  if (mHate) { mHate.crossIn(eventsBox); }
 }
 
 function addEvents(events, eventsBox, emptyTitle, emptyMessage, oppositeTabName, switchCallback) {
-  console.log(switchCallback)
   if (events.length === 0) {
     const message = addMessage(eventsBox, emptyTitle, emptyMessage);
     const buttonBar = addButtonBar(message);
@@ -94,7 +95,6 @@ function addEvent(event, parent) {
   
   const date = new Date(event.date);
   const now = new Date();
-  console.log(date, now)
 
   addDate(date, eventInfo);
   

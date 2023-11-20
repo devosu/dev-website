@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icons/favicon-16x16.png"
+    />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#357bee" />
+
+    <!-- manifest and colors -->
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+    <meta name="theme-color" content="#357bee" />
+    <meta name="msapplication-TileColor" content="#357bee" />
+
+    <!-- meta for SEO -->
+    <meta name="apple-mobile-web-app-title" content="DEV" />
+    <meta name="application-name" content="DEV" />
+    <meta
+      name="description"
+      content="Software Engineering Club at The Ohio State University"
+    />
+    <meta
+      name="keywords"
+      content="software engineering, osu, cse, cse club, osu cs, osu cs club, software engineering club, software engineering club osu, software engineering club at the ohio state university, software engineering club at ohio state, dev, dev at dev, dev, dev at ohio state"
+    />
+
+    <title>DEV - Software Engineering Club at OSU</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <script src="../m-hate.js"></script>
+  </head>
+  <body>
+    <div id="head" class="gradient-banner section">
+      <div id="headBody" class="center">
+        <a href="../" class="no-gradient">
+          <img
+            src="../assets/logo-white.png"
+            alt="DEV Logo"
+            height="100px"
+            class="center"
+        /></a>
+        <span
+          ><h2>
+            <span id="subtitle">
+              Software Engineering Club at The Ohio State University
+            </span>
+            <span id="blinkingUnderscore" class="blinking" style="margin-left:-15px">_</span>
+          </h2>
+        </span>
+      </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div id="intro" class="section">
+      <div class="block">
+        <h1>❌ichigan</h1>
+        <p>
+          To show our support to the Buckeyes in the game against ❌ichigan, we have developed a website script to cross all the M's on your website. Upon page load, it will recursively search through all the elements on your page and wrap any M's with a hate tag. This script will not affect any of your content or styling, and will only change the appearance of the M's on your page. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Usage Section -->
+    <div id="usage" class="section">
+      <div class="block">
+        <h1>📝 Usage</h1>
+        <p>
+          To use this script, simply add the following line to your website's HTML:
+        </p>
+        <pre><code>&lt;script src="https://tosu.dev/m-hate.js"&gt;&lt;/script&gt;</code></pre>
+      </div>
+    </div>
+
+    <div id="api" class="section">
+      <div class="block">
+        <h1>🖱️ API</h1>
+        <p>
+          m-hate.js works automatically out-of-the-box, but has an api in case it breaks your website or you have dynamic elements that need to be updated. If you place the script tag in the head of your HTML, you can use the following commands to control the script:
+        </p>
+        <h2>mHate.excludeTags(list) and mHate.excludeClasses(list)</h2>
+        <p>If purgery breaks your website, you can use these commands to prevent m-hate from interfereng with specific elements. Just pass a list of tag names or class names and m-hate will ignore them. Tag names must be passed in uppercase. Default tags excluded: 'SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'LABEL', 'PRE', 'HATE'</p>
+        
+        <h2>mHate.crossAllM()</h2>
+        <p>Purges the entire body of your webpage. Runs automatically on page load</p>
+
+        <h2>mHate.crossIn(element)</h2>
+        <p>Purges given HTML element and all its children that are not in exclude lists</p>
+      </div>
+    </div>
+
+    <div id="privacy" class="section">
+      <div class="block">
+        <h1>🔒 Privacy</h1>
+        <p>
+          This script does not collect any data from your website or your users, use cookies, or analyze usage statistics. You can also see the source code <a href="https://tosu.dev/m-hate.js" target="_blank">here</a>
+        </p>
+      </div>
+    </div>
+    
+
+    <footer>
+      <!-- copyright -->
+      <div class="section">
+        <p>© <span id="thisYear"></span> DEV</p>
+        <a class="icon-link" href="https://github.com/devosu/dev-website" target="_blank"><img src="../assets/github-mark.svg" width="20"></a>
+      </div>
+    </footer>
+
+    <script>
+      const thisYear = document.getElementById("thisYear");
+      thisYear.textContent = new Date().getFullYear();
+
+      const head = document.getElementById("head");
+      head.onmousemove = (e) => {
+        head.style.setProperty("--cursor-x", e.clientX + "px");
+        head.style.setProperty("--cursor-y", e.clientY + "px");
+      };
+      head.ontouchmove = (e) => {
+        head.style.setProperty("--cursor-x", e.touches[0].clientX + "px");
+        head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
+      };
+    </script>
+  </body>
+</html>
