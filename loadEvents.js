@@ -88,14 +88,15 @@ function addEvent(event, parent) {
   eventInfo.classList.add("event-info");
   
   addWatermark(eventInfo, event);
-  
+
   addName(event, eventInfo);
+
   
   addDescription(event, eventInfo);
   
   const date = new Date(event.date);
   const now = new Date();
-
+  
   addDate(date, eventInfo);
   
   if (date > now) {
@@ -103,6 +104,8 @@ function addEvent(event, parent) {
   }
   
   addLocation(event, eventInfo);
+  
+  addTags(event, eventInfo);
   
   addEventButtons(event, eventInfo, date, now);
 
@@ -121,9 +124,23 @@ function addImage(event, parent) {
   }
 }
 
+function addTags(event, parent) {
+  if (event.tags) {
+    const eventTags = document.createElement("p");
+    eventTags.classList.add("event-tags");
+    parent.appendChild(eventTags);
+    for (let tag of event.tags) {
+      const tagElement = document.createElement("span");
+      tagElement.classList.add("event-tag");
+      tagElement.innerHTML = tag;
+      eventTags.appendChild(tagElement);
+    }
+  }
+}
+
 function addName(event, parent) {
-  const eventName = document.createElement("h3");
-  eventName.textContent = event.name;
+  const eventName = document.createElement("h2");
+  eventName.innerHTML = event.name;
   parent.appendChild(eventName);
 }
 

@@ -73,6 +73,24 @@ a.icon-link:hover {
 .event-info .button-bar {
   justify-content: left;
 }
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: start;
+  padding: 0;
+}
+.event-tags .event-tag {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, #b4cdf6, #51c8e7);
+  border-radius: 1rem;
+  padding: 0rem 0.7rem;
+  margin: 0 0.2rem;
+}
+
 .button-bar a {
   margin: 0 0.2rem;
   padding: 0.5rem;
