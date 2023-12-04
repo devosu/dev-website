@@ -102,6 +102,7 @@
             "tags": ["Collaboration", "Social"],
             "emoji": "🍕",
             "date": "2023-11-28T19:00:00",
+            "lengthMin": 120,
             "description": "Come hang out with other students and student organizations on campus! There will be free food and games. A collaborative event with Competitive Programming Club, Cyber Security Club, OHI/O, Google Developer Student Club, and INFORMS.",
             "imageSrc": "/assets/cs_social_banner.png",
             "location": "Blackburn Victory Room"

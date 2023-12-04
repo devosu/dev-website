@@ -212,7 +212,8 @@ function addGoogleCalendar(parent, event, date) {
   url.searchParams.append("text", name);
 
   const endDate = new Date(date);
-  endDate.setHours(endDate.getHours() + 1);
+  const lengthMin = event.lengthMin || 60;
+  endDate.setMinutes(endDate.getMinutes() + lengthMin);
 
   //format date as YYYYMMDDTHHmmSSZ
   const dateFormatted = date.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");

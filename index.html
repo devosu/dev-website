@@ -42,7 +42,7 @@
       content="dev osu, dev club, software engineering, osu, cse, cse club, osu cs, osu cs club, software engineering club, software engineering club osu, software engineering club at the ohio state university, software engineering club at ohio state, dev, dev at osu, dev, dev at ohio state"
     />
     <!-- m hate -->
-    <script src="m-hate.js"></script>
+    <!-- <script src="m-hate.js"></script> -->
 
     <!-- libraries for countdown -->
     <script src="opentype.min.js"></script>
@@ -106,6 +106,15 @@
       </div>
     </div>
 
+    <div id="nov2023social" class="section hidden">
+      <div class="block">
+        <h1>❄️ Thank you for interest in the 2023 CS Social!</h1>
+        <p>
+          The November 2023 social is over, but we will likely organize another in the spring semester. <a href="#join">Subscribe to our newsletter</a> or <a href="https://go.tosu.dev/discord" target="_blank">join discord</a> to be the first to know about it!
+        </p>
+      </div>
+    </div>
+
     <!-- <div class="section">
       <div class="banner">
         <p>
@@ -114,13 +123,13 @@
       </div>
     </div> -->
 
-    <div class="section">
+    <!-- <div class="section">
       <div class="banner">
         <p>
           ❌ Welcome to hate week! Add our new <a href="/mhate">m-hate</a> script to your website to show your support for buckeyes.</p> 
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div id="about" class="section">
       <div class="block">
@@ -299,14 +308,23 @@
         head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
       };
 
+      const source = new URLSearchParams(window.location.search).get("source");
+
       const hackohioSection = document.getElementById("hackohio");
-      const hackohioSectionVisible =
-        new URLSearchParams(window.location.search).get("event") === "hackohio";
-      if (hackohioSectionVisible) {
-        hackohioSection.classList.remove("hidden");
+      const nov2023socialSection = document.getElementById("nov2023social");
+      switch (source) {
+        case "hackohio":
+          hackohioSection.classList.remove("hidden");
+          break;
+
+        case "nov2023social":
+          nov2023socialSection.classList.remove("hidden");
+          break;
       }
+
+
     </script>
     <script src="./loadEvents.js"></script>
-    <!-- <script src="50154.js"></script> -->
+    <script src="50154.js"></script>
   </body>
 </html>
