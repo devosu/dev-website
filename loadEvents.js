@@ -45,7 +45,7 @@ function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEven
     addEvents(pastEvents, eventsBox, "Nothing happened yet 😳", "Nothing ever was, but everything will be.", "future", switchCallback)
   }
 
-  if (mHate) { mHate.crossIn(eventsBox); }
+  // if (mHate) { mHate.crossIn(eventsBox); }
 }
 
 function addEvents(events, eventsBox, emptyTitle, emptyMessage, oppositeTabName, switchCallback) {

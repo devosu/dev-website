@@ -172,23 +172,23 @@
           commitement.
         </p>
         <p>
-          To become a member, type your email below and click "Subscribe". The
+          To become a member, type your email <input class="text-input" placeholder="here" id="join-email-input"> and click <button id="join-button"> join </button>. After confirming, the
           first email you recieve has all the next steps. You will also start
           recieving emails with important club announcements. Then, just come to
           any of our meetings and you will be a member!
         </p>
 
         <div class="center">
-          <iframe
+          <!-- <iframe
             src="https://devosu.substack.com/embed"
             width="350"
             height="150"
             frameborder="0"
             scrolling="no"
-          ></iframe>
+          ></iframe> -->
         </div>
         <p>
-          If the form doesn't work, click
+          If the form above doesn't work, click
           <a href="https://devosu.substack.com/subscribe" target="_blank"
             >here</a
           >
@@ -320,6 +320,49 @@
         case "nov2023social":
           nov2023socialSection.classList.remove("hidden");
           break;
+      }
+
+      const joinEmailInput = document.getElementById("join-email-input");
+      const joinButton = document.getElementById("join-button");
+
+      joinButton.onclick = () => {
+        const email = joinEmailInput.value;
+        if (!email) {
+          alert("Please enter your email");
+        } else if (!/.+@[a-zA-Z0-9]+\.[a-zA-Z]+/.test(email)) {
+          alert("Please enter a valid email");
+        } else {
+          joinButton.disabled = true;
+          subscribe(email, () => {
+            joinEmailInput.value = "";
+            joinButton.disabled = false;
+          });
+        }
+      };
+        
+      async function subscribe(email, callback) {
+        const body = {
+          email,
+          domain: "devosu.substack.com",
+        };
+        const request = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        };
+        const response = await fetch(
+          "https://substackapi.com/api/subscribe",
+          request
+        );
+
+        if (response.status == 200) {
+          alert("Done! Please confirm your subscription in your email");
+          if (callback) callback();
+        } else {
+          alert("Something went wrong. Please reach out to officers");
+        }
       }
 
 

@@ -30,7 +30,25 @@ p, ul {
   line-height: 2rem;
 }
 
-a {
+input.text-input {
+  border: solid #357def 1px;
+  border-radius: 0.4rem;
+  font-size: inherit;
+  padding: 0.3rem;
+  transition: all 0.2s linear;
+  outline: none;
+  background-color: white;
+  font-family: inherit;
+}
+input.text-input:focus {
+  border-color: white;
+  box-shadow: -5px -5px 20px 10px #357cee7c, 
+              5px 5px 20px 10px #ef2e9267;
+}
+
+a, button {
+  border: none;
+  font-size: inherit;
   color: white;
   background-color: #357bee;
   padding: 0.3rem;
@@ -40,7 +58,7 @@ a {
   --gradient-shift: 0px;
   cursor: pointer;
 }
-a:hover {
+button:hover, a:hover {
   background-image: linear-gradient(
     to right,
     #357bee var(--gradient-shift),
@@ -64,6 +82,13 @@ a.icon-link {
 a.icon-link:hover {
   opacity: 0.7;
 }
+
+button:disabled, a:disabled {
+  background-image: none;
+  opacity: 0.5;
+  cursor: wait;
+}
+
 
 .button-bar {
   display: flex;
