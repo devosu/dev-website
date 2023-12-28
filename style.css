@@ -46,7 +46,7 @@ input.text-input:focus {
               5px 5px 20px 10px #ef2e9267;
 }
 
-a, button {
+a, button, .gradient-button, .gradient-file::file-selector-button {
   border: none;
   font-size: inherit;
   color: white;
@@ -58,18 +58,33 @@ a, button {
   --gradient-shift: 0px;
   cursor: pointer;
 }
-button:hover, a:hover {
+button:hover, a:hover, .gradient-button:hover, .gradient-file::file-selector-button:hover {
   background-image: linear-gradient(
     to right,
     #357bee var(--gradient-shift),
     #ef2e92
   );
 }
-a.no-gradient {
+.no-gradient {
   background-image: none;
   background-color: transparent;
   color: black;
   padding: 0;
+}
+.fancy-button {
+  background: white;
+  color: black;
+  /* yelow glow */
+  border: #f5f500 solid 2px;
+  box-shadow: 0 0 40px 0 #f5f500;
+}
+.fancy-button:hover {
+  background: #357bee;
+  color: white;
+  border: #357bee solid 2px;
+  /* gradient shadow */
+  /* box-shadow: -5px -5px 40px #357def,  */
+  /* 5px 5px 40px #ef2e92; */
 }
 
 a.icon-link {
@@ -97,6 +112,9 @@ button:disabled, a:disabled {
 }
 .event-info .button-bar {
   justify-content: left;
+}
+.tall {
+  line-height: 2rem;
 }
 
 .event-tags {
@@ -174,12 +192,20 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 
 .block {
   margin: 2rem 3rem 0 3rem;
   width: 50%;
   min-width: 350px;
+}
+
+.container {
+  margin: 0 auto;
+  width: min-content;
 }
 
 .banner {
@@ -357,9 +383,16 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.gallery .fit {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .gallery .square, .gallery .rectangle {
   margin: 0.5rem;
   object-fit: contain;
+  max-width: 100%;
 }
 
 .gallery .small.square {
@@ -383,11 +416,118 @@ input:checked + .slider:before {
 }
 
 .gallery .big.square {
-  width: 400px;
-  max-height: 300px;
+  width: 250px;
+  max-height: 200px;
 }
 
 .gallery .big.rectangle {
-  width: 800px;
+  width: 600px;
   max-height: 200px;
+}
+
+.gradient-file {
+  font-size: inherit;
+}
+
+/* sponsorship tiers */
+.tier-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.tier-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #357def;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  cursor: pointer;
+  width: 250px;
+  min-height: 120px;
+  text-align: center;
+}
+div.tier-card:hover {
+  transform: rotate3d(1, 1, 0, 12deg);
+  box-shadow: 2px -2px 5px #ef2e92
+}
+
+div.tier-card p, div.tier-card h2 {
+  margin: 0;
+}
+div.tier-card.selected {
+  background-color: #357def;
+  color: white;
+}
+
+.website-preview {
+  width: 50vw;
+  min-width: 325px;
+  font-size: 1.2rem;
+  /* margin: 0 auto; */
+
+  border: #357def solid 1px;
+  border-radius: 0.4rem;
+
+  padding: 0 30px;
+}
+
+.website-preview .url-bar {
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #357def;
+  /* ignore outer padding */
+  margin: 0 -30px;
+}
+
+.fade-text-top {
+  background-image: linear-gradient(to bottom, transparent, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.fade-text-bottom {
+  background-image: linear-gradient(to top, transparent, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.citation {
+  font-size: 0.9rem;
+  text-align: right;
+  margin: 0 0 0.5rem 0;
+}
+
+.flyer-preview {
+  width: 385px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: #357def solid 1px;
+  border-radius: 0.4rem;
+}
+.flyer-preview .gallery {
+  position:relative;
+  height: 80px;
+  margin-top: 420px;
+}
+
+.flyer-preview .gallery img {
+  transform-origin: top;
+  transform: scale(0.3);
+  max-width: calc(100% / 0.3);
+  max-height: calc(100% / 0.3);
 }
