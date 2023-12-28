@@ -11,6 +11,8 @@ h2,
 h3 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -70,6 +72,11 @@ button:hover, a:hover, .gradient-button:hover, .gradient-file::file-selector-but
   background-color: transparent;
   color: black;
   padding: 0;
+}
+.no-gradient:hover {
+  background-image: none;
+  background-color: transparent;
+  color: black;
 }
 .fancy-button {
   background: white;
@@ -437,7 +444,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-div.tier-card {
+.tier-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -450,18 +457,18 @@ div.tier-card {
   background-color: white;
   cursor: pointer;
   width: 250px;
-  min-height: 120px;
+  min-height: 150px;
   text-align: center;
 }
-div.tier-card:hover {
+.tier-card:hover {
   transform: rotate3d(1, 1, 0, 12deg);
   box-shadow: 2px -2px 5px #ef2e92
 }
 
-div.tier-card p, div.tier-card h2 {
+.tier-card p, div.tier-card h2 {
   margin: 0;
 }
-div.tier-card.selected {
+.tier-card.selected {
   background-color: #357def;
   color: white;
 }
@@ -528,6 +535,6 @@ div.tier-card.selected {
 .flyer-preview .gallery img {
   transform-origin: top;
   transform: scale(0.3);
-  max-width: calc(100% / 0.3);
-  max-height: calc(100% / 0.3);
+  max-width: calc(100% / 0.25);
+  max-height: calc(100% / 0.25);
 }
