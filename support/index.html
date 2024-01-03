@@ -71,20 +71,29 @@
       <div class="block">
         <h1>🚀 Introduction</h1>
         <p>
-          Welcome to the Software Engineering Club (DEV), a student-ran organization on the Ohio State University campus. Our mission is to empower students with new skills through interactive workshops, expose them to diverse opportunities in the field of Software Engineering, and provide the resources they need to launch their groundbreaking projects.
-
-          As a new club founded this fall, we already proudly host over 150 total members, with over 30 active members participating weekly.
+          Welcome to the Software Engineering Club (DEV), a student organization on The Ohio State University campus. We empower students with new skills through interactive workshops, expose them to diverse opportunities in the field of Software Engineering, and provide the resources to launch their groundbreaking projects.
         </p>
-
         <div class="button-bar">
           <a href="../#meetings">Explore past and upcoming events</a>
         </div>
+        <p>
+          As a new club founded this fall, we already host over <span class="bold">150</span> total members, with over <span class="bold">30</span> active members participating weekly.
+
+          In the upcoming semester, we are expanding our impact by hosting workshops in K-12 schools to aiming to foster curiosity and open up a world of opportunities for younger students.
+        </p>
+
       </div>
     </div>
 
+    <!-- <div class="section">
+      <div class="card">
+        <span class="big-text">150+ members</span>
+      </div>
+    </div> -->
+
     <div id="sponsorship" class="section">
       <div class="block">
-        <h1>💵 Why Do We Ask You for a Sponsorship?</h1> 
+        <h1>💵 Where will your donation go?</h1> 
           <p>
             DEV officers are all volunteers and we do not charge any membership fees to ensure that our club is accessible to all students. Your sponsorship is crucial to help us foster an inclusive and welcoming community of passionate students. If you choose to donate, your contribution will go towards the following:
             <ul>
@@ -102,6 +111,8 @@
         <h1>🎁 Benefits for Sponsors</h1>
         <p>
           By partnering with us, you're not just supporting a club — you're shaping the next generation of tech talent. All sponsors (Tier 1+) get a custom Discord announcement channel on our server to announce your events and engage closely with the community, and a resume book of our talented members.
+
+          Additionally, your logo will be on our website and marketing materials. You can upload your logo below to preview how it will look on our website and marketing materials.
         </p>
       </div>
     </div>
@@ -125,14 +136,14 @@
           <div class="container">
           <div class="website-preview">
             <div class="url-bar">
-              <button class="url-button inactive">⬅</button>
-              <input value="https://tosu.dev" class="text-input" disabled>  
-              <button class="">x</button>
+              <button class="" id="websitePreviewBackButton">⬅</button>
+              <input value="https://osu.dev" class="text-input" disabled>  
+              <button class="" id="websitePreviewXButton">x</button>
             </div>
             <p class="fade-text-top">
                   We are also committed to supporting your personal software projects by
                 providing mentorship and computing resources (free hosting and
-                subdomains on tosu.dev).
+                subdomains on osu.dev).
 
                 This club is welcoming everyone regardless of their experience, major,
                 or grade. To use perks like subdomains and cloud credits, you need to
@@ -186,17 +197,17 @@
           <button class="tier-card no-gradient" id="tierCard1">
               <h2>🤩 Tier 1</h2>
               Small logo on website
-              <span>$50+</span>
+              <span>$50</span>
           </button>
           <button class="tier-card no-gradient" id="tierCard2">
               <h2>😎 Tier 2</h2>
               Medium logo on website and marketing materials
-              <span>$150+</span>
+              <span>$150</span>
           </button>
           <button class="tier-card no-gradient" id="tierCard3">
               <h2>🤯 Tier 3</h2>
               Large logo on website and marketing materials
-              <span>$300+</span>
+              <span>$300</span>
           </button>
         </div>
 
@@ -215,11 +226,11 @@
 
           <!-- <input type="checkbox" id="coverFees" name="coverFees" value="coverFees">
           <label for="coverFees" id="coverFeesLabel">Generously cover processing fees</label><br> -->
+          <p id="donateText">Please select tier and payment type</p>
         </div>
         
         <div id="donateButtonSection" class="hidden">
           <!-- <h2>Donate</h2> -->
-          <p id="donateText">Please select tier and payment type</p>
           <div class="button-bar tall">
             <a target="_blank" id="donateButton" class="fancy-button">Donate</a>
           </div>
@@ -264,7 +275,7 @@
               <strong>Products and Services:</strong> DEV is always looking for products and services to help our members learn and grow. If you are interested in providing a product or service to our club for free or at a discount, please reach out!
             </li>
             <li>
-              <strong>Spread the Word:</strong> We are still growing and would love your help to spread the word about our club. Please share our website and social media with your friends and colleagues.
+              <strong>Spread the Word:</strong> We are still growing and would love your help to spread the word about our club. Please share our website <span class="gradient-text selectable">osu.dev</span> with your friends and colleagues.
             </li>
           </ul>
         </p>
@@ -311,5 +322,6 @@
         head.style.setProperty("--cursor-y", e.touches[0].clientY + "px");
       };
     </script>
+    <script src="../subscribe.js"></script>
   </body>
 </html>

@@ -48,6 +48,10 @@
             "location": "Hitchcock 131",
             "buttons": [
                 {
+                    "buttonText": "Slides",
+                    "buttonLink": "https://docs.google.com/presentation/d/1vddZ5J0QJ7argWNgTdgdFfOnSyKzxYvQRpGfaws6Gmc/edit?usp=sharing"
+                },
+                {
                     "buttonText": "Code",
                     "buttonLink": "https://github.com/devosu/group-chat"
                 }

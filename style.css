@@ -538,3 +538,31 @@ input:checked + .slider:before {
   max-width: calc(100% / 0.25);
   max-height: calc(100% / 0.25);
 }
+
+.card {
+  background-color: #357def;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  width: 250px;
+  min-height: 150px;
+  text-align: center;
+}
+
+.big-text {
+  font-size: 2rem;
+  font-weight: 700; 
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.selectable {
+  /* double click will select as a single block of text */
+  user-select: all;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  
+}

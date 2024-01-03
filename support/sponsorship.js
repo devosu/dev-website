@@ -10,7 +10,7 @@ function updateLogoPreview(removeClasses, addClass='') {
     logoPreview2.classList.add(addClass);
 }
 
-let sectionSelected = false;
+let tierSelected = false;
 let logoUploaded = false;
 
 
@@ -45,8 +45,12 @@ const tierCards = document.querySelectorAll('.tier-card');
 styles = ['small', 'medium', 'big']
 prices = [50, 150, 300]
 
-function selectTier(n) {
-    sectionSelected = true;
+let history = [];
+function selectTier(n, saveHistory=true) {
+    if (saveHistory) {
+        history.push(n);
+    }
+    tierSelected = true;
     maybeShowPreview();
 
     checkout.total = prices[n];
@@ -73,8 +77,11 @@ tierCards.forEach((card, i) => {
 
 const logoPreviewContainer = document.getElementById('logoPreviewContainer');
 function maybeShowPreview() {
-    if (sectionSelected && logoUploaded) {
+    if (tierSelected && logoUploaded) {
         logoPreviewContainer.classList.remove('hidden');
+    }
+    else if (!tierSelected) {
+        selectTier(0);
     }
 }
 
@@ -104,8 +111,9 @@ paymentMethodRadio.forEach((radio) => {
 });
 
 function updateCheckoutButton() {
-    if (checkout.total !== 0 && checkout.method !== '') {
-        donateButtonSection.classList.remove('hidden');
+    donateButtonSection.classList.remove('hidden');
+    if (checkout.total == 0 && checkout.method !== '') {
+        selectTier(0, false);
     }
 
     if (checkout.method === 'stripe') {
@@ -150,3 +158,18 @@ donateButton.addEventListener('click', () => {
     }, 1000);
 });
 
+const websitePreviewXButton = document.getElementById('websitePreviewXButton');
+websitePreviewXButton.addEventListener('click', () => {
+    logoPreviewContainer.classList.add('hidden');
+    history = [];
+});
+
+const websitePreviewBackButton = document.getElementById('websitePreviewBackButton');
+websitePreviewBackButton.addEventListener('click', () => {
+    if (history.length <= 1) {
+        logoPreviewContainer.classList.add('hidden');
+    } else {
+        history.pop();
+        selectTier(history.pop());
+    }
+});

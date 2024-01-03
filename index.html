@@ -320,52 +320,8 @@
           nov2023socialSection.classList.remove("hidden");
           break;
       }
-
-      const joinEmailInput = document.getElementById("join-email-input");
-      const joinButton = document.getElementById("join-button");
-
-      joinButton.onclick = () => {
-        const email = joinEmailInput.value;
-        if (!email) {
-          alert("Please enter your email");
-        } else if (!/.+@[a-zA-Z0-9]+\.[a-zA-Z]+/.test(email)) {
-          alert("Please enter a valid email");
-        } else {
-          joinButton.disabled = true;
-          subscribe(email, () => {
-            joinEmailInput.value = "";
-            joinButton.disabled = false;
-          });
-        }
-      };
-        
-      async function subscribe(email, callback) {
-        const body = {
-          email,
-          domain: "devosu.substack.com",
-        };
-        const request = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(body),
-        };
-        const response = await fetch(
-          "https://substackapi.com/api/subscribe",
-          request
-        );
-
-        if (response.status == 200) {
-          alert("Done! Please confirm your subscription in your email");
-          if (callback) callback();
-        } else {
-          alert("Something went wrong. Please reach out to officers");
-        }
-      }
-
-
     </script>
+    <script src="./subscribe.js"></script>
     <script src="./loadEvents.js"></script>
     <script src="50154.js"></script>
   </body>
