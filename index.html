@@ -115,6 +115,16 @@
       </div>
     </div>
 
+    <div id="tosudev" class="section hidden">
+      <div class="block">
+        <h1>🌐 <span class="fading-out-animation">t</span><span class="coloring-gradient-animation">osu.dev</span></h1>
+        <p>We have transitioned to a new domain: <strong>osu.dev</strong>! We will also be using to.osu.dev for short links.</p>
+        <p>
+          This also means that you can request a subdomain for your personal projects. For example, if your project is called "project", you can request <strong>project.osu.dev</strong>. To request a subdomain through the Computing Resources Program, please open a ticket in our Discord server in <a href="#contact">contact methods</a>.
+        </p>
+      </div>
+    </div>
+
     <!-- <div class="section">
       <div class="banner">
         <p>
@@ -258,6 +268,18 @@
         </p>
       </div>
     </div>
+    
+    <!-- <div id="social-media" class="section">
+      <div class="block">
+        <h1>📱 Social Media</h1>
+        <div class="center">
+          <a class="icon-link" href="https://www.youtube.com/@devosu">
+            
+          </a>
+        </div>
+      </div>
+    </div> -->
+
 
     <div id="scientist" class="section">
       <div class="block">
@@ -305,9 +327,12 @@
       };
 
       const source = new URLSearchParams(window.location.search).get("source");
+      const redirect = new URLSearchParams(window.location.search).get("redirect");
 
       const hackohioSection = document.getElementById("hackohio");
       const nov2023socialSection = document.getElementById("nov2023social");
+      const tosudevSection = document.getElementById("tosudev");
+
       switch (source) {
         case "hackohio":
           hackohioSection.classList.remove("hidden");
@@ -317,6 +342,13 @@
           nov2023socialSection.classList.remove("hidden");
           break;
       }
+
+      switch (redirect) {
+        case "tosudev":
+          tosudevSection.classList.remove("hidden");
+          break;
+      }
+
     </script>
     <script src="./subscribe.js"></script>
     <script src="./loadEvents.js"></script>

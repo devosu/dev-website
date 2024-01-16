@@ -271,6 +271,35 @@ div.center {
   }
 }
 
+.fading-out-animation {
+  /* repeat animation */
+  animation: fading-out-animation 3s forwards;
+}
+@keyframes fading-out-animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.coloring-gradient-animation {
+  /* repeat animation */
+  animation: coloring-gradient-animation 3s forwards;
+  background-image: linear-gradient(to right, #357bee, #ef2e92);
+}
+@keyframes coloring-gradient-animation {
+  0% {
+    background-image: none;
+  }
+  100% {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
 .event-box {
   display: flex;
   flex-direction: column;
