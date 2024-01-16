@@ -53,7 +53,7 @@ function addEvents(events, eventsBox, emptyTitle, emptyMessage, oppositeTabName,
     const message = addMessage(eventsBox, emptyTitle, emptyMessage);
     const buttonBar = addButtonBar(message);
     addButton(buttonBar, `See ${oppositeTabName} events`, switchCallback)
-    addButton(buttonBar, "Subscribe to updates", "https://go.tosu.dev/newsletter")
+    addButton(buttonBar, "Subscribe to updates", "https://to.osu.dev/newsletter")
   } else {
     for (let event of events) {
       addEvent(event, eventsBox);
@@ -200,7 +200,7 @@ function addLocation(event, parent) {
 }
 
 function addRSVP(parent) {
-  addButton(parent, "RSVP", "https://go.tosu.dev/rsvp");
+  addButton(parent, "RSVP", "https://to.osu.dev/rsvp");
 }
 
 function addGoogleCalendar(parent, event, date) {
@@ -220,8 +220,8 @@ function addGoogleCalendar(parent, event, date) {
   const endDateFormatted = endDate.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
 
   url.searchParams.append("dates", dateFormatted + "/" + endDateFormatted);
-  url.searchParams.append("location", event.location + " (Check https://tosu.dev for updates)");
-  url.searchParams.append("details", "Check https://tosu.dev for latest updates! \n" + event.description);
+  url.searchParams.append("location", event.location + " (Check osu.dev for updates)");
+  url.searchParams.append("details", "Check https://osu.dev for latest updates! \n" + event.description);
 
   addButton(parent, "Google Calendar", url);
 }
