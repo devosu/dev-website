@@ -59,7 +59,7 @@
           radial-gradient(
             50vw 50vw at var(--circle2-x) var(--circle2-y),
             #00cafcbb 20%,
-            #ffffff00 90%
+            #ffffff00 80%
           ),
           radial-gradient(
             50vw 50vw at var(--circle3-x) var(--circle3-y),
@@ -73,11 +73,18 @@
           ),
           linear-gradient(90deg, #2500db, #8e94ff);
 
+          /* blur background */
+
         background-size: 100vw 100vh;
       }
       #headBody {
-        width: fit-content;
+        backdrop-filter: blur(100px), brightness(0.5);
+
+        width: 100vw;
+        height: 100vh;
         margin: 0;
+        display: flex;
+        align-items: center;
       }
       .invisible {
         opacity: 0;
@@ -92,9 +99,11 @@
     <script src="../countdown.js"></script>
     <div id="head" class="gradient-banner section">
       <div id="headBody" class="block">
-        <svg width="100vw" height="200" id="countdownSVG" class="">
-          <path d="" fill="white" />
-        </svg>
+        <div class="">
+          <svg width="100vw" height="200" id="countdownSVG" class="">
+            <path d="" fill="white" />
+          </svg>
+        </div>
       </div>
     </div>
     <script>

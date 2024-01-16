@@ -238,6 +238,10 @@ div.center {
   width: fit-content;
 }
 
+.vcenter {
+  margin: auto;
+}
+
 .name,
 .gradient-text {
   font-family: "IBM Plex Mono", monospace;

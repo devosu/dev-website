@@ -112,6 +112,15 @@
             "location": "Blackburn Victory Room"
         },
         {
+            "name": "JavaScript for Front-End Workshop",
+            "tags": ["Workshop", "Front-End Web Dev"],
+            "emoji": "☕",
+            "date": "2024-01-22T19:00:00",
+            "description": "Learn advanced features of JavaScript and how to use them to build a front-end web application. You will learn about JS runtimes, API requests, asynchronous programming, intervals, and more. Basic knowledge of JavaScript from the Intro to Web Dev workshop is recommended. You will need a Windows/Mac/Linux laptop.",
+            "imageSrc": "/assets/js_workshop.png",
+            "location": "Evans Lab 2004"
+        },
+        {
             "name": "Test event",
             "tags": ["Test"],
             "emoji": "🍕",
