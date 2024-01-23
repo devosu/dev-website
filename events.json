@@ -128,6 +128,10 @@
                 {
                     "buttonText": "VS Code setup",
                     "buttonLink": "https://www.youtube.com/watch?v=bg8rqYOtdTQ"
+                },
+                {
+                    "buttonText": "Code",
+                    "buttonLink": "https://github.com/devosu/js-runtime-workshop/tree/finished"
                 }
             ],
             "location": "Evans Lab 2004"
