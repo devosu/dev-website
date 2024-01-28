@@ -126,15 +126,19 @@
             "imageSrc": "/assets/js_workshop.png",
             "buttons": [
                 {
-                    "buttonText": "VS Code setup",
-                    "buttonLink": "https://www.youtube.com/watch?v=bg8rqYOtdTQ"
-                },
-                {
                     "buttonText": "Code",
                     "buttonLink": "https://github.com/devosu/js-runtime-workshop/tree/finished"
                 }
             ],
             "location": "Evans Lab 2004"
+        },
+        {
+            "name": "React Native - Mobile App Development Workshop",
+            "tags": ["Workshop", "Mobile App Development"],
+            "emoji": "📱",
+            "date": "2024-01-29T19:00:00",
+            "description": "In this introductory React Native workshop, you will learn the basics of React Native, including its component-based architecture, and build a simple cross-platform application. The workshop will guide you through the development of a basic weather application, and you will be able to run your code on an iOS or Android device. This workshopt will give you a starting basis to build your own mobile app. JavaScript knowledge is recommended. You will need a Windows/Mac/Linux laptop.",
+            "imageSrc": "/assets/react_native_workshop.png"
         },
         {
             "name": "Test event",
