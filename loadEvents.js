@@ -226,6 +226,10 @@ function addGoogleCalendar(parent, event, date) {
   addButton(parent, "Google Calendar", url);
 }
 
+function addVSCodeTutorial(parent) {
+  addButton(parent, "VS Code Tutorial", "https://to.osu.dev/vscode");
+}
+
 function addButtonBar(parent) {
   const eventButtons = document.createElement("div");
   eventButtons.classList.add("button-bar");
@@ -251,6 +255,7 @@ function addEventButtons(event, parent, date, now) {
   if (date > now) {
     addRSVP(eventButtons);
     addGoogleCalendar(eventButtons, event, date);
+    addVSCodeTutorial(eventButtons);
   }
 
   if (event.buttons) {
