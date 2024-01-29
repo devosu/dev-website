@@ -255,7 +255,9 @@ function addEventButtons(event, parent, date, now) {
   if (date > now) {
     addRSVP(eventButtons);
     addGoogleCalendar(eventButtons, event, date);
-    addVSCodeTutorial(eventButtons);
+    if (event.tags && event.tags.includes("Workshop")) {
+      addVSCodeTutorial(eventButtons);
+    }
   }
 
   if (event.buttons) {
