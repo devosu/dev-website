@@ -137,7 +137,7 @@
             "tags": ["Workshop", "Mobile App Development"],
             "emoji": "📱",
             "date": "2024-01-29T19:00:00",
-            "description": "In this introductory React Native workshop, you will learn the basics of React Native, including its component-based architecture, and build a simple cross-platform application. The workshop will guide you through the development of a basic weather application, and you will be able to run your code on an iOS or Android device. This workshopt will give you a starting basis to build your own mobile app. JavaScript knowledge is recommended. You will need a Windows/Mac/Linux laptop.",
+            "description": "In this introductory React Native workshop, you will learn the basics of React Native, including its component-based architecture, and build a simple cross-platform application. The workshop will guide you through the development of a basic weather application, and you will be able to run your code on an iOS or Android device. This workshop will give you a starting basis to build your own mobile app. JavaScript knowledge is recommended. You will need a Windows/Mac/Linux laptop.",
             "location": "Evans Lab 2004",
             "imageSrc": "/assets/react_native_workshop.png"
         },
