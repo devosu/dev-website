@@ -15,6 +15,7 @@ async function loadEvents() {
   });
 
   for (let event of events) {
+    event.date = new Date(event.date);
     event.ends = new Date(event.date)
     event.ends.setMinutes(event.ends.getMinutes() + (event.lengthMin || 60));
   }
@@ -98,22 +99,20 @@ function addEvent(event, parent) {
 
   
   addDescription(event, eventInfo);
-  
-  const date = new Date(event.date);
+
   const now = new Date();
   
-  addDate(date, eventInfo);
+  addDate(event, eventInfo);
   
-  if (date > now) {
-    addStartsIn(date, eventInfo);
+  if (event.date > now) {
+    addStartsIn(event.date, eventInfo);
   }
   
   addLocation(event, eventInfo);
   
   addTags(event, eventInfo);
   
-  addEventButtons(event, eventInfo, date, now);
-
+  addEventButtons(event, eventInfo, now);
 
   eventElement.appendChild(eventInfo);
   parent.appendChild(eventElement);
@@ -157,10 +156,10 @@ function addDescription(event, parent) {
   }
 }
 
-function addDate(date, parent) {
+function addDate(event, parent) {
   const eventDate = document.createElement("p");
   eventDate.textContent =
-    `📆 ${date.toDateString()}, ${date.toLocaleTimeString()}`;
+    `📆 ${event.date.toDateString()}, ${event.date.toLocaleTimeString()} - ${event.ends.toLocaleTimeString()}`;
   parent.appendChild(eventDate);
 }
 
@@ -208,7 +207,7 @@ function addRSVP(parent) {
   addButton(parent, "RSVP", "https://to.osu.dev/rsvp");
 }
 
-function addGoogleCalendar(parent, event, date) {
+function addGoogleCalendar(parent, event) {
   const url = new URL("https://www.google.com/calendar/render");
   url.searchParams.append("action", "TEMPLATE");
 
@@ -216,13 +215,9 @@ function addGoogleCalendar(parent, event, date) {
   if (event.emoji) name = event.emoji + " " + name;
   url.searchParams.append("text", name);
 
-  const endDate = new Date(date);
-  const lengthMin = event.lengthMin || 60;
-  endDate.setMinutes(endDate.getMinutes() + lengthMin);
-
   //format date as YYYYMMDDTHHmmSSZ
-  const dateFormatted = date.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
-  const endDateFormatted = endDate.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
+  const dateFormatted = event.date.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
+  const endDateFormatted = event.ends.toISOString().replace(/[-:]/g, "").replace(/\.\d\d\d/g, "");
 
   url.searchParams.append("dates", dateFormatted + "/" + endDateFormatted);
   url.searchParams.append("location", event.location + " (Check osu.dev for updates)");
@@ -254,12 +249,12 @@ function addButton(parent, text, link) {
   parent.appendChild(button);
 }
 
-function addEventButtons(event, parent, date, now) {
+function addEventButtons(event, parent, now) {
   const eventButtons = addButtonBar(parent, event);
 
-  if (date > now) {
+  if (event.date > now) {
     addRSVP(eventButtons);
-    addGoogleCalendar(eventButtons, event, date);
+    addGoogleCalendar(eventButtons, event);
   }
 
   if (event.buttons) {

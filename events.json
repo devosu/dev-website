@@ -166,9 +166,10 @@
             "tags": ["Collaboration", "Workshop", "No Code"],
             "emoji": "🚀",
             "date": "2024-02-01T19:00:00",
-            "description": "Learn how to build a Minimum Viable Product (MVP) for your startup idea without writing a single line of code. This workshop will teach you how to use no-code tools to build a website and backend for your startup idea. You will need a Windows/Mac/Linux laptop.",
+            "description": "Learn how to build a Minimum Viable Product (MVP) for your startup idea without writing a single line of code. This workshop will teach you how to use no-code tools to build a website and backend for your startup idea. You can also win $100 prize! You will need a Windows/Mac/Linux laptop.",
             "location": "Lazenby Hall 034",
             "imageSrc": "/assets/no_code_workshop.png",
+            "lengthMin": 90,
             "buttons": [
                 {
                     "buttonText": "Flyer",
