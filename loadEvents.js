@@ -14,12 +14,17 @@ async function loadEvents() {
     return !event.hide && (!event.publishOn || new Date(event.publishOn) <= new Date());
   });
 
+  for (let event of events) {
+    event.ends = new Date(event.date)
+    event.ends.setMinutes(event.ends.getMinutes() + (event.lengthMin || 60));
+  }
+
   const pastEvents = events.filter((event) => {
-    return new Date(event.date) < new Date();
+    return event.ends < new Date();
   }).reverse();
 
   const futureEvents = events.filter((event) => {
-    return new Date(event.date) > new Date();
+    return event.ends > new Date();
   });
 
   let switchCallback = () => {

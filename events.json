@@ -115,7 +115,13 @@
             "lengthMin": 120,
             "description": "Come hang out with other students and student organizations on campus! There will be free food and games. A collaborative event with Competitive Programming Club, Cyber Security Club, OHI/O, Google Developer Student Club, and INFORMS.",
             "imageSrc": "/assets/cs_social_banner.png",
-            "location": "Blackburn Victory Room"
+            "location": "Blackburn Victory Room",
+            "buttons": [
+                {
+                    "buttonText": "Flyer",
+                    "buttonLink": "/assets/cs_social_flyer.png"
+                }
+            ]
         },
         {
             "name": "JavaScript for Front-End Workshop",
@@ -148,6 +154,25 @@
                 {
                     "buttonText": "Demo",
                     "buttonLink": "https://snack.expo.dev/@elijahm/dev-demo"
+                },
+                {
+                    "buttonText": "Code",
+                    "buttonLink": "https://github.com/devosu/react-native-demo"
+                }
+            ]
+        },
+        {
+            "name": "Rapid MVP Development - No Code Workshop - Collab with Business Builders Club ",
+            "tags": ["Collaboration", "Workshop", "No Code"],
+            "emoji": "🚀",
+            "date": "2024-02-01T19:00:00",
+            "description": "Learn how to build a Minimum Viable Product (MVP) for your startup idea without writing a single line of code. This workshop will teach you how to use no-code tools to build a website and backend for your startup idea. You will need a Windows/Mac/Linux laptop.",
+            "location": "Lazenby Hall 034",
+            "imageSrc": "/assets/no_code_workshop.png",
+            "buttons": [
+                {
+                    "buttonText": "Flyer",
+                    "buttonLink": "/assets/collab_with_buisness_builders_workshop.png"
                 }
             ]
         },
