@@ -182,6 +182,15 @@
             ]
         },
         {
+            "name": "Google AI Mastery Workshop",
+            "tags": ["Workshop", "AI"],
+            "emoji": "🤖",
+            "date": "2024-02-12T19:00:00",
+            "description": "Learn how to use Google's new Gemini API to create chatbots. You will learn the basics of Google Cloud AI products and prompt design. You will need a google account and a laptop.",
+            "location": "Evans Lab 2004",
+            "imageSrc": "/assets/google_ai_workshop.png"
+        },
+        {
             "name": "Test event",
             "tags": ["Test"],
             "emoji": "🍕",
