@@ -188,7 +188,17 @@
             "date": "2024-02-12T19:00:00",
             "description": "Learn how to use Google's new Gemini API to create chatbots. You will learn the basics of Google Cloud AI products and prompt design. You will need a google account and a laptop.",
             "location": "Evans Lab 2004",
-            "imageSrc": "/assets/google_ai_workshop.png"
+            "imageSrc": "/assets/google_ai_workshop.png",
+            "buttons": [
+                {
+                    "buttonText": "Google Cloud Skills Boost",
+                    "buttonLink": "https://www.cloudskillsboost.google/paths/"
+                },
+                {
+                    "buttonText": "Jupyter Notebooks",
+                    "buttonLink": "https://github.com/GoogleCloudPlatform/asl-ml-immersion/tree/f3497a5ab6ee0b6965224d9de92000de0a5152bf/notebooks/vertex_genai/labs"
+                }
+            ]
         },
         {
             "name": "Test event",
