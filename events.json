@@ -197,6 +197,10 @@
                 {
                     "buttonText": "Jupyter Notebooks",
                     "buttonLink": "https://github.com/GoogleCloudPlatform/asl-ml-immersion/tree/f3497a5ab6ee0b6965224d9de92000de0a5152bf/notebooks/vertex_genai/labs"
+                },
+                {
+                    "buttonText": "Slides",
+                    "buttonLink": "https://drive.google.com/file/d/1HNIRGKc47VWgm1yKQKKERA92jT5eWQYQ/view?usp=sharing"
                 }
             ]
         },
