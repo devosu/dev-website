@@ -205,6 +205,15 @@
             ]
         },
         {
+            "name": "Intro to Quantative Research",
+            "tags": ["Quant"],
+            "emoji": "📈",
+            "date": "2024-02-26T19:00:00",
+            "description": "JJ St. Leroux is an incoming quantitative research intern at <a href='https://www.capstoneco.com' target='_blank'>Capstone Investment Advisors</a> who is joining DEV to give a lecture on what being a “quant” looks like at each stage in a financial firm. He will discuss the complete life cycle of a quantitative strategy, from designing Financial Information Systems to deploying an investment strategy. At the end, he will discuss interviews for various quant firms and how you can kickstart a career in the industry!",
+            "location": "Evans Lab 2004",
+            "imageSrc": "/assets/intro_to_quantative_research.png"
+        },
+        {
             "name": "Test event",
             "tags": ["Test"],
             "emoji": "🍕",
