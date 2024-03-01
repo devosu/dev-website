@@ -214,6 +214,21 @@
             "imageSrc": "/assets/intro_to_quantative_research.png"
         },
         {
+            "name": "Personal Portfolio Website Workshop with ACM-W",
+            "tags": ["Collaboration", "Workshop", "Career"],
+            "emoji": "💼",
+            "date": "2024-03-04T19:00:00",
+            "description": "Learn how to learn how to create your own portfolio website which showcases your projects and achievements to employers. You will learn the basics of HTML and will deploy your website through GitHub pages. This workshop will be a collaboration with ACM-W. You will need a Windows/Mac/Linux laptop.",
+            "location": "Dreese Labs 317",
+            "imageSrc": "/assets/acmw_portfolio_website_workshop_banner.jpeg",
+            "buttons": [
+                {
+                    "buttonText": "Flyer",
+                    "buttonLink": "/assets/acmw_portfolio_website_workshop.jpeg"
+                }
+            ]
+        },
+        {
             "name": "Test event",
             "tags": ["Test"],
             "emoji": "🍕",
