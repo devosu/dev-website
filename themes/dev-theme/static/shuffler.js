@@ -2,7 +2,7 @@
 * This script shuffles the photosOfTheDay.json file
 */
 
-import file from './photosOfTheDay.json';
+import file from '../photosOfTheDay.json';
 
 // shuffle the array
 function shuffle(array) {
