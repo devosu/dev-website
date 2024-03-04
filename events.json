@@ -231,6 +231,14 @@
                 {
                     "buttonText": "Flyer",
                     "buttonLink": "/assets/acmw_portfolio_website_workshop_flyer.png"
+                },
+                {
+                    "buttonText": "VS Code Tutorial",
+                    "buttonLink": "https://to.osu.dev/vscode"
+                },
+                {
+                    "buttonText": "Template",
+                    "buttonLink": "https://startbootstrap.com/theme/personal"
                 }
             ]
         },
