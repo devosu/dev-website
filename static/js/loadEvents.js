@@ -2,7 +2,7 @@
  * This script loads the events.json file and displays the events on the page
  */
 async function loadEvents() {
-  await loadFont("./assets/fonts/LibreFranklin-Regular.ttf");
+  await loadFont(".fonts/LibreFranklin-Regular.ttf");
   const eventsBox = document.getElementById("events-box");
   const eventsFutureSwitch = document.getElementById("events-future-switch");
   const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
