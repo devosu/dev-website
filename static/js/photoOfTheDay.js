@@ -14,7 +14,7 @@ const photoOfTheDayDescription = document.getElementById('photoOfTheDayDescripti
 const photoOfTheDaySource = document.getElementById('photoOfTheDaySource');
 
 async function setPhoto() {
-    const photos = await (await fetch('./photosOfTheDayShuffled.json')).json();
+    const photos = await (await fetch('js/photosOfTheDayShuffled.json')).json();
 
     const day = new Date().getTime();
     const oneMinute = 1000 * 60;

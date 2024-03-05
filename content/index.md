@@ -4,6 +4,8 @@ date = 2024-03-03T13:35:19-05:00
 draft = false
 +++
 
+{{< section id="about" >}}
+
 # 👀 About
 
 DEV at OSU is a student organization that aims to provide students with the
@@ -16,6 +18,9 @@ mentorship and computing resources (free hosting and subdomains on osu.dev).
 This club is welcoming everyone regardless of their experience, major, or grade.
 To use perks like subdomains and cloud credits, you need to be an active OSU
 student, but you can still attend workshops and recieve mentorship if you are not.
+{{< /section >}}
+
+{{< section id="join" >}}
 
 # 🤝 Join
 
@@ -31,10 +36,18 @@ to subscribe
 
 If you are interested in becoming an officer, [apply now!](https://to.osu.dev/teamapp).
 Please reach out to us using any of the [contact methods](#contact) if you have any questions.
+{{< /section >}}
+
+{{< section id="meetings" >}}
 
 # 📅 Meetings
 
+{{< /section >}}
+
 {{< meetings >}}
+
+
+{{< section id="contact" >}}
 
 # 🌵 Contactus
 
@@ -44,12 +57,22 @@ members, ask questions, and get help.
 Reach out to us at [club@tosu.dev](mailto:club@tosu.dev) if you have any
 questions, concerns, or suggestions.
 
+{{< /section >}}
+
+{{< section id="sponsor" >}}
+
 # 🥇 Partnership / Sponsorship
 
 We are thrilled to partner with companies and organizations that share our
 passion for software engineering and education. If you are interested in
-supporting us, please check out [this page](/support).
+supporting us, please check out [this page](/support/).
+
+{{< /section >}}
+
+{{< section id="scientist" >}}
 
 # 📸 Computer Scientist of the day
 
 {{< photoOfTheDay >}}
+
+{{< /section >}}
