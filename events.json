@@ -239,6 +239,10 @@
                 {
                     "buttonText": "Template",
                     "buttonLink": "https://startbootstrap.com/theme/personal"
+                },
+                {
+                    "buttonText": "Slides",
+                    "buttonLink": "https://docs.google.com/presentation/d/1sMB3ZX-NJIEQnSZqhfaNE5r36MFO8LOgN-IU6Vw2pu8/edit?usp=sharing"
                 }
             ]
         },
