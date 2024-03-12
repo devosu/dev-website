@@ -130,14 +130,14 @@ function updateCheckoutButton() {
     }
     else if (checkout.method === 'direct') {
         donateText.innerText = `We accept direct bank transfers (ACH) to our checking account. Please email us for details.`;
-        donateButton.innerText = `Contact club@tosu.dev`;
-        const url = `mailto:club@tosu.dev?subject=Sponsorship&body=Hi! I would like to donate $${checkout.total} to Software Engineering Club with a direct bank transfer.`;
+        donateButton.innerText = `Contact dev@osu.edu`;
+        const url = `mailto:dev@osu.edu?subject=Sponsorship&body=Hi! I would like to donate $${checkout.total} to Software Engineering Club with a direct bank transfer.`;
         donateButton.setAttribute('href', url);
     }
     else if (checkout.method === 'check') {
         donateText.innerText = `We accept paper checks. Please email us for the mailing address.`;
-        donateButton.innerText = `Contact club@tosu.dev`;
-        const url = `mailto:club@tosu.dev?subject=Sponsorship&body=Hi! I would like to donate $${checkout.total} to Software Engineering Club with a check.`;
+        donateButton.innerText = `Contact dev@osu.edu`;
+        const url = `mailto:dev@osu.edu?subject=Sponsorship&body=Hi! I would like to donate $${checkout.total} to Software Engineering Club with a check.`;
         donateButton.setAttribute('href', url);
     }
 }

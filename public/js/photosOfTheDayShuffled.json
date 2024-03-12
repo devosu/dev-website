@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Linus Torvalds, creator of Linux",
+        "description": "Linus Benedict Torvalds is a Finnish-American software engineer who is the creator and, historically, the principal developer of the Linux kernel, which is the kernel for Linux operating systems (distributions) and other operating systems such as Android and Chrome OS. He also created the distributed version control system Git and the diving logging and planning software Subsurface.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg",
+        "source": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    },
+    {
+        "name": "Margaret Hamilton, coined the term <span class=\"gradient-text\">software engineering</span>, lead the team that developed the on-board flight software for the Apollo space program",
+        "description": "Margaret Heafield Hamilton is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT Instrumentation Laboratory, which developed on-board flight software for the Apollo space program. In 1986, she became the founder and CEO of Hamilton Technologies, Inc. in Cambridge, Massachusetts. The company was developed around the Universal Systems Language based on her paradigm of Development Before the Fact for systems and software design. ",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Margaret_Hamilton_in_action.jpg/1920px-Margaret_Hamilton_in_action.jpg",
+        "source": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)"
+    },
+    {
+        "name": "Grace Hopper, inventor of the linkers (part of a compiler)",
+        "description": "Grace Brewster Murray Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. She popularized the idea of machine-independent programming languages, which led to the development of COBOL, an early high-level programming language still in use today.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Grace_Hopper_and_UNIVAC.jpg/440px-Grace_Hopper_and_UNIVAC.jpg",
+        "source": "https://en.wikipedia.org/wiki/Grace_Hopper"
+    },
+    {
+        "name": "Ada Lovelace, inventor of the first computer algorithm",
+        "description": "Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. Because of this, she is often regarded as the first computer programmer.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ada_Lovelace_portrait.jpg/440px-Ada_Lovelace_portrait.jpg",
+        "source": "https://en.wikipedia.org/wiki/Ada_Lovelace"
+    },
+    {
+        "name": "Claude Shannon, father of information theory",
+        "description": "Claude Shannon was an American mathematician, electrical engineer, and cryptographer known as \"the father of information theory\". Shannon is noted for having founded information theory with a landmark paper, A Mathematical Theory of Communication, that he published in 1948.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/9/99/ClaudeShannon_MFO3807.jpg",
+        "source": "https://en.wikipedia.org/wiki/Claude_Shannon"
+    },
+    {
+        "name": "Richard Stallman, founder of the GNU project",
+        "description": "Richard Matthew Stallman, often known by his initials, RMS, is an American free software movement activist and programmer. He campaigns for software to be distributed in a manner such that its users receive the freedoms to use, study, distribute, and modify that software. Software that ensures these freedoms is termed free software. Stallman launched the GNU Project, founded the Free Software Foundation, developed the GNU Compiler Collection and GNU Emacs, and wrote the GNU General Public License.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Richard_Stallman_at_LibrePlanet_2019.jpg/440px-Richard_Stallman_at_LibrePlanet_2019.jpg",
+        "source": "https://en.wikipedia.org/wiki/Richard_Stallman"
+    },
+    {
+        "name": "Radhia Cousot, inventor of abstract interpretation",
+        "description": "Radhia Cousot is a French computer scientist. She is a professor at the École Normale Supérieure in Paris, France. She is known for her work on abstract interpretation with her husband Patrick Cousot.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/RadhiaCousot--Picture.jpg",
+        "source": "https://en.wikipedia.org/wiki/Radhia_Cousot"
+    },
+    {
+        "name": "Annie Easley, leading member of the team that developed software for the Centaur rocket stage at NASA",
+        "description": "Annie Jean Easley was an American computer scientist, mathematician, and rocket scientist. She worked for the Lewis Research Center (now Glenn Research Center) of the National Aeronautics and Space Administration (NASA) and its predecessor, the National Advisory Committee for Aeronautics (NACA). She was a leading member of the team which developed software for the Centaur rocket stage, and was one of the first African-Americans in her field.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/NASA_Science_and_Engineering_Newsletter_Annie_Easley.jpg/1024px-NASA_Science_and_Engineering_Newsletter_Annie_Easley.jpg",
+        "source": "https://en.wikipedia.org/wiki/Annie_Easley"
+    },
+    {
+        "name": "Ken Thompson (left, Dennis Ritchie - right), co-inventors of Unix and B",
+        "description": "Kenneth Thompson, a pioneering American computer scientist, spent most of his career at Bell Labs, where he developed the original Unix operating system and created the B programming language, a precursor to C. He was also instrumental in the creation and early development of the Plan 9 operating system. Since 2006, Thompson has been associated with Google, where he co-invented the Go programming language. He recieves the Turing Award from the ACM in 1983, the Hamming Medal from the IEEE in 1990, and the National Medal of Technology from President Bill Clinton in 1999.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Ken_Thompson_and_Dennis_Ritchie--1973.jpg",
+        "source": "https://en.wikipedia.org/wiki/Ken_Thompson"
+    },
+    {
+        "name": "Dennis Ritchie (standing, Ken Thompson is sitting), co-inventor of Unix and C",
+        "description": "Dennis Ritchie, American computer scientist, collaborated closely with Ken Thompson to create the Unix operating system and the B programming language. He received several prestigious awards for their contributions, including the Turing Award from the ACM in 1983, the Hamming Medal from the IEEE in 1990, and the National Medal of Technology from President Bill Clinton in 1999.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg/1920px-Ken_Thompson_%28sitting%29_and_Dennis_Ritchie_at_PDP-11_%282876612463%29.jpg",
+        "source": "https://en.wikipedia.org/wiki/Dennis_Ritchie"
+    },
+    {
+        "name": "Katherine Johnson, pioneer of computerized celestial navigation",
+        "description": "Creola Katherine Johnson was an American mathematician whose calculations of orbital mechanics as a NASA employee were critical to the success of the first and subsequent U.S. crewed spaceflights. During her 35-year career at NASA and its predecessor, she earned a reputation for mastering complex manual calculations and helped pioneer the use of computers to perform the tasks.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Katherine_Johnson_1983.jpg/1024px-Katherine_Johnson_1983.jpg",
+        "source": "https://en.wikipedia.org/wiki/Katherine_Johnson"
+    },
+    {
+        "name": "Bjarne Stroustrup, creator of C++",
+        "description": "Bjarne Stroustrup is a Danish computer scientist, who is most notable for the creation and development of the widely used C++ programming language. Stroustrup was the head of AT&T Bell Labs' Large-scale Programming Research department, from its creation until late 2002. As of July 2022, Stroustrup is a full professor of Computer Science at Columbia University.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bjarne-stroustrup_%28cropped%29.jpg/440px-Bjarne-stroustrup_%28cropped%29.jpg",
+        "source": "https://en.wikipedia.org/wiki/Bjarne_Stroustrup"
+    },
+    {
+        "name": "Barbara Liskov, inventor of data abstraction",
+        "description": "Barbara Liskov is an American computer scientist who is an Institute Professor at the Massachusetts Institute of Technology and Ford Professor of Engineering in its School of Engineering's electrical engineering and computer science department. She is known for her work in programming languages, programming methodology, and distributed computing. She is the recipient of the 2008 Turing Award and the 2004 John von Neumann Medal. She is also an ACM Fellow and a member of the National Academy of Engineering and the National Academy of Sciences.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Barbara_Liskov_MIT_computer_scientist_2010.jpg/1024px-Barbara_Liskov_MIT_computer_scientist_2010.jpg",
+        "source": "https://en.wikipedia.org/wiki/Barbara_Liskov"
+    },
+    {
+        "name": "Donald Knuth, inventor of Tex and the analysis of algorithms (Foundations series at OSU)",
+        "description": "Donald Ervin Knuth is an American computer scientist, mathematician, and professor emeritus at Stanford University. He is the author of the multi-volume work The Art of Computer Programming. Knuth has been called the \"father of the analysis of algorithms\". He contributed to the development of the rigorous analysis of the computational complexity of algorithms and systematized formal mathematical techniques for it. In the process he also popularized the asymptotic notation.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/KnuthAtOpenContentAlliance.jpg/440px-KnuthAtOpenContentAlliance.jpg",
+        "source": "https://en.wikipedia.org/wiki/Donald_Knuth"
+    },
+    {
+        "name": "Radia Perlman, inventor of the spanning-tree protocol (STP) - fundamental to the modern computer networks, \"Mother of the Internet\"",
+        "description": "Radia Joy Perlman is an American computer programmer and network engineer. She is most famous for her invention of the spanning-tree protocol (STP), which is fundamental to the operation of network bridges, while working for Digital Equipment Corporation. She also made large contributions to many other areas of network design and standardization, such as link-state routing protocols.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Radia_Perlman_2009.jpg/1024px-Radia_Perlman_2009.jpg",
+        "source": "https://en.wikipedia.org/wiki/Radia_Perlman"
+    },
+    {
+        "name": "Niklaus Wirth, inventor of Pascal and Modula",
+        "description": "Niklaus Emil Wirth is a Swiss computer scientist, best known for designing several programming languages, including Pascal, and for pioneering several classic topics in software engineering. In 1984 he won the Turing Award, generally recognized as the highest distinction in computer science, for developing a sequence of innovative computer languages.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Niklaus_Wirth_large.jpg",
+        "source": "https://en.wikipedia.org/wiki/Niklaus_Wirth"
+    },
+    {
+        "name": "Gottfried Wilhelm Leibniz, inventor of the binary system",
+        "description": "Gottfried Wilhelm Leibniz was a German polymath and philosopher who occupies a prominent place in the history of mathematics and the history of philosophy. He invented the binary system, the foundation of virtually all modern computer architectures.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg/440px-Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg",
+        "source": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
+    },
+    {
+        "name": "Alan Turing",
+        "description": "Alan Turing was a British mathematician, logician, cryptanalyst, and computer scientist. He was highly influential in the development of computer science, providing a formalisation of the concepts of \"algorithm\" and \"computation\" with the Turing machine, which played a significant role in the creation of the modern computer. Turing is widely considered to be the father of computer science and artificial intelligence.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg/330px-Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg",
+        "source": "https://en.wikipedia.org/wiki/Alan_Turing"
+    },
+    {
+        "name": "Yukihiro Matsumoto, creator of Ruby",
+        "description": "Yukihiro Matsumoto is a Japanese computer scientist and software programmer best known as the chief designer of the Ruby programming language and its reference implementation, Matz's Ruby Interpreter (MRI). His demeanor has brought about a motto in the Ruby community: \"Matz is nice and so we are nice,\" commonly abbreviated as MINASWAN.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/7/76/Yukihiro_Matsumoto.JPG",
+        "source": "https://en.wikipedia.org/wiki/Yukihiro_Matsumoto"
+    },
+    {
+        "name": "Sophie Wilson, designer of the ARM architecture",
+        "description": "Sophie Wilson is a British computer scientist and software engineer. Wilson designed the instruction set of the Acorn Micro-Computer, the first of a long line of computers sold by Acorn Computers Ltd, including its BBC Micro, and the instruction set of the ARM processor, which is currently the most widely used 32-bit instruction set architecture in terms of quantity produced, powering most smartphones and tablets, IoT and embedded devices, as well as the Apple M2 processors.",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Sophie_Wilson.jpg",
+        "source": "https://en.wikipedia.org/wiki/Sophie_Wilson"
+    }
+]
