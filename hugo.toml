@@ -1,4 +1,6 @@
 baseURL = 'https://osu.dev/'
 languageCode = 'en-us'
 title = 'DEV - Software Engineering Club at OSU'
-theme = 'dev-theme'
+disableKinds = ["taxonomy"]
+[markup.goldmark.renderer]
+unsafe= true

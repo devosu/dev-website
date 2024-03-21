@@ -46,7 +46,6 @@ Please reach out to us using any of the [contact methods](#contact) if you have 
 
 {{< meetings >}}
 
-
 {{< section id="contact" >}}
 
 # 🌵 Contactus
