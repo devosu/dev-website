@@ -247,6 +247,33 @@
             ]
         },
         {
+            "name": "How to Win a Hackathon",
+            "tags": ["Hackathon"],
+            "emoji": "🏆",
+            "date": "2024-03-25T19:00:00",
+            "description": "Learn from this year's 1st place HackOH/O winners how to prepare for a hackathon, form a team, select the project, and implement your ideas in a short timeframe. With a case study on their winning project, gain insights into pivoting strategies, stack recommendations, and task distribution.",
+            "location": "Evans Lab 2004",
+            "imageSrc": "/assets/how_to_win_a_hackathon.png"
+        },
+        {
+            "name": "C̸̻̑Ṣ̵͘ ̴͉̄S̴̫̕ȯ̶͈c̵̘̃i̶̻͆a̴̳͊l̵͓̂",
+            "tags": ["Collaboration", "Social"],
+            "emoji": "",
+            "date": "2024-04-01T20:00:00",
+            "description": "",
+            "location": "Blackburn Victory Room",
+            "imageSrc": "/assets/gradient_banner.png"
+        },
+        {
+            "name": "DEV Talk: Malik Alnakhaleh",
+            "tags": ["DEV Talk"],
+            "emoji": "👨‍💻",
+            "date": "2024-04-08T19:00:00",
+            "description": "\"You’ve probably learned a lot about Computer Science and Engineering during your time at OSU, and that’s good, but it’s not the whole picture. Let’s sit down and have a casual chat about how to get into tech, sharing tips and real-life advice on breaking into in the industry, regardless of your background.\"",
+            "location": "Evans Lab 2004",
+            "imageSrc": "/assets/nationwide_banner.jpg"
+        },
+        {
             "name": "Test event",
             "tags": ["Test"],
             "emoji": "🍕",
