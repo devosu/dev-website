@@ -260,6 +260,7 @@
             "tags": ["Collaboration", "Social"],
             "emoji": "",
             "date": "2024-04-01T20:00:00",
+            "lengthMin": 120,
             "description": "",
             "location": "Blackburn Victory Room",
             "imageSrc": "/assets/gradient_banner.png"
