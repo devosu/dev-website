@@ -215,7 +215,7 @@
             "buttons": [
                 {
                     "buttonText": "Recording",
-                    "buttonLink": "https://www.youtube.com/watch?v=83pOXB27Qfc&t=10s"
+                    "buttonLink": "https://www.youtube.com/watch?v=83pOXB27Qfc"
                 },
                 {
                     "buttonText": "Slides",
@@ -267,10 +267,16 @@
             "lengthMin": 120,
             "description": "Join us for our second, spring CS Social! Come hang out with other students and student organizations on campus! There will be free food and games. A collaborative event with Competitive Programming Club, Collaborative Software Development Club, Game Creation Club, AI Club, and Code 4 Community.",
             "location": "Blackburn Victory Room",
-            "imageSrc": "/assets/cs_social_2_banner.png"
+            "imageSrc": "/assets/cs_social_2_banner.png",
+            "buttons": [
+                {
+                    "buttonText": "Flyer",
+                    "buttonLink": "/assets/cs_social_2_flyer.png"
+                }
+            ]
         },
         {
-            "name": "DEV Talk: Malik Alnakhaleh",
+            "name": "DEV Talk: Malik Alnakhaleh, Software Developer & AI/ML Expert at Nationwide",
             "tags": ["DEV Talk"],
             "emoji": "👨‍💻",
             "date": "2024-04-08T19:00:00",
