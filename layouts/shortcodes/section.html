@@ -1,4 +1,4 @@
-<div id="{{ .Get "id" }}" class="section {{ .Get "class" }}">
+<div id="{{ .Get "id" }}" class="section{{ .Get "class" }}">
     <div class = "block">
     {{ .Inner | markdownify }}
     </div>

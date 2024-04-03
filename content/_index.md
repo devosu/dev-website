@@ -42,9 +42,9 @@ Please reach out to us using any of the [contact methods](#contact) if you have 
 
 # 📅 Meetings
 
-{{< /section >}}
-
 {{< meetings >}}
+
+{{< /section >}}
 
 {{< section id="contact" >}}
 
