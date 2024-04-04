@@ -1,121 +1,122 @@
 <div id="tiers" class="section">
-    <div class="block">
-      <h1>🏆 Sponsorship Tiers and Preview</h1>
+  <div class="block">
+    <h1>🏆 Sponsorship Tiers and Preview</h1>
 
-      <h2>📎 Upload your logo to preview</h2>
-      <input id="uploadButton" type="file" class="gradient-file" accept="image/*" name="logo">
-      <p>
-        You can upload your logo here to preview how it will look on our website and marketing materials.
-        Try switching between different tiers to see how the appearance changes.
-        The file you select will not be saved or sent anywhere, it's just for previewing on your machine.
+    <h2>📎 Upload your logo to preview</h2>
+    <input id="uploadButton" type="file" class="gradient-file" accept="image/*" name="logo">
+    <p>
+      You can upload your logo here to preview how it will look on our website and marketing materials.
+      Try switching between different tiers to see how the appearance changes.
+      The file you select will not be saved or sent anywhere, it's just for previewing on your machine.
+    </p>
+  </div>
+</div>
+
+<div class="section hidden" id="logoPreviewContainer">
+  <div class="container">
+    <div class="website-preview">
+      <div class="url-bar">
+        <button class="" id="websitePreviewBackButton">⬅</button>
+        <input value="https://osu.dev" class="text-input" disabled>
+        <button class="" id="websitePreviewXButton">x</button>
+      </div>
+      <p class="fade-text-top">
+        We are also committed to supporting your personal software projects by
+        providing mentorship and computing resources (free hosting and
+        subdomains on osu.dev).
+
+        This club is welcoming everyone regardless of their experience, major,
+        or grade. To use perks like subdomains and cloud credits, you need to
+        be an active OSU student, but you can still attend workshops and
+        recieve mentorship if you are not.
+      </p>
+
+      <h1>🏢 Partners</h1>
+      <div class="gallery">
+        <!-- <img class="big square" alt="some other logo""> -->
+        <img id="logoPreview" class="small" alt="your logo">
+
+      </div>
+
+      <h1>🤝 Join</h1>
+      <p class="fade-text-bottom">
+        DEV is open membership, you can join at any time with zero
+        commitement.
+
+        To become a member, type your email <input class="text-input" placeholder="here" id="join-email-input"
+          type="email"> and click <button id="join-button"> join </button>. After confirming, the
+        first email you recieve has all the next steps. You will also start
+        recieving emails with important club announcements. Then, just come to
+        any of our meetings and you will be a member!
       </p>
     </div>
+    <span class="citation">Official website</span>
   </div>
-      
-      <div class="section hidden" id="logoPreviewContainer">
-        <div class="container">
-        <div class="website-preview">
-          <div class="url-bar">
-            <button class="" id="websitePreviewBackButton">⬅</button>
-            <input value="https://osu.dev" class="text-input" disabled>  
-            <button class="" id="websitePreviewXButton">x</button>
-          </div>
-          <p class="fade-text-top">
-              We are also committed to supporting your personal software projects by
-              providing mentorship and computing resources (free hosting and
-              subdomains on osu.dev).
 
-              This club is welcoming everyone regardless of their experience, major,
-              or grade. To use perks like subdomains and cloud credits, you need to
-              be an active OSU student, but you can still attend workshops and
-              recieve mentorship if you are not.
-          </p>
-
-          <h1>🏢 Partners</h1>
-          <div class="gallery">
-            <!-- <img class="big square" alt="some other logo""> -->
-            <img id="logoPreview" class="small" alt="your logo">
-
-          </div>
-
-          <h1>🤝 Join</h1>
-          <p class="fade-text-bottom">
-            DEV is open membership, you can join at any time with zero
-            commitement.
-
-            To become a member, type your email <input class="text-input" placeholder="here" id="join-email-input" type="email"> and click <button id="join-button"> join </button>. After confirming, the
-            first email you recieve has all the next steps. You will also start
-            recieving emails with important club announcements. Then, just come to
-            any of our meetings and you will be a member!
-          </p>
-        </div>
-        <span class="citation">Official website</span>
-        </div>
-
-        <div id="flyerPreview" class="container">
-          <div style="background-image: url(../assets/DEV_flyer_preview.png);" class="flyer-preview">
-            <div class="gallery">
-              <img id="logoPreview2" class="small" alt="your logo">
-            </div>
-          </div>
-          <span class="citation">Sample flyer</span>
-        </div>
-        <div class="banner">
-        <p>Exact dimensions may be custom-tailored for your logo, this is just a preview. You can also later share multiple versions of your logo to fit different backgrounds.</p>
-        </div>
+  <div id="flyerPreview" class="container">
+    <div style="background-image: url(../assets/DEV_flyer_preview.png);" class="flyer-preview">
+      <div class="gallery">
+        <img id="logoPreview2" class="small" alt="your logo">
       </div>
+    </div>
+    <span class="citation">Sample flyer</span>
+  </div>
+  <div class="banner">
+    <p>Exact dimensions may be custom-tailored for your logo, this is just a preview. You can also later share multiple
+      versions of your logo to fit different backgrounds.</p>
+  </div>
+</div>
 
-  <div class="section">
-    <div class="block">
-      <h2>🏆 Select the Tier</h2>
-      <p>
-        All benefits are active for one calendar year from the date of donation.
-        In addition to a custom Discord announcement chanel and resume book, you get:
-      </p>
-      <div class="tier-card-container">
+<div class="section">
+  <div class="block">
+    <h2>🏆 Select the Tier</h2>
+    <p>
+      All benefits are active for one calendar year from the date of donation.
+      In addition to a custom Discord announcement chanel and resume book, you get:
+    </p>
+    <div class="tier-card-container">
+      <button class="tier-card no-gradient" id="tierCard1">
+        <h2>🤩 Tier 1</h2>
+        <p>Small logo on website</p>
+        <p>$50</p>
+      </button>
+      <button class="tier-card no-gradient" id="tierCard2">
+        <h2>😎 Tier 2</h2>
+        <p>Medium logo on website and marketing materials</p>
+        <p>$150</p>
+      </button>
+      <button class="tier-card no-gradient" id="tierCard3">
+        <h2>🤯 <span class="gradient-text">Tier 3</span></h2>
+        <p class="gradient-text">Large logo on website and marketing materials</p>
+        <p class="gradient-text">$300</p>
+      </button>
+    </div>
 
-        <button class="tier-card no-gradient" id="tierCard1">
-            <h2>🤩 Tier 1</h2>
-            Small logo on website
-            <span>$50</span>
-        </button>
-        <button class="tier-card no-gradient" id="tierCard2">
-            <h2>😎 Tier 2</h2>
-            Medium logo on website and marketing materials
-            <span>$150</span>
-        </button>
-        <button class="tier-card no-gradient" id="tierCard3">
-            <h2>🤯 Tier 3</h2>
-            Large logo on website and marketing materials
-            <span>$300</span>
-        </button>
-      </div>
+    <div id="paymentMethodSection">
+      <h2>💳 Payment Method</h2>
+      <input type="radio" id="stripe" name="paymentMethod" value="stripe" checked>
+      <label for="stripe">Credit/Debit Card, Apple Pay, Google Pay, ACH Payment (eCheck)</label><br>
+      <input type="radio" id="givebutter" name="paymentMethod" value="givebutter">
+      <label for="givebutter">PayPal, Venmo</label><br>
+      <!-- <input type="radio" id="ach" name="paymentMethod" value="ach"> -->
+      <!-- <label for="ach">ACH Payment (eCheck)</label><br> -->
+      <input type="radio" id="direct" name="paymentMethod" value="direct">
+      <label for="direct">Direct Bank Transfer (ACH)</label><br>
+      <input type="radio" id="check" name="paymentMethod" value="check">
+      <label for="check">Mailed Check</label><br>
 
-      <div id="paymentMethodSection">
-        <h2>💳 Payment Method</h2>
-        <input type="radio" id="stripe" name="paymentMethod" value="stripe" checked>
-        <label for="stripe">Credit/Debit Card, Apple Pay, Google Pay, ACH Payment (eCheck)</label><br>
-        <input type="radio" id="givebutter" name="paymentMethod" value="givebutter">
-        <label for="givebutter">PayPal, Venmo</label><br>
-        <!-- <input type="radio" id="ach" name="paymentMethod" value="ach"> -->
-        <!-- <label for="ach">ACH Payment (eCheck)</label><br> -->
-        <input type="radio" id="direct" name="paymentMethod" value="direct">
-        <label for="direct">Direct Bank Transfer (ACH)</label><br>
-        <input type="radio" id="check" name="paymentMethod" value="check">
-        <label for="check">Mailed Check</label><br>
-
-        <!-- <input type="checkbox" id="coverFees" name="coverFees" value="coverFees">
+      <!-- <input type="checkbox" id="coverFees" name="coverFees" value="coverFees">
         <label for="coverFees" id="coverFeesLabel">Generously cover processing fees</label><br> -->
-        <p id="donateText">Please select tier and payment type</p>
-      </div>
-      
-      <div id="donateButtonSection" class="hidden">
-        <!-- <h2>Donate</h2> -->
-        <div class="button-bar tall">
-          <a target="_blank" id="donateButton" class="fancy-button">Donate</a>
-        </div>
-        <p id="thankYouText" class="hidden">Thank you!</p>
-      </div>
-
+      <p id="donateText">Please select tier and payment type</p>
     </div>
+
+    <div id="donateButtonSection" class="hidden">
+      <!-- <h2>Donate</h2> -->
+      <div class="button-bar tall">
+        <a target="_blank" id="donateButton" class="fancy-button">Donate</a>
+      </div>
+      <p id="thankYouText" class="hidden">Thank you!</p>
+    </div>
+
   </div>
+</div>
