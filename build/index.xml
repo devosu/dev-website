@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on DEV - Software Engineering Club at OSU</title>
+    <link>https://osu.dev/</link>
+    <description>Recent content in Index on DEV - Software Engineering Club at OSU</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Mar 2024 13:35:19 -0500</lastBuildDate><atom:link href="https://osu.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support</title>
+      <link>https://osu.dev/support/</link>
+      <pubDate>Tue, 05 Mar 2024 17:42:06 -0500</pubDate>
+      
+      <guid>https://osu.dev/support/</guid>
+      <description>🚀 Introduction Welcome to the Software Engineering Club (DEV), a student organization on The Ohio State University campus. We empower students with new skills through interactive workshops, expose them to diverse opportunities in the field of Software Engineering, and provide the resources to launch their groundbreaking projects.
+Explore past and upcoming events  As a new club founded this fall, we already host over 200 total members, with over 30 active members participating weekly.</description>
+    </item>
+    
+  </channel>
+</rss>
