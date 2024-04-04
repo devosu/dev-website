@@ -48,5 +48,5 @@ hugo server --config=hugo.toml
 set -e; \
 if [ -d "build" ]; then rm -Rf build; fi; \
 mkdir -p build; \
-hugo --config=hugo.toml -d build
+hugo -d build
 ```
