@@ -4,9 +4,9 @@ name: Hugo Deploy
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["hugo"]
+    branches: ["staging"]
   pull_request:
-    branches: ["hugo"]
+    branches: ["staging"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
