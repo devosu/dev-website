@@ -7,7 +7,7 @@ async function loadEvents() {
   const eventsFutureSwitch = document.getElementById("events-future-switch");
   const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
 
-  const eventsReq = await fetch("events.json");
+  const eventsReq = await fetch("/json/events.json");
   let events = (await eventsReq.json()).events;
 
   events = events.filter((event) => {

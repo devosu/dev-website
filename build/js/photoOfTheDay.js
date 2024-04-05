@@ -14,23 +14,23 @@ const photoOfTheDayDescription = document.getElementById('photoOfTheDayDescripti
 const photoOfTheDaySource = document.getElementById('photoOfTheDaySource');
 
 async function setPhoto() {
-    const photos = await (await fetch('js/photosOfTheDayShuffled.json')).json();
+  const photos = await (await fetch("/json/photosOfTheDayShuffled.json")).json();
 
-    const day = new Date().getTime();
-    const oneMinute = 1000 * 60;
-    const oneDay = 60 * 24;
-    const today = ((day / oneMinute) - new Date().getTimezoneOffset()) / oneDay;
-    // console.log(day, today, new Date().getTimezoneOffset());
+  const day = new Date().getTime();
+  const oneMinute = 1000 * 60;
+  const oneDay = 60 * 24;
+  const today = ((day / oneMinute) - new Date().getTimezoneOffset()) / oneDay;
+  // console.log(day, today, new Date().getTimezoneOffset());
 
-    const photoIndex = Math.floor(today) % photos.length;
+  const photoIndex = Math.floor(today) % photos.length;
 
-    const photo = photos[photoIndex];
+  const photo = photos[photoIndex];
 
-    photoOfTheDayName.innerHTML = photo.name;
-    photoOfTheDayPhoto.src = photo.photo;
-    photoOfTheDayPhoto.alt = photo.name;
-    photoOfTheDayDescription.innerHTML = photo.description;
-    photoOfTheDaySource.href = photo.source;
+  photoOfTheDayName.innerHTML = photo.name;
+  photoOfTheDayPhoto.src = photo.photo;
+  photoOfTheDayPhoto.alt = photo.name;
+  photoOfTheDayDescription.innerHTML = photo.description;
+  photoOfTheDaySource.href = photo.source;
 }
 
 setPhoto();

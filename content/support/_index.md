@@ -2,6 +2,7 @@
 title = 'Support'
 date = 2024-03-05T17:42:06-05:00
 draft = false
+url = 'support/'
 +++
 
 {{< section id="intro" >}}
