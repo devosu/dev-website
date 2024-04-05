@@ -1,4 +1,6 @@
 # README
+[![CodeQL](https://github.com/KemingHe/contrib-dev-website/actions/workflows/codeql.yml/badge.svg?branch=staging)](https://github.com/KemingHe/contrib-dev-website/actions/workflows/codeql.yml)
+[![Hugo Deploy](https://github.com/KemingHe/contrib-dev-website/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/KemingHe/contrib-dev-website/actions/workflows/deploy.yml)
 
 Source code for https://osu.dev
 
@@ -6,9 +8,9 @@ Source code for https://osu.dev
 
 | Name        | Email                     | Role              |
 |-------------|---------------------------|-------------------|
+| Alex Gulko  | gulko.5[at]osu.edu        | Initial Developer |
 | Misha Gusev | gusev.2@osu.edu           | Lead Developer    |
 | Keming He   | keminghe.career@gmail.com | Software QA       |
-| Alex Gulko  | gulko.5[at]osu.edu        | Initial Developer |
 
 Credit: Table made using Tables Generator
 

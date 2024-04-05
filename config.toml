@@ -1,4 +1,4 @@
-baseURL = 'https://osu.dev/'
+baseURL = 'https://contrib-dev-website.hes-solutions.tech'
 languageCode = 'en-us'
 title = 'DEV - Software Engineering Club at OSU'
 disableKinds = ["taxonomy"]
