@@ -1,4 +1,6 @@
 # README
+[![CodeQL](https://github.com/KemingHe/contrib-dev-website/actions/workflows/codeql.yml/badge.svg?branch=staging)](https://github.com/KemingHe/contrib-dev-website/actions/workflows/codeql.yml)
+[![Hugo Deploy](https://github.com/KemingHe/contrib-dev-website/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/KemingHe/contrib-dev-website/actions/workflows/deploy.yml)
 
 Source code for https://osu.dev
 
