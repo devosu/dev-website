@@ -1,3 +1,5 @@
-public/**
-
 50153.*
+
+# Hugo
+/public
+/build

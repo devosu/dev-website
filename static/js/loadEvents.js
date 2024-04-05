@@ -2,12 +2,12 @@
  * This script loads the events.json file and displays the events on the page
  */
 async function loadEvents() {
-  await loadFont("./assets/fonts/LibreFranklin-Regular.ttf");
+  await loadFont("/fonts/LibreFranklin-Regular.ttf");
   const eventsBox = document.getElementById("events-box");
   const eventsFutureSwitch = document.getElementById("events-future-switch");
   const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
 
-  const eventsReq = await fetch("./events.json");
+  const eventsReq = await fetch("/json/events.json");
   let events = (await eventsReq.json()).events;
 
   events = events.filter((event) => {
@@ -32,7 +32,7 @@ async function loadEvents() {
     eventsFutureSwitchInput.checked = !eventsFutureSwitchInput.checked;
     updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback);
   };
-  
+
   eventsFutureSwitch.onchange = () => {
     updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback);
     window.navigator.vibrate(10);
@@ -44,7 +44,7 @@ async function loadEvents() {
 function updateEvents(eventsFutureSwitchInput, eventsBox, pastEvents, futureEvents, switchCallback) {
   eventsBox.innerHTML = "";
   clearCountdowns();
-  
+
   if (eventsFutureSwitchInput.checked) {
     addEvents(futureEvents, eventsBox, "Nothing planned yet 😳", "Without a time machine, there is no way I can tell.", "past", switchCallback)
   } else {
@@ -92,26 +92,26 @@ function addEvent(event, parent) {
   // event info box
   const eventInfo = document.createElement("div");
   eventInfo.classList.add("event-info");
-  
+
   addWatermark(eventInfo, event);
 
   addName(event, eventInfo);
 
-  
+
   addDescription(event, eventInfo);
 
   const now = new Date();
-  
+
   addDate(event, eventInfo);
-  
+
   if (event.date > now) {
     addStartsIn(event.date, eventInfo);
   }
-  
+
   addLocation(event, eventInfo);
-  
+
   addTags(event, eventInfo);
-  
+
   addEventButtons(event, eventInfo, now);
 
   eventElement.appendChild(eventInfo);
@@ -271,4 +271,6 @@ function addWatermark(parent, event) {
   parent.appendChild(watermark);
 }
 
-loadEvents();
+document.addEventListener('DOMContentLoaded', (e) => {
+  loadEvents();
+});
