@@ -2,12 +2,12 @@
  * This script loads the events.json file and displays the events on the page
  */
 async function loadEvents() {
-  await loadFont("fonts/LibreFranklin-Regular.ttf");
+  await loadFont("/fonts/LibreFranklin-Regular.ttf");
   const eventsBox = document.getElementById("events-box");
   const eventsFutureSwitch = document.getElementById("events-future-switch");
   const eventsFutureSwitchInput = eventsFutureSwitch.querySelector("input");
 
-  const eventsReq = await fetch("data/events.json");
+  const eventsReq = await fetch("/json/events.json");
   let events = (await eventsReq.json()).events;
 
   events = events.filter((event) => {

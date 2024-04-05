@@ -173,10 +173,3 @@ websitePreviewBackButton.addEventListener('click', () => {
     selectTier(history.pop());
   }
 });
-
-// JS specifically for the tier 3 card text style change:
-// const tierCard3 = document.getElementById('tierCard3');
-// tierCard3.addEventListener('click', () => {
-//   tierCard3.classList.toggle('no-gradient');
-//   tierCard3.classList.toggle('gradient-text');
-// });

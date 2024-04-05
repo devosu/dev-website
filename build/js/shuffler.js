@@ -2,7 +2,7 @@
 * This script shuffles the photosOfTheDay.json file
 */
 
-import file from 'data/photosOfTheDay.json';
+import file from "/json/photosOfTheDay.json";
 
 // shuffle the array
 function shuffle(array) {
@@ -29,8 +29,8 @@ function shuffle(array) {
 const shuffled = shuffle(file);
 
 // save the shuffled array to a new file
-import { writeFile } from 'fs';
-writeFile('js/photosOfTheDayShuffled.json', JSON.stringify(shuffled), (err) => {
+import { writeFile } from "fs";
+writeFile("/json/photosOfTheDayShuffled.json", JSON.stringify(shuffled), (err) => {
   if (err) throw err;
-  console.log('The file has been saved!');
+  console.log("The file has been saved!");
 });
