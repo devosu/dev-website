@@ -4,11 +4,11 @@ Source code for https://osu.dev
 
 ## Contributors
 
-| Name        | Email                     | Role           |
-|-------------|---------------------------|----------------|
-| Alex Gulko  | alex@gulko.net            | President      |
-| Misha Gusev | gusev.2@osu.edu           | Lead Developer |
-| Keming He   | keminghe.career@gmail.com | Software QA    |
+| Name        | Email                     | Role              |
+|-------------|---------------------------|-------------------|
+| Misha Gusev | gusev.2@osu.edu           | Lead Developer    |
+| Keming He   | keminghe.career@gmail.com | Software QA       |
+| Alex Gulko  | gulko.5[at]osu.edu        | Initial Developer |
 
 Credit: Table made using Tables Generator
 
@@ -39,7 +39,7 @@ git checkout remove_branch_name
 3. To start the Hugo development server:
 
 ```sh
-hugo server --config=hugo.toml
+hugo server --config=config.toml
 ```
 
 4. To build the static site:
