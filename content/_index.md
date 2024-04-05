@@ -2,6 +2,7 @@
 title = 'Index'
 date = 2024-03-03T13:35:19-05:00
 draft = false
+url = '/'
 +++
 
 {{< section id="about" >}}
@@ -64,7 +65,7 @@ questions, concerns, or suggestions.
 
 We are thrilled to partner with companies and organizations that share our
 passion for software engineering and education. If you are interested in
-supporting us, please check out [this page](/support/).
+supporting us, please check out [this page](support/).
 
 {{< /section >}}
 
