@@ -57,7 +57,7 @@ If you're unable to make a donation, there are still many ways you can support u
 Join our [Discord](https://to.osu.dev/discord) to chat with officers and other
 members, ask questions, and get help.
 
-Reach out to us at [club@tosu.dev](mailto:club@tosu.dev) if you have any
+Reach out to us at [dev@osu.edu](mailto:dev@osu.edu) if you have any
 questions, concerns, or suggestions.
 
 {{< /section >}}

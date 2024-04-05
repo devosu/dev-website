@@ -54,7 +54,7 @@ Please reach out to us using any of the [contact methods](#contact) if you have 
 Join our [Discord](https://to.osu.dev/discord) to chat with officers and other
 members, ask questions, and get help.
 
-Reach out to us at [club@tosu.dev](mailto:club@tosu.dev) if you have any
+Reach out to us at [dev@osu.edu](mailto:dev@osu.edu) if you have any
 questions, concerns, or suggestions.
 
 {{< /section >}}
