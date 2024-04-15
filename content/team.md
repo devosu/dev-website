@@ -1,6 +1,7 @@
 +++
 title = 'Team'
 url = 'team/'
+menus = 'main'
 +++
 
 {{< section id="team" >}}

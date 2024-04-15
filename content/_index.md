@@ -1,13 +1,14 @@
 +++
-title = 'Index'
+title = 'Home'
 date = 2024-03-03T13:35:19-05:00
 draft = false
 url = '/'
+menus = 'main'
 +++
 
 {{< section id="about" >}}
 
-# 👀 About
+# 👀 About DEV
 
 DEV at OSU is a student organization that aims to provide students with the
 opportunity to expand their skills in web development and other branches of
@@ -56,6 +57,14 @@ members, ask questions, and get help.
 
 Reach out to us at [dev@osu.edu](mailto:dev@osu.edu) if you have any
 questions, concerns, or suggestions.
+
+{{< /section >}}
+
+{{< section id="social-media">}}
+
+# 📱 Social Media
+
+Find us on [{{< tinyImage src="assets/Instagram_Glyph_White.png" alt="Instagram" >}} Instagram](https://www.instagram.com/osu.dev/), [{{< tinyImage src="assets/LinkedIn-in-white-128.png" alt="LinkedIn">}} LinkedIn](https://www.linkedin.com/company/devosu), and [{{< tinyImage src="assets/yt_icon_mono_dark.png" alt="YouTube">}} YouTube](https://www.youtube.com/@devosu).
 
 {{< /section >}}
 

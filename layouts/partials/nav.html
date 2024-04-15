@@ -1,5 +1,6 @@
-<ul id="nav">
-  {{ range .Site.Menus.nav }}
-  <li><a href=" {{ .URL }}">{{ .Name }}</a></li>
+{{ $currentPage := . }}
+<ul id="nav" class="navbar">
+  {{ range .Site.Menus.main }}
+  <li><a href=" {{ .URL }}" {{ if $currentPage.IsMenuCurrent .Menu .}}class="active-navbar"{{ end }}>{{ .Name }}</a></li>
   {{ end }}
 </ul>

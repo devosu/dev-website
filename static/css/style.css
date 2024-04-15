@@ -9,7 +9,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.monospace {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   margin-top: 0;
@@ -21,17 +22,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 p,
 ul {
   line-height: 2rem;
+}
+
+.subtitle-text {
+  font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 input.text-input {
@@ -640,4 +646,35 @@ div.tier-card h2 {
   -webkit-user-select: all;
   -moz-user-select: all;
 
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.navbar > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+
+.navbar > li > a {
+  background-image: none;
+  background-color: transparent;
+  color: black;
+}
+
+.navbar > li > a:hover {
+  text-decoration: none;
+  color: #357def;
+}
+
+.active-navbar {
+  font-weight: bold;
 }
