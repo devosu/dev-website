@@ -253,7 +253,7 @@ function addEventButtons(event, parent, now) {
   const eventButtons = addButtonBar(parent, event);
 
   if (event.date > now) {
-    addRSVP(eventButtons);
+    // addRSVP(eventButtons);
     addGoogleCalendar(eventButtons, event);
   }
 
