@@ -37,7 +37,11 @@ ul {
 
 .subtitle-text {
   font-size: 1.5rem;
-  white-space: nowrap;
+  /* white-space: break-spaces; */
+  display: block;
+  text-align: center;
+  width: 100vw;
+  overflow: hidden;
 }
 
 input.text-input {
