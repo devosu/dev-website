@@ -1,54 +1,47 @@
 # README
-[![CodeQL](https://github.com/KemingHe/contrib-dev-website/actions/workflows/codeql.yml/badge.svg?branch=staging)](https://github.com/devosu/dev-website/actions/workflows/codeql.yml)
-[![Hugo Deploy](https://github.com/KemingHe/contrib-dev-website/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/devosu/dev-website/actions/workflows/deploy.yml)
 
-Source code for https://osu.dev
+[![CodeQL](https://github.com/devosu/dev-website/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/devosu/dev-website/actions/workflows/codeql.yml)
+[![Hugo Deploy](https://github.com/devosu/dev-website/actions/workflows/hugo.yml/badge.svg?branch=main)](https://github.com/devosu/dev-website/actions/workflows/hugo.yml)
 
-## Contributors
+Open-source repository for [https://osu.dev](https://osu.dev), come check it out!!
 
-| Name        | Email                     | Role              |
-|-------------|---------------------------|-------------------|
-| Alex Gulko  | gulko.5[at]osu.edu        | Initial Developer |
-| Misha Gusev | gusev.2@osu.edu           | Lead Developer    |
-| Keming He   | keminghe.career@gmail.com | Software QA       |
+## :rocket: Quick Start
 
-Credit: Table made using Tables Generator
+### 1. Install Hugo
 
-> https://www.tablesgenerator.com/markdown_tables#
-
-## Developer Guide
-
-1. Install Hugo
-
-> https://gohugo.io/installation/
+> [https://gohugo.io/installation/](https://gohugo.io/installation/)
 
 ```sh
 # For Debian (Ubuntu) Linux users:
-set -e; sudo apt update; sudo apt upgrade -y; sudo apt install hugo
+sudo apt install hugo
 ```
 
-2. Clone the repo and navigate to local dir
+### 2. Clone and Contribute
 
 ```sh
 git clone https://github.com/devosu/dev-website.git
 cd dev-website
 
-# To clone a specific branch:
-git fetch
-git checkout remove_branch_name
+git checkout -b feat-myfeaturename-myname
+git push -u origin feat-myfeaturename-myname
 ```
 
-3. To start the Hugo development server:
+### 3. Serving it Locally
 
 ```sh
 hugo server --config=config.toml
 ```
 
-4. To build the static site:
+## :sunflower: Community
 
-```sh
-set -e; \
-if [ -d "build" ]; then rm -Rf build; fi; \
-mkdir -p build; \
-hugo -d build
-```
+### :heart: Contributors
+
+<a href="https://github.com/devosu/dev-website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=devosu/dev-website" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
+### :gear: Repo Status
+
+![Alt](https://repobeats.axiom.co/api/embed/1a33114f8932dae03be123cdb0bcef1bab6222da.svg "Repobeats analytics image")
