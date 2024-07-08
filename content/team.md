@@ -15,21 +15,21 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 {{< section id="officers" >}}
 # 🧑‍💼 Officers
 
-- {{< gradientText >}}Alex Gulko{{< /gradientText >}}, president.
+- {{< gradientText t="Alex Gulko" >}}, president.
 
-- {{< gradientText >}}Johnathan Wang{{< /gradientText >}}, vice president.
+- {{< gradientText t="Johnathan Wang">}}, vice president.
 
-- {{< gradientText >}}RJ Jaiswal{{< /gradientText >}}, treasurer.
+- {{< gradientText t="RJ Jaiswal">}}, treasurer.
 
-- {{< gradientText >}}Elijah Mansur{{< /gradientText >}}, outreach director.
+- {{< gradientText t="Elijah Mansur">}}, outreach director.
 
-- {{< gradientText >}}Keming He{{< /gradientText >}}, hiring director.
+- {{< gradientText t="Keming He">}}, devops director. {{<iconTextLink href="https://github.com/KemingHe" t="GitHub" src="github">}}
 
-- {{< gradientText >}}Ashritha Kota{{< /gradientText >}}, event director.
+- {{< gradientText t="Ashritha Kota">}}, event director.
 
-- {{< gradientText >}}Varsha Venkateshwaran{{< /gradientText >}}, marketing director.
+- {{< gradientText t="Varsha Venkateshwaran">}}, marketing director.
 
-- {{< gradientText >}}Misha Gusev{{< /gradientText >}}, technology director.
+- {{< gradientText t="Misha Gusev">}}, technology director.
 
 {{< /section >}}
 
@@ -37,9 +37,9 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 # 🎨 Designers
 
-- {{< gradientText >}}Suyeon Chae{{< /gradientText >}}
+- {{< gradientText t="Suyeon Chae">}}
 
-- {{< gradientText >}}William An{{< /gradientText >}}
+- {{< gradientText t="William An">}}
 
 {{< /section >}}
 
@@ -47,15 +47,15 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 # 🛠️ Senior Engineers
 
-- {{< gradientText >}}Aryan Tyagi{{< /gradientText >}}
+- {{< gradientText t="Aryan Tyagi">}}
 
-- {{< gradientText >}}Bennett Godinho-Nelson{{< /gradientText >}}
+- {{< gradientText t="Bennett Godinho-Nelson">}}
 
-- {{< gradientText >}}D'Andre Williams{{< /gradientText >}}
+- {{< gradientText t="D'Andre Williams">}}
 
-- {{< gradientText >}}Ekumjyot Kaur (Ekum){{< /gradientText >}}
+- {{< gradientText t="Ekumjyot Kaur (Ekum)">}}
 
-- {{< gradientText >}}Trevor Gerald{{< /gradientText >}}
+- {{< gradientText t="Trevor Gerald">}}
 
 {{< /section >}}
 
@@ -63,18 +63,18 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 # 🛠️ Junior Engineers
 
-- {{< gradientText >}}Alex Eichner{{< /gradientText >}}
+- {{< gradientText t="Alex Eichner">}}
 
-- {{< gradientText >}}Bo Ding{{< /gradientText >}}
+- {{< gradientText t="Bo Ding">}}
 
-- {{< gradientText >}}Connor Radkov{{< /gradientText >}}
+- {{< gradientText t="Connor Radkov">}}
 
-- {{< gradientText >}}Jerry Chang{{< /gradientText >}}
+- {{< gradientText t="Jerry Chang">}}
 
-- {{< gradientText >}}Max Miller{{< /gradientText >}}
+- {{< gradientText t="Max Miller">}}
 
-- {{< gradientText >}}Yakob Getu{{< /gradientText >}}
+- {{< gradientText t="Yakob Getu">}}
 
-- {{< gradientText >}}Ziqi Ou{{< /gradientText >}}
+- {{< gradientText t="Ziqi Ou">}}
 
 {{< /section >}}

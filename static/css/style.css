@@ -682,3 +682,10 @@ div.tier-card h2 {
 .active-navbar {
   font-weight: bold;
 }
+
+.inline-icon {
+  max-height: 1rem;
+  max-width: 1.1rem;
+  margin: 0 0.4rem 0 0;
+  vertical-align: baseline;
+}
