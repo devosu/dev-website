@@ -684,8 +684,7 @@ div.tier-card h2 {
 }
 
 .inline-icon {
-  max-height: 1rem;
-  max-width: 1.1rem;
+  max-height: 16px;
   margin: 0 0.4rem 0 0;
   vertical-align: baseline;
 }
