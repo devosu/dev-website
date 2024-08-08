@@ -1,14 +1,14 @@
 <a href="{{ .Get "href" }}" target="_blank">
   {{- if eq (.Get "src") "github" -}}
-    <img src="/assets/third-logos/github-white-mini.png" alt="GitHub logo" class="inline-icon"/>
+    <img src="/assets/third-logos/github-white-mini.png" alt="GitHub logo" class=".inline-icon-button"/>
   {{- else if eq (.Get "src" ) "youtube" -}}
-    <img src="/assets/third-logos/youtube-white-mini.png" alt="YouTube logo" class="inline-icon"/>
+    <img src="/assets/third-logos/youtube-white-mini.png" alt="YouTube logo" class=".inline-icon-button"/>
   {{- else if eq (.Get "src" ) "instagram" -}}
-    <img src="/assets/third-logos/instagram-white-mini.png" alt="Instagram logo" class="inline-icon"/>
+    <img src="/assets/third-logos/instagram-white-mini.png" alt="Instagram logo" class=".inline-icon-button"/>
   {{- else if eq (.Get "src" ) "linkedin" -}}
-    <img src="/assets/third-logos/linkedin-white-mini.png" alt="LinkedIn logo" class="inline-icon"/>
+    <img src="/assets/third-logos/linkedin-white-mini.png" alt="LinkedIn logo" class=".inline-icon-button"/>
   {{- else -}}
-    <img src="{{.Get "src"}}" alt="{{.Get "alt"}}" class="inline-icon"/>
+    <img src="{{.Get "src"}}" alt="{{.Get "alt"}}" class=".inline-icon-button"/>
   {{- end -}}
   {{.Get "t"}}
 </a>

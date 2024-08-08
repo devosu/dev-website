@@ -15,15 +15,14 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 {{< section id="officers" >}}
 # 🧑‍💼 Officers
 
-- {{< gradientText t="Alex Gulko" >}}, president.
-
+- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/" src="github" title="">}}
 - {{< gradientText t="Johnathan Wang">}}, vice president.
 
 - {{< gradientText t="RJ Jaiswal">}}, treasurer.
 
 - {{< gradientText t="Elijah Mansur">}}, outreach director.
 
-- {{< gradientText t="Keming He">}}, devops director. {{<iconTextLink href="https://github.com/KemingHe" t="GitHub" src="github">}}
+- {{< gradientText t="Keming He">}}, devops director. {{<iconLink href="https://github.com/KemingHe" src="github" title="Keming's GitHub">}} {{<iconLink href="https://www.linkedin.com/in/keminghe/" src="linkedin" title="Keming's LinkedIn">}}
 
 - {{< gradientText t="Ashritha Kota">}}, event director.
 
