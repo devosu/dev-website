@@ -1,6 +1,5 @@
 +++
 title = 'Home'
-date = 2024-03-03T13:35:19-05:00
 draft = false
 url = '/'
 menus = 'main'
@@ -64,7 +63,10 @@ questions, concerns, or suggestions.
 
 # 📱 Social Media
 
-Find us on [{{< tinyImage src="assets/Instagram_Glyph_White.png" alt="Instagram" >}} Instagram](https://www.instagram.com/osu.dev/), [{{< tinyImage src="assets/LinkedIn-in-white-128.png" alt="LinkedIn">}} LinkedIn](https://www.linkedin.com/company/devosu), and [{{< tinyImage src="assets/yt_icon_mono_dark.png" alt="YouTube">}} YouTube](https://www.youtube.com/@devosu).
+Find us on
+{{< iconTextLink src="instagram" href="https://www.instagram.com/osu.dev/" t="Instagram">}},
+{{< iconTextLink src="linkedin" href="https://www.linkedin.com/company/devosu/" t="LinkedIn">}}, and
+{{< iconTextLink src="youtube" href="https://www.youtube.com/@devosu/" t="YouTube">}}.
 
 {{< /section >}}
 

@@ -1,0 +1,13 @@
+<a class="icon-link" target="_blank" title="{{.Get "title"}}" href="{{.Get "href"}}"> 
+  {{- if eq (.Get "src") "github" -}}
+    <img src="/assets/third-logos/github-grey-21.png" alt="GitHub logo" class="inline-icon"/>
+  {{- else if eq (.Get "src" ) "youtube" -}}
+    <img src="/assets/third-logos/youtube-dark-icon-21.png" alt="YouTube logo" class="inline-icon"/>
+  {{- else if eq (.Get "src" ) "instagram" -}}
+    <img src="/assets/third-logos/instagram-black-21.png" alt="Instagram logo" class="inline-icon"/>
+  {{- else if eq (.Get "src" ) "linkedin" -}}
+    <img src="/assets/third-logos/linkedin-black-21.png" alt="LinkedIn logo" class="inline-icon"/>
+  {{- else -}}
+    <img src="{{.Get "src"}}" alt="{{.Get "alt"}}" class="inline-icon"/>
+  {{- end -}}
+</a>

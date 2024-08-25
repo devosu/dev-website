@@ -3,7 +3,8 @@ languageCode = 'en-us'
 title = 'DEV - Software Engineering Club at OSU'
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
-[markup.goldmark.renderer]
-unsafe= true
 
-sectionPagesMenu = 'main'
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+    sectionPagesMenu = 'main'
