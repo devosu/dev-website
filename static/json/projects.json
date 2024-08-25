@@ -1,0 +1,47 @@
+{
+    "projects": [
+        {
+            "name": "Research Mentorship Website",
+            "tags": ["Tailwind CSS","Typescript", "Next.js", "Firestore"],
+            "emoji": "🌐",
+            "date": "2024-08-13T18:00:00",
+            "description": "A collaboration with the Undergraduate Student Government! This full-stack website serves to deliver aspiring mentors and mentees an opportunity to work with fellow students in intensive research. Contributed by Keming He, Trevor Gerald, and Jerry Chang.",
+            "imageSrc": "/assets/front_end_workshop.png",
+            "buttons": [
+                {
+                    "buttonText": "Website Link",
+                    "buttonLink": "https://research.osu.dev/"
+                }
+            ]
+        },
+        {
+            "name": "Event-Feed Project",
+            "tags": ["Next.js","Typescript"],
+            "emoji": "👨‍💻",
+            "date": "2024-12-12T18:00:00",
+            "description": "A project that focuses on providing a website that displays OSU's events and club postings for all to see.",
+            "imageSrc": "/assets/acmw_portfolio_website_workshop_banner.png",
+            "buttons": [
+                {
+                    "buttonText": "Website Link",
+                    "buttonLink": "/404"
+                } 
+            ]
+        },
+        {
+            "name": "Test event" ,
+            "tags": ["Test"],
+            "emoji": "🍕",
+            "date": "2024-11-28T19:00:00",
+            "description": "This is a test event.",
+            "imageSrc": "/assets/status_banner.jpeg",
+            "buttons": [
+                {
+                    "buttonText": "Test",
+                    "buttonLink": "example.com"
+                }
+            ],
+            "hide": true
+        }
+    ]
+  }
