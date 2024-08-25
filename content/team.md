@@ -15,7 +15,7 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 {{< section id="officers" >}}
 # 🧑‍💼 Officers
 
-- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}}
+- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}} {{<iconLink href="https://www.linkedin.com/in/alexgulko/" src="linkedin" title="Alex's LinkedIn">}}
 
 - {{< gradientText t="RJ Jaiswal">}}, treasurer.
 
