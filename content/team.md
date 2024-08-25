@@ -15,20 +15,16 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 {{< section id="officers" >}}
 # 🧑‍💼 Officers
 
-- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}}
-- {{< gradientText t="Johnathan Wang">}}, vice president.
+- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}} {{<iconLink href="https://www.linkedin.com/in/alexgulko/" src="linkedin" title="Alex's LinkedIn">}}
 
 - {{< gradientText t="RJ Jaiswal">}}, treasurer.
-
-- {{< gradientText t="Elijah Mansur">}}, outreach director.
 
 - {{< gradientText t="Keming He">}}, devops director. {{<iconLink href="https://github.com/KemingHe" src="github" title="Keming's GitHub">}} {{<iconLink href="https://www.linkedin.com/in/keminghe/" src="linkedin" title="Keming's LinkedIn">}}
 
 - {{< gradientText t="Ashritha Kota">}}, event director.
 
-- {{< gradientText t="Varsha Venkateshwaran">}}, marketing director.
+- {{< gradientText t="Trevor Gerald">}}, software director.
 
-- {{< gradientText t="Misha Gusev">}}, technology director.
 
 {{< /section >}}
 
@@ -54,13 +50,13 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 - {{< gradientText t="Ekumjyot Kaur (Ekum)">}}
 
-- {{< gradientText t="Trevor Gerald">}}
+- {{< gradientText t="Jerry Chang">}}
 
 {{< /section >}}
 
-{{< section id="junior-engineers" >}}
+<!-- {{< section id="junior-engineers" >}} -->
 
-# 🛠️ Junior Engineers
+<!-- # 🛠️ Junior Engineers
 
 - {{< gradientText t="Alex Eichner">}}
 
@@ -68,12 +64,11 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 - {{< gradientText t="Connor Radkov">}}
 
-- {{< gradientText t="Jerry Chang">}}
 
 - {{< gradientText t="Max Miller">}}
 
 - {{< gradientText t="Yakob Getu">}}
 
-- {{< gradientText t="Ziqi Ou">}}
+- {{< gradientText t="Ziqi Ou">}} -->
 
-{{< /section >}}
+<!-- {{< /section >}} -->
