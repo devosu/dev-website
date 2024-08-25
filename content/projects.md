@@ -20,11 +20,12 @@ DEV at the Ohio State University works with student clubs and school departments
 
 {{< section id="contact" >}}
 
-# 🌵     Join us
-If there are any student organizations and school departments want to work with us,
-join our  [Discord](https://to.osu.dev/discord) to chat with our officers to help you find your own software solutions. 
+# 🌵     Join a Project
+Any and all students and faculty are fully welcome in joining our endeavors in providing high-quality projects for the greater Ohio State University community. 
+To join a project, join our [Discord](https://to.osu.dev/discord) and open a ticket in the #contactus chat to begin the process. 
 
-Reach out to us at [dev@osu.edu](mailto:dev@osu.edu) if you have any
-questions, concerns, or suggestions.
 
+# 📝 Propose a Project 
+If there are any students, organizations and school departments that want to propose a project idea,
+join our  [Discord](https://to.osu.dev/discord) and open a ticket in the #contactus chat, or email us at [dev@osu.edu](mailto:dev@osu.edu) 
 {{< /section >}} 

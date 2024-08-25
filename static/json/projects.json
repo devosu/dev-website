@@ -22,10 +22,6 @@
             "description": "A project that focuses on providing a website that displays OSU's events and club postings for all to see.",
             "imageSrc": "/assets/acmw_portfolio_website_workshop_banner.png",
             "buttons": [
-                {
-                    "buttonText": "Website Link",
-                    "buttonLink": "/404"
-                } 
             ]
         },
         {
