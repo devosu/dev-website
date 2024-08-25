@@ -14,11 +14,10 @@ opportunity to expand their skills in web development and other branches of
 software engineering through workshops.
 
 We are also committed to supporting your personal software projects by providing
-mentorship and computing resources (free hosting and subdomains on osu.dev).
+mentorship and resources.
 
-This club is welcoming everyone regardless of their experience, major, or grade.
-To use perks like subdomains and cloud credits, you need to be an active OSU
-student, but you can still attend workshops and recieve mentorship if you are not.
+This club is welcoming everyone regardless of their experience, major, and educational background.
+
 {{< /section >}}
 
 {{< section id="join" >}}

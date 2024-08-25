@@ -14,7 +14,7 @@ Welcome to the Software Engineering Club (DEV), a student organization on The Oh
 
 {{< pastEvents >}}
 
-As a new club founded this fall, we already host over **200** total members, with over **30** active members participating weekly. In the upcoming semester, we are expanding our impact by hosting workshops in K-12 schools to foster curiosity and open up a world of opportunities for younger students.
+As a new club founded this fall, we already host over **200** total members, with over **30** active members participating weekly.
 {{< /section >}}
 
 {{< section id="sponsorship" >}}
@@ -23,7 +23,7 @@ As a new club founded this fall, we already host over **200** total members, wit
 
 DEV officers are all volunteers and we do not charge any membership fees to ensure that our club is accessible to all students. Your sponsorship is crucial to help us foster an inclusive and welcoming community of passionate students. If you choose to donate, your contribution will go towards the following:
 
-* **Computing Resources Program ($1500 / year):** DEV has a commitement to help OSU students build and launch their software-based projects. To do this, we share free cloud credits, subdomains, and other computing resources with our members. This program is a significant expense for our club, but it's essential to our mission.
+* **Computing Resources Program ($500 / year):** DEV has a commitement to help OSU students build and launch their software-based projects. To do this, we share free cloud credits, subdomains, and other computing resources with our members. This program is a significant expense for our club, but it's essential to our mission.
 * **Marketing and Outreach ($300 / year):** This includes flyers, merch, and recruiting events, enhances our club's visibility within the campus and helps recruit new members.
 * **Club Operations ($200 / year):** This includes food for club meetings and other miscellaneous expenses.
 
