@@ -485,9 +485,24 @@ div.center {
 /* .slider:hover {
 } */
 
-input:checked+.slider:before {
+/* Meetings switch */
+.events-switch .slider::before {
+  content: "Past Events";
+}
+
+.events-switch input:checked + .slider::before {
   left: calc(100% - 4px - 150px);
-  content: var(--slider-text-on);
+  content: "Future Events";
+}
+
+/* Projects switch */
+.projects-switch .slider::before {
+  content: "Past Projects";
+}
+
+.projects-switch input:checked + .slider::before {
+  left: calc(100% - 4px - 150px);
+  content: "Future Projects";
 }
 
 .hidden {

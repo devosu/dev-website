@@ -83,10 +83,8 @@ function addProject(project, parent) {
 
   const now = new Date();
 
-  addDate(project, projectInfo);
-
-  if (project.date > now) {
-    addStartsIn(project.date, projectInfo);
+  if(project.date<=now){
+     addDate(project, projectInfo);
   }
 
   addTags(project, projectInfo);
@@ -173,10 +171,6 @@ function addStartsIn(date, parent) {
 
 function addProjectButtons(project, parent, now) {
   const projectButtons = addButtonBar(parent);
-
-  if (project.date > now) {
-    addGoogleCalendar(projectButtons, project);
-  }
 
   if (project.buttons) {
     for (let button of project.buttons) {
