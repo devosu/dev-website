@@ -146,6 +146,9 @@ a:disabled {
 .event-info .button-bar {
   justify-content: left;
 }
+.project-info .button-bar {
+  justify-content: left;
+}
 
 .tall {
   line-height: 2rem;
