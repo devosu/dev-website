@@ -328,7 +328,7 @@ div.center {
 
   100% {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
     background-clip: text;
   }
 }
@@ -376,6 +376,50 @@ div.center {
 .event-info {
   padding: 0 1rem 1rem 1rem;
 }
+.project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  border: 0.5px solid #7e7e7e;
+  border-radius: 10px;
+  margin: 2rem 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  line-height: 2rem;
+  justify-content: left;
+}
+
+.project-watermark {
+  position: relative;
+  top: 170px;
+  text-align: right;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  z-index: -1;
+  font-size: 14rem;
+  height: 0;
+  /* no select */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 0 1rem 1rem 1rem;
+}
+
 
 .countdown {
   margin: 0 0.4rem;
@@ -441,9 +485,24 @@ div.center {
 /* .slider:hover {
 } */
 
-input:checked+.slider:before {
+/* Meetings switch */
+.events-switch .slider::before {
+  content: "Past Events";
+}
+
+.events-switch input:checked + .slider::before {
   left: calc(100% - 4px - 150px);
-  content: "Future events";
+  content: "Future Events";
+}
+
+/* Projects switch */
+.projects-switch .slider::before {
+  content: "Past Projects";
+}
+
+.projects-switch input:checked + .slider::before {
+  left: calc(100% - 4px - 150px);
+  content: "Future Projects";
 }
 
 .hidden {
