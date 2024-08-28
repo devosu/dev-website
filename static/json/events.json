@@ -294,6 +294,17 @@
           "imageSrc": "/assets/backdrop.png"
       },
       {
+        "name": "Initial Meeting",
+        "tags": ["Intro"],
+        "emoji": "🌟",
+        "date": "2024-09-03T18:00:00",
+        "description": "Welcome to DEV! We will introduce the club, its officers, and meet you in-person for the first time this year! We will also discuss the events planned, as well as the projects and how you can get involved.",
+        "location": "Hitchcock 131",
+        "imageSrc": "/assets/backdrop.png",
+        "buttons": [
+        ]
+      },
+      {
           "name": "Test event",
           "tags": ["Test"],
           "emoji": "🍕",
