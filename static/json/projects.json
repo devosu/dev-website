@@ -17,27 +17,16 @@
         {
             "name": "Event Feed Project",
             "tags": ["Next.js","Typescript"],
-            "emoji": "👨‍💻",
+            "emoji": "📅",
             "date": "2024-12-12T18:00:00",
-            "description": "A centralized listing of all OSU's events and club postings for all to see.",
+            "description": "A centralized listing of all OSU's events and club postings for all to see. Features RSVP, reminders, and more.",
             "imageSrc": "/assets/event_feed_sketch.png",
             "buttons": [
-            ]
-        },
-        {
-            "name": "Test event" ,
-            "tags": ["Test"],
-            "emoji": "🍕",
-            "date": "2024-11-28T19:00:00",
-            "description": "This is a test event.",
-            "imageSrc": "/assets/status_banner.jpeg",
-            "buttons": [
                 {
-                    "buttonText": "Test",
-                    "buttonLink": "example.com"
+                    "buttonText": "Early Adopters Survey",
+                    "buttonLink": "https://forms.gle/TA2XfoFvu3c8Apy79"
                 }
-            ],
-            "hide": true
+            ]
         }
     ]
   }

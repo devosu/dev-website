@@ -136,7 +136,7 @@ function addDescription(project, parent) {
 function addDate(project, parent) {
   const projectDate = document.createElement("p");
   projectDate.textContent =
-    `Released on ${project.date.toDateString()} 📆`;
+    `📆 Released on ${project.date.toDateString()}`;
   parent.appendChild(projectDate);
 }
 
