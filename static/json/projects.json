@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "name": "Research Mentorship Website",
+            "tags": ["Tailwind CSS","Typescript", "Next.js", "Firestore"],
+            "emoji": "🔬",
+            "date": "2024-08-25T12:00:00",
+            "description": "A collaboration with the Undergraduate Student Government! This full-stack website serves to deliver aspiring mentors and mentees an opportunity to work with fellow students in intensive research. Contributed by Keming He, Trevor Gerald, and Jerry Chang.",
+            "imageSrc": "/assets/urmp_screenshot.png",
+            "buttons": [
+                {
+                    "buttonText": "Visit Website",
+                    "buttonLink": "https://research.osu.dev/"
+                }
+            ]
+        },
+        {
+            "name": "Event Feed Project",
+            "tags": ["Next.js","Typescript"],
+            "emoji": "📅",
+            "date": "2024-12-12T18:00:00",
+            "description": "A centralized listing of all OSU's events and club postings for all to see. Features RSVP, reminders, and more.",
+            "imageSrc": "/assets/event_feed_sketch.png",
+            "buttons": [
+                {
+                    "buttonText": "Early Adopters Survey",
+                    "buttonLink": "https://forms.gle/TA2XfoFvu3c8Apy79"
+                }
+            ]
+        }
+    ]
+  }
