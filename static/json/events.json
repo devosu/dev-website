@@ -144,7 +144,7 @@
       },
       {
           "name": "React Native - Mobile App Development Workshop",
-          "tags": ["Workshop", "Mobile App Development"],
+          "tags": ["Workshop", "React", "Mobile App Development"],
           "emoji": "📱",
           "date": "2024-01-29T19:00:00",
           "description": "In this introductory React Native workshop, you will learn the basics of React Native, including its component-based architecture, and build a simple cross-platform application. The workshop will guide you through the development of a basic weather application, and you will be able to run your code on an iOS or Android device. This workshop will give you a starting basis to build your own mobile app. JavaScript knowledge is recommended. You will need a Windows/Mac/Linux laptop.",
@@ -302,22 +302,75 @@
         "location": "Hitchcock 131",
         "imageSrc": "/assets/dev-backdrop.png",
         "buttons": [
+            {
+                "buttonText": "Slides",
+                "buttonLink": "https://docs.google.com/presentation/d/1OG-naRMY5LsxReStgwTGfL73fxutuvUTIrz7cKtZE7g/edit?usp=sharing"
+            }
         ]
       },
       {
-          "name": "Test event",
-          "tags": ["Test"],
-          "emoji": "🍕",
-          "date": "2024-11-28T19:00:00",
-          "description": "This is a test event.",
-          "location": "DEV Lab",
-          "buttons": [
-              {
-                  "buttonText": "Test",
-                  "buttonLink": "example.com"
-              }
-          ],
-          "hide": true
-      }
+        "name": "Intro to Web Dev Workshop: JavaScript, HTML, and CSS",
+        "tags": ["Workshop", "Front-End Web Dev", "JS"],
+        "emoji": "🌐",
+        "date": "2024-09-17T18:00:00",
+        "description": "Learn the basics of web development with JavaScript, HTML, and CSS. No prior experience required! You will need a Windows/Mac/Linux laptop.",
+        "imageSrc": "/assets/frontend_workshop2.png",
+        "location": "TBA",
+        "buttons": [
+            {
+                "buttonText": "VS Code Tutorial",
+                "buttonLink": "https://to.osu.dev/vscode"
+            }
+        ]
+    },
+    {
+        "name": "The GitHub Workshop",
+        "tags": ["Workshop", "GitHub"],
+        "emoji": "🐙",
+        "date": "2024-10-01T18:00:00",
+        "description": "Discover how Git and GitHub work, how to use and collaborate in repos. No prior experience required! You will need a GitHub account and a Windows/Mac/Linux laptop.",
+        "imageSrc": "/assets/github_workshop.webp",
+        "location": "TBA",
+        "buttons": [
+            {
+                "buttonText": "Sign up on GitHub",
+                "buttonLink": "https://github.com/signup?ref_page=osu.dev&ref=osu.dev"
+            },
+            {
+                "buttonText": "VS Code Tutorial",
+                "buttonLink": "https://to.osu.dev/vscode"
+            }
+        ]
+    },
+    {
+        "name": "React.js Workshop",
+        "tags": ["Workshop", "Front-End Web Dev", "React"],
+        "emoji": "💻",
+        "date": "2024-10-15T18:00:00",
+        "description": "Explore one of the most popular JavaScript frameworks, how components and reactivity work, and why you should or shouldn’t use it. Some JavaScript knowledge suggested. You will need a Windows/Mac/Linux laptop.",
+        "imageSrc": "/assets/react_workshop.png",
+        "location": "TBA",
+        "buttons": [
+            {
+                "buttonText": "VS Code Tutorial",
+                "buttonLink": "https://to.osu.dev/vscode"
+            }
+        ]
+    },
+    {
+        "name": "Test event",
+        "tags": ["Test"],
+        "emoji": "🍕",
+        "date": "2024-11-28T19:00:00",
+        "description": "This is a test event.",
+        "location": "DEV Lab",
+        "buttons": [
+            {
+                "buttonText": "Test",
+                "buttonLink": "example.com"
+            }
+        ],
+        "hide": true
+    }
   ]
 }
