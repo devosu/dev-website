@@ -309,10 +309,28 @@
         ]
       },
       {
+        "name": "Networking Workshop",
+        "tags": ["Workshop", "Career", "DEV Talk"],
+        "emoji": "🤝",
+        "date": "2024-09-17T18:00:00",
+        "description": "This talk will provide practical tips on choosing the right events, making genuine connections, and staying in touch over time. You’ll leave with a clear plan to develop your networking skills and become an active part of the tech community. Presented by Tiana Silva - Tech Elevator graduate and Full Stack Developer at OCLC.",
+        "location": "Enarson 326",
+        "imageSrc": "/assets/networking_workshop_thin_banner.png"
+      },
+      {
+        "name": "IGS Energy Employee Roundtable",
+        "tags": ["Career", "Round Table"],
+        "emoji": "🔥",
+        "date": "2024-09-24T18:00:00",
+        "description": "Join us for a round table discussion with IGS Energy Executives and Engineers. They will discuss their experiences working in the tech industry and how to succeed in the field, as well as talk in depth about IGS and how you can apply for their internships (wink wink).",
+        "imageSrc": "/assets/igs_energy.png",
+        "location": "Ohio Union Interfaith Prayer and Reflection Room"
+      },
+      {
         "name": "Intro to Web Dev Workshop: JavaScript, HTML, and CSS",
         "tags": ["Workshop", "Front-End Web Dev", "JS"],
         "emoji": "🌐",
-        "date": "2024-09-17T18:00:00",
+        "date": "2024-10-01T18:00:00",
         "description": "Learn the basics of web development with JavaScript, HTML, and CSS. No prior experience required! You will need a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/frontend_workshop2.png",
         "location": "TBA",
@@ -327,7 +345,7 @@
         "name": "The GitHub Workshop",
         "tags": ["Workshop", "GitHub"],
         "emoji": "🐙",
-        "date": "2024-10-01T18:00:00",
+        "date": "2024-10-08T18:00:00",
         "description": "Discover how Git and GitHub work, how to use and collaborate in repos. No prior experience required! You will need a GitHub account and a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/github_workshop.webp",
         "location": "TBA",
