@@ -1,7 +1,6 @@
 # README
 
 [![CodeQL](https://github.com/devosu/dev-website/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/devosu/dev-website/actions/workflows/codeql.yml)
-[![Hugo Deploy](https://github.com/devosu/dev-website/actions/workflows/hugo.yml/badge.svg?branch=main)](https://github.com/devosu/dev-website/actions/workflows/hugo.yml)
 
 Open-source repository for [https://osu.dev](https://osu.dev), come check it out!!
 
