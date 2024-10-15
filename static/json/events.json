@@ -315,7 +315,13 @@
         "date": "2024-09-17T18:00:00",
         "description": "This talk will provide practical tips on choosing the right events, making genuine connections, and staying in touch over time. You’ll leave with a clear plan to develop your networking skills and become an active part of the tech community. Presented by Tiana Silva - Tech Elevator graduate and Full Stack Developer at OCLC.",
         "location": "Enarson 326",
-        "imageSrc": "/assets/networking_workshop_thin_banner.png"
+        "imageSrc": "/assets/networking_workshop_thin_banner.png",
+        "buttons": [
+            {
+                "buttonText": "Slides",
+                "buttonLink": "https://docs.google.com/presentation/d/1IJH77ibhVGSvRGFciTxv8EExtq709S0axAoDb5y1pcM/edit?usp=sharing"
+            }
+        ]
       },
       {
         "name": "IGS Energy Employer Roundtable",
@@ -333,11 +339,15 @@
         "date": "2024-10-01T18:00:00",
         "description": "Learn the basics of web development with JavaScript, HTML, and CSS. No prior experience required! You will need a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/frontend_workshop2.png",
-        "location": "TBA",
+        "location": "Zoom",
         "buttons": [
             {
                 "buttonText": "VS Code Tutorial",
                 "buttonLink": "https://to.osu.dev/vscode"
+            },
+            {
+                "buttonText": "Slides",
+                "buttonLink": "https://docs.google.com/presentation/d/1Z7zzj5U1Zb-XkW0kcacyCiw9NmQKYe5MQO5eiCJj9N8/edit?usp=sharing"
             }
         ]
     },
@@ -348,7 +358,7 @@
         "date": "2024-10-08T18:00:00",
         "description": "Discover how Git and GitHub work, how to use and collaborate in repos. No prior experience required! You will need a GitHub account and a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/github_workshop.webp",
-        "location": "TBA",
+        "location": "Enarson 256",
         "buttons": [
             {
                 "buttonText": "Sign up on GitHub",
@@ -361,10 +371,25 @@
         ]
     },
     {
+        "name": "How to Win a Hackathon",
+        "tags": ["Hackathon", "Free food"],
+        "emoji": "🏆",
+        "date": "2024-10-15T18:00:00",
+        "description": "Learn from last year's 1st place HackOH/O winners how to prepare for a hackathon, form a team, select the project, and implement your ideas in a short timeframe. Enjoy free pizza and amazing opportunity to build your team for the upcoming HackOHI/0 2024",
+        "imageSrc": "/assets/how_to_win_a_hackathon 2.png",
+        "location": "Baker 144",
+        "buttons": [
+            {
+                "buttonText": "Sign up for HackOHI/O",
+                "buttonLink": "https://to.osu.dev/signuphack24"
+            }
+        ]
+    },
+    {
         "name": "React.js Workshop",
         "tags": ["Workshop", "Front-End Web Dev", "React"],
         "emoji": "💻",
-        "date": "2024-10-15T18:00:00",
+        "date": "2024-10-22T18:00:00",
         "description": "Explore one of the most popular JavaScript frameworks, how components and reactivity work, and why you should or shouldn’t use it. Some JavaScript knowledge suggested. You will need a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/react_workshop.png",
         "location": "TBA",
