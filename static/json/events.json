@@ -412,7 +412,7 @@
         "name": "React.js Workshop",
         "tags": ["Workshop", "Front-End Web Dev", "React"],
         "emoji": "💻",
-        "date": "2024-10-22T18:00:00",
+        "date": "2024-10-29T18:00:00",
         "description": "Explore one of the most popular JavaScript frameworks, how components and reactivity work, and why you should or shouldn’t use it. Some JavaScript knowledge suggested. You will need a Windows/Mac/Linux laptop.",
         "imageSrc": "/assets/react_workshop.png",
         "location": "TBA",
@@ -421,7 +421,8 @@
                 "buttonText": "VS Code Tutorial",
                 "buttonLink": "https://to.osu.dev/vscode"
             }
-        ]
+        ],
+        "hide": true
     },
     {
         "name": "Test event",
