@@ -382,6 +382,29 @@
             {
                 "buttonText": "Sign up for HackOHI/O",
                 "buttonLink": "https://to.osu.dev/signuphack24"
+            },
+            {
+                "buttonText": "Slides",
+                "buttonLink": "https://docs.google.com/presentation/d/18oEg1Pymnvb4gWYX_hwRDi4qCa8JXjHklIwCQL3zruE/edit?usp=sharing"
+            }
+        ]
+    },
+    {
+        "name": "Intro to Full-Stack Web Dev with Node.js",
+        "tags": ["Workshop", "Full-Stack Web Dev"],
+        "emoji": "🖥️",
+        "date": "2024-10-19T13:30:00",
+        "description": "Learn about making API calls, building a web server, and creating interactive web experiences with modern technologies. You will need a Windows/Mac/Linux laptop.",
+        "imageSrc": "/assets/full_stack_workshop.png",
+        "location": "Senate Chamber Room - Ohio Union",
+        "buttons": [
+            {
+                "buttonText": "Slides",
+                "buttonLink": "https://docs.google.com/presentation/d/1ntNlByuX7eB5oDhLpiuB1lTHnDAvahmcbciR6npsJUk/edit?usp=sharing"
+            },
+            {
+                "buttonText": "Code",
+                "buttonLink": "https://github.com/devosu/group-chat"
             }
         ]
     },
