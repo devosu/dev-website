@@ -7,6 +7,8 @@
     <img src="/assets/third-logos/instagram-black-21.png" alt="Instagram logo" class="inline-icon"/>
   {{- else if eq (.Get "src" ) "linkedin" -}}
     <img src="/assets/third-logos/linkedin-black-21.png" alt="LinkedIn logo" class="inline-icon"/>
+  {{- else if eq (.Get "src") "website" -}}
+    <img src="/assets/third-logos/website-black-21.png" alt="Website icon" class="inline-icon"/>
   {{- else -}}
     <img src="{{.Get "src"}}" alt="{{.Get "alt"}}" class="inline-icon"/>
   {{- end -}}

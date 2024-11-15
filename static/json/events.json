@@ -401,6 +401,18 @@
         ]
     },
     {
+        "name": "Computer Science Social",
+        "tags": ["Collaboration", "Social"],
+        "emoji": "🥤",
+        "date": "2024-11-17T18:00:00",
+        "lengthMin": 180,
+        "description": "Join us for our third, fall CS Social! Come hang out with other students and student organizations on campus! There will be free food and games. A collaborative event with ACM-W, OHI/O, IEEE, Competitive Programming Club, and Women in Cybersecurity.",
+        "location": "Busch Valor Room",
+        "imageSrc": "/assets/cs_social_3.png",
+        "buttons": [
+        ]
+    },
+    {
         "name": "Test event",
         "tags": ["Test"],
         "emoji": "🍕",
