@@ -13,9 +13,10 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 {{< /section >}}
 
 {{< section id="officers" >}}
+
 # 🧑‍💼 Officers
 
-- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}} {{<iconLink href="https://www.linkedin.com/in/alexgulko/" src="linkedin" title="Alex's LinkedIn">}}
+- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}} {{<iconLink href="https://www.linkedin.com/in/alexgulko/" src="linkedin" title="Alex's LinkedIn">}} {{<iconLink href="https://gulko.net" src="website" title="Alex's Website">}}
 
 - {{< gradientText t="RJ Jaiswal">}}, treasurer.
 
@@ -23,7 +24,7 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 - {{< gradientText t="Ashritha Kota">}}, event director.
 
-- {{< gradientText t="Trevor Gerald">}}, software director.
+- {{< gradientText t="Trevor Gerald">}}, software director. {{<iconLink href="https://trevorgerald.web.app/" src="website" title="Trevor's Website">}}
 
 
 {{< /section >}}
@@ -40,13 +41,7 @@ DEV is operated and supported by our amazing team of officers, designers, and en
 
 {{< section id="senior-engineers" >}}
 
-# 🛠️ Senior Engineers
-
-- {{< gradientText t="Aryan Tyagi">}}
-
-- {{< gradientText t="Bennett Godinho-Nelson">}}
-
-- {{< gradientText t="D'Andre Williams">}}
+# 🛠️ Engineers
 
 - {{< gradientText t="Ekumjyot Kaur (Ekum)">}}
 
