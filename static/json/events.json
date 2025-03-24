@@ -437,6 +437,31 @@
         ]
     },
     {
+        "name": "Semester Kickoff Meeting",
+        "tags": ["Intro"],
+        "emoji": "🎉",
+        "date": "2025-01-27T18:00:00",
+        "description": "Welcome to DEV! We will introduce the club, its officers, and meet you in-person for the first time this year! We will also discuss the events planned, as well as the projects and how you can get involved.",
+        "location": "Enarson 245",
+        "imageSrc": "/assets/dev-backdrop.png"
+    },
+    {
+        "name": "AI Workshop",
+        "tags": ["Workshop", "AI"],
+        "emoji": "🤖",
+        "date": "2025-02-17T18:00:00",
+        "description": "You will learn how to create your own chatbot using ChatGPT API in a Node.js application. Some JavaScript experience recommended, but not required. Bring your laptop!",
+        "imageSrc": "/assets/how_to_win_a_hackathon.png"
+    },
+    {
+        "name": "Make the Makeathon workshop",
+        "tags": ["Workshop", "Makeathon"],
+        "emoji": "🛠️",
+        "date": "2025-03-18T18:00:00",
+        "description": "Join us and OHI/O to learn about forming a makeathon team, implementing a project, and winning MakeOHI/O 2025. This will also be the chance to learn more about MakeOHI/O and form your team before competition. ",
+        "imageSrc": "/assets/make_the_makeathon25.png"
+    },
+    {
         "name": "Test event",
         "tags": ["Test"],
         "emoji": "🍕",
