@@ -8,44 +8,23 @@ menus = 'main'
 
 # 👥 Team
 
-DEV is operated and supported by our amazing team of officers, designers, and engineers. They are all volunteers and do their best to create great experience for our members and OSU students.
+DEV is operated and supported by our amazing Executive Board. They are all volunteers and do their best to create great experience for our members and OSU students.
 
 {{< /section >}}
 
-{{< section id="officers" >}}
+{{< section id="eboard" >}}
 
-# 🧑‍💼 Officers
+# 🏛️ Executive Board
 
-- {{< gradientText t="Alex Gulko" >}}, president. {{<iconLink href="https://github.com/GulkoA" src="github" title="">}} {{<iconLink href="https://www.linkedin.com/in/alexgulko/" src="linkedin" title="Alex's LinkedIn">}} {{<iconLink href="https://gulko.net" src="website" title="Alex's Website">}}
+- {{< gradientText t="Krish Deshmukh" >}}, President. {{<iconLink href="https://github.com/krishdeshmukhhh" src="github" title="Krish's GitHub">}} {{<iconLink href="https://www.linkedin.com/in/krish-deshmukh/" src="linkedin" title="Krish's LinkedIn">}} {{<iconLink href="https://krishdeshmukh.com" src="website" title="Krish's Website">}}
 
-- {{< gradientText t="RJ Jaiswal">}}, treasurer.
+- {{< gradientText t="Ingrid Escalante-Hernandez" >}}, Vice-President. {{<iconLink href="https://www.linkedin.com/in/ingridescher/" src="linkedin" title="Ingrid's LinkedIn">}}
 
-- {{< gradientText t="Keming He">}}, devops director. {{<iconLink href="https://github.com/KemingHe" src="github" title="Keming's GitHub">}} {{<iconLink href="https://www.linkedin.com/in/keminghe/" src="linkedin" title="Keming's LinkedIn">}}
+- {{< gradientText t="Trevor Gerald" >}}, Treasurer. {{<iconLink href="https://trevorgerald.web.app/" src="website" title="Trevor's Website">}}
 
-- {{< gradientText t="Ashritha Kota">}}, event director.
+- {{< gradientText t="Ashritha Kota" >}}, Events Director. {{<iconLink href="https://www.linkedin.com/in/ashritha-kota-b81625290/" src="linkedin" title="Ashritha's LinkedIn">}}
 
-- {{< gradientText t="Trevor Gerald">}}, software director. {{<iconLink href="https://trevorgerald.web.app/" src="website" title="Trevor's Website">}}
-
-
-{{< /section >}}
-
-{{< section id="designers" >}}
-
-# 🎨 Designers
-
-- {{< gradientText t="Suyeon Chae">}}
-
-- {{< gradientText t="William An">}}
-
-{{< /section >}}
-
-{{< section id="senior-engineers" >}}
-
-# 🛠️ Engineers
-
-- {{< gradientText t="Ekumjyot Kaur (Ekum)">}}
-
-- {{< gradientText t="Jerry Chang">}}
+- {{< gradientText t="Aiden John" >}}, Marketing Director.
 
 {{< /section >}}
 
